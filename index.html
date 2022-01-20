@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="calc" action="">
+        <p>Сумма первоначального взноса</p>
+        <input class="input downPayment" type="number">
+        <p>Сумма пополнения</p>
+        <input class="input replenishment" type="number">
+        <p>Количество периодов начисления ставки (ежемесячно, ежеквартально, ежегодно и т.д.);</p>
+        <select class="input count">
+            <option value="1">ежемесячно</option>
+            <option value="4">ежеквартально</option>
+            <option value="12">ежегодно</option>
+        </select>
+        <p>Процентная ставка</p>
+        <input class="input interestRate " type="number">
+        <p>Срок депозита в месяцах</p>
+        <input class="input term" type="number">
+        <br>
+        <input class="submt" type="submit" value="Рассчитать">
+    </form>
+    <div class="result"></div>
+</body>
+<script src="script.js"></script>
+
+</html>
