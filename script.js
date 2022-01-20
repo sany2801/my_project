@@ -1,6 +1,6 @@
 const downPayment = document.querySelector('.downPayment')
 const replenishment = document.querySelector('.replenishment')
-const count = document.querySelector('.count')
+// const count = document.querySelector('.count')
 const interestRate = document.querySelector('.interestRate')
 const term = document.querySelector('.term')
 const submt = document.querySelector('.submt')
@@ -23,14 +23,18 @@ const result = document.querySelector('.result')
 
 submt.addEventListener('click',(event)=>{
     event.preventDefault()
-    let p = downPayment.value;
+    let p = downPayment.value; //превоначальный взнос
     console.log(p)
-    let r = interestRate.value;
+    let r = interestRate.value; // процент
     console.log(r)
-    let n = count.value;
+    // let n = count.value; 
+    let t = term.value //кол-во месяцев
 
-    let t = term.value
+
     let res = +p + ((p/100)*r)
     console.log(res)
-
+    for(i = 1; i < t; i++){
+        let res2 = (res + +replenishment.value)+((p/100)*r)
+        console.log(res2)
+    }
 })
