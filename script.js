@@ -1,40 +1,43 @@
-const downPayment = document.querySelector('.downPayment')
-const replenishment = document.querySelector('.replenishment')
-// const count = document.querySelector('.count')
-const interestRate = document.querySelector('.interestRate')
-const term = document.querySelector('.term')
+const downPayment = document.querySelector('.downPayment') //превоначальный взнос
+const replenishment = document.querySelector('.replenishment') //сумма пополгниния
+const interestRate = document.querySelector('.interestRate') // процент
+const term = document.querySelector('.term') //кол-во месяцев
 const submt = document.querySelector('.submt')
 const result = document.querySelector('.result')
 
 
 
 // A = P x (1 + r/n)nt, где:
-
 // A – сумма, которую вы получите в конце периода;
-
 // P – сумма первоначальных инвестиций, т.е. то, что вы вкладываете;
-
 // r – годовая ставка;
-
 // n – количество периодов начисления ставки (ежемесячно, ежеквартально, ежегодно и т.д.);
-
 // t – общий срок вклада в годах.
 
 
 submt.addEventListener('click',(event)=>{
     event.preventDefault()
-    let p = downPayment.value; //превоначальный взнос
-    console.log(p)
-    let r = interestRate.value; // процент
-    console.log(r)
-    // let n = count.value; 
-    let t = term.value //кол-во месяцев
+    
+    const downPaymentValue = +downPayment.value;
+    const replenishmentValue = +replenishment.value;
+    const interestRateValue = +interestRate.value;
+    const termValue = +term.value;
+    console.log('первоночальный взнос: ', downPaymentValue);
+    console.log("Сумма пополнения: ", replenishmentValue);
+    console.log('Процент: ',interestRateValue);
+    console.log('Срок депозита в месяцах: ',termValue)
+    // let S = 0;
+    const procentInMonth = interestRateValue / 12;
+    console.log(procentInMonth)
 
-
-    let res = +p + ((p/100)*r)
-    console.log(res)
-    for(i = 1; i < t; i++){
-        let res2 = (res + +replenishment.value)+((p/100)*r)
-        console.log(res2)
-    }
+   
 })
+
+
+
+for (i=0; i<=10; i++){
+    let num = 1;
+    // i =+ num;
+    console.log(i + num)
+    console.log(num)
+}
