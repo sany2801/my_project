@@ -17,12 +17,28 @@ submt.addEventListener('click',(event)=>{
     event.preventDefault()
     result.innerHTML = "";
     const arr = []
-    for(i=1; i<= +term.value +1;i++){
+    for(i=1; i<= +term.value+1 ;i++){
         arr.push(i)
+		console.log(arr)
     }
-    const arrRed =  arr.reduce(function(sum, acum, index){
-        let procent = (((sum/100)* +interestRate.value)/12) 
-        result.innerHTML += `<p>${index} месяц ${(sum - +replenishment.value).toFixed(+range.value)}`
-        return sum + procent + +replenishment.value;
-    },+replenishment.value)
+	// let procent1 = (((+downPayment.value/100)* +interestRate.value)/12) 
+
+    const arrRed =  arr.reduce(function(acum, sum, index){
+		// debugger;
+		// let procent = (((acum/100)* +interestRate.value)/12) 
+        result.innerHTML += `<p>${index} месяц ${(acum - 100).toFixed(+range.value)}`
+        return (acum + (((acum/100)* +interestRate.value)/12)) + +replenishment.value;
+    },+downPayment.value)
 })
+
+
+
+// const array = [1,2,3,4,5]
+// console.log(array)
+// array.reduce(function(acum, sum, index, arr){
+// 	console.log(`acum: ${acum}, sum: ${sum}, index: ${index}, arr: ${arr}`)
+// 	return acum + sum
+// },0)
+
+
+
