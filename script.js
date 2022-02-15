@@ -2,32 +2,39 @@ const downPayment = document.querySelector('.downPayment')
 const replenishment = document.querySelector('.replenishment')
 const interestRate = document.querySelector('.interestRate')
 const term = document.querySelector('.term')
-const submt = document.querySelector('.submt')
+const submit = document.querySelector('.submit')
 const result = document.querySelector('.result')
 const range = document.querySelector('#range')
 const rangeValue = document.querySelector('.rangeValue')
+const tableResult = document.querySelector('.tableResult')
+const totalValue = document.querySelector('.totalValue')
+const replenishmentValue = document.querySelector('.replenishmentValue')
+const interestValue = document.querySelector('.interestValue')
 
 
-
-rangeValue.innerHTML = `${range.value}`
-range.addEventListener('click', (event)=>{
-    rangeValue.innerHTML = `${range.value}`
-})
-submt.addEventListener('click',(event)=>{
+submit.addEventListener('click',(event)=>{
     event.preventDefault()
-    result.innerHTML = "";
+    tableResult.innerHTML = "";
     const arr = []
     for(i=1; i<= +term.value+1 ;i++){
         arr.push(i)
 		console.log(arr)
     }
-	// let procent1 = (((+downPayment.value/100)* +interestRate.value)/12) 
-
+	// debugger;
     const arrRed =  arr.reduce(function(acum, sum, index){
-		// debugger;
-		// let procent = (((acum/100)* +interestRate.value)/12) 
-        result.innerHTML += `<p>${index} месяц ${(acum - 100).toFixed(+range.value)}`
-        return (acum + (((acum/100)* +interestRate.value)/12)) + +replenishment.value;
+        tableResult.innerHTML +=`
+        <tr class = 'index${index}'>
+                <td>${index}</td>
+                <td>${(acum - replenishment.value).toFixed(3)}</td>
+        </tr>`
+        totalValue.innerHTML =`
+        ${(acum - replenishment.value).toFixed(3)}`
+        replenishmentValue.innerHTML =`
+        ${+downPayment.value + +replenishment.value * (+term.value-1)}`
+        interestValue.innerHTML =`
+        ${(((acum - replenishment.value)) - (+downPayment.value + +replenishment.value * (+term.value-1))).toFixed(3)}`
+			return (acum + (((acum/100)* +interestRate.value)/12)) + +replenishment.value;
+		
     },+downPayment.value)
 })
 
