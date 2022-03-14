@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -7,10 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+ 
+
     <div class="wrapper">
         <div class="slider">
+            <div class="button">
+                <button class="slider-previous"></button>
+                <button class="slider-next"></button>
+            </div>
             <div class="slider-line">
                 <img src="images/Frame 1.png" alt="" srcset="">
                 <img src="images/Frame 2.png" alt="" srcset="">
@@ -18,13 +25,19 @@
                 <img src="images/Frame 4.png" alt="" srcset="">
                 <img src="images/Frame 5.png" alt="" srcset="">
                 <img src="images/Frame 6.png" alt="" srcset="">
-                <img src="images/Frame 6.png" alt="" srcset="">
-            </div>          
+            </div>
         </div>
-        <button class="slider-previous">Previous</button>
-        <button class="slider-next">Next</button>
-    </div>
+        <div class="button-navigator">
+            <button class="navigator active" id="0"></button>
+            <button class="navigator" id="600"></button>
+            <button class="navigator" id="1200"></button>
+            <button class="navigator" id="1800"></button>
+            <button class="navigator" id="2400"></button>
+            <button class="navigator" id="3000"></button>
+        </div>
+    </div> 
 
     <script src="script.js"></script>
 </body>
+
 </html>
