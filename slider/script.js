@@ -1,50 +1,81 @@
-let offset = 0
-const sliderPrev = document.querySelector('.slider-previous')
-const sliderNext = document.querySelector('.slider-next')
-const sliderLine = document.querySelector('.slider-line')
-const buttonNavigator = document.querySelector('.button-navigator')
-const navigator = document.querySelector('.navigator')
-const draw = (index)=>{
-    offset =+ index;
-    sliderLine.style.left = -offset + 'px';
-  
-}
+// let offset = 0
+// const sliderPrev = document.querySelector('.slider-previous')
+// const sliderNext = document.querySelector('.slider-next')
+// const sliderLine = document.querySelector('.slider-line')
+// const buttonNavigator = document.querySelector('.button-navigator')
+// const imgSlider = document.getElementsByClassName("imgSlider")
 
 
-const init = ()=>{
-    buttonNavigator.addEventListener('click', (event)=>{
-        
-        btnId = event.target.id
-        // console.log(btnClass)
-        console.log(btnId)
-        draw(btnId)
-    })
-    sliderPrev.addEventListener('click',()=>{
-        draw(offset-600)
-        if (offset < 0) {
-            draw(3000);
-        }
-    })
-    sliderNext.addEventListener('click',()=>{
-        draw(offset+600)
-        if(offset > 3000){
-            draw(0)
-        }
-    })
-}
-if(offset = 0){
 
-}
-init()
+//     const draw = (index)=>{
+//     offset =+ index;
+//     sliderLine.style.left = -offset + 'px';
+// }   
 
-// let menu = document.querySelectorAll('menu')
-// console.log(menu)
 
 // const init = ()=>{
-//     menu.forEach((item)=>
-//         item.classList.remove('active'))
-//         this.classList.add('active')   
-// }
+//     buttonNavigator.addEventListener('click', (event)=>{       
+//         btnId = event.target.id
+//         draw(btnId)
+//         document.getElementById(offset).style.backgroundColor = "yellow";
+//     })
 
-// menu.forEach((item) =>
-// item.addEventListener('click', init))
+
+//     sliderPrev.addEventListener('click',(event)=>{
+//         draw(offset-600)
+//         if (offset < 0) {
+//             draw(3000);
+//         }
+//     console.log("Prev " + offset)
+//     })
+
+
+//     sliderNext.addEventListener('click',()=>{
+//         draw(offset+600)
+//         if(offset > 3000){
+//             draw(0)
+//         }
+//     console.log("Next "+ offset)
+//     })
+// }
+// init()
+const slider =document.querySelector('.slider')
+const btn = document.querySelectorAll('.btn')
+const prev = document.querySelector('.prev')
+const next = document.querySelector('.next')
+let offset = 0;
+
+prev.addEventListener('click', ()=>{
+    draw(offset - 600)
+    if(offset < 0){
+        draw(3000)
+    }
+})
+
+next.addEventListener('click',()=>{
+  draw( offset + 600)
+  if(offset > 3000){
+      draw(0)
+  }  
+})
+
+const draw = (index)=>{
+    offset =+ index;
+    slider.style.left = -offset + 'px';
+}  
+
+
+
+function avtiveLink(){
+    btn.forEach((item) =>
+        item.classList.remove('active'))
+        this.classList.add('active')
+    };
+btn.forEach((item) =>
+item.addEventListener('click', avtiveLink))
+
+btn.forEach((item) =>
+item.addEventListener('click', (avtiveLink)=>{
+    btnId = avtiveLink.target.id
+     draw(btnId)
+}))
