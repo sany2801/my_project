@@ -13,27 +13,29 @@ const draw = (index)=>{
 
 const init = ()=>{
     buttonNavigator.addEventListener('click', (event)=>{
-        
         btnId = event.target.id
-        // console.log(btnClass)
-        console.log(btnId)
         draw(btnId)
+        if(offset = 0){
+            document.getElementById('0').style.backgroundColor = "yellow";
+        }
     })
+
+
     sliderPrev.addEventListener('click',()=>{
         draw(offset-600)
         if (offset < 0) {
             draw(3000);
         }
+        console.log(offset)
     })
     sliderNext.addEventListener('click',()=>{
+        
         draw(offset+600)
         if(offset > 3000){
             draw(0)
         }
+        console.log(offset)
     })
-}
-if(offset = 0){
-
 }
 init()
 
