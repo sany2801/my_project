@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    transition: all 0.5s ease-out;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.wrapper-slider{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.line-slider{
+    position: relative;
+    display: flex;
+    width: 600px;
+}
+.slider{
+    width: 600px;
+    height: 300px;
+}
+.active-slide{
+    position: relative;
+    position: absolute;
+    left: 0;
+}
+
+/* 
+.slider{
+    left: -600px;
+    position: absolute;
+    width: 3600px;
+    display: flex;
+}
+.slider .active{
+    left: 0;
+}*/
+.slider div{
+    width: 600px;
+    height: 300px;
+}
+.slider1{
+    background-color: rgb(27, 101, 167);
+    background-image: url(images/Frame\ 1.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}.slider2{
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image: url(images/Frame\ 2.png);
+    background-color: rgb(0, 136, 255);
+}.slider3{
+    background-repeat: no-repeat;
+    background-image: url(images/Frame\ 3.png);
+    background-size:contain;
+    background-color: rgb(255, 179, 15);
+}.slider4{
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image: url(images/Frame\ 4.png);
+    background-color: rgb(255, 136, 136);
+}.slider5{
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image: url(images/Frame\ 5.png);
+    background-color: rgb(123, 255, 109);
+}.slider6{
+    background-image: url(images/Frame\ 6.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 0, 0);
+}
+
+.prev{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: rgba(0, 136, 255, 0.493);
+}.next{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background-color: rgba(0, 136, 255, 0.493);
+}
+
+.wraper-dots{
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    margin: 1rem;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(149, 149, 149);
+}
+.active{
+    background-color: black;
+}
