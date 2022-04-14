@@ -1,17 +1,17 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
 }
-.wrapper{
-    width: 80%;
-    margin: 30px auto;
-    padding: 30px;
+/* .wrapper{  */
+/* width: 80%; */
+/* margin: 30px auto; */
+/* padding: 30px;
     background-color: rgb(110, 212, 216);
     position: relative;
-}
+}/*
 .slider{
-    width: 600px;
+    width: 600px; 
     height: 300px;
     border: 1px solid black;
     margin: 30px auto;
@@ -77,7 +77,9 @@
     background-color: white;
 }
 
-
+.button-navigator .active{
+    background-color: chartreuse;
+}
 
 .link{
     width: 40px;
@@ -85,6 +87,112 @@
     background-color: transparent;
 }
 
+.menu .active{
+    background-color: chartreuse;
+}*/
 
+/* .wrapper{
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 80%;
+}
+.slider-line{
+    width: 600px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    width: 3000px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 0.45s;
 
+}
+.imgslider{
+    width: 600px;
+    height: 100px;
+    background-color: rgb(175, 175, 206);
+}
+.btnnavigator{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+}
+.active{
+    background-color: antiquewhite;
+}
+.prev{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: coral;
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    font-weight: 800;
+    font-size: 30px;
+}
+.next{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: coral;
+    position: absolute;
+    top: 10px;
+    right: -50px;   
+    font-weight: 800;
+    font-size: 30px;
+} */
 
+.wrapper {
+  width: 80%;
+  margin: 30px auto;
+}
+.wrapper-slider {
+  position: relative;
+}
+.slider {
+  display: none;
+}
+.wrapper-slider .active {
+  display: block;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+}
+.round {
+  margin: 0.5rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: bisque;
+}
+
+.controls .active {
+  background-color: black;
+}
+
+.prev {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  background-color: rgba(243, 255, 8, 0.455);
+}
+.next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background-color: rgba(243, 255, 8, 0.455);
+}
