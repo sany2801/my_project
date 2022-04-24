@@ -1,81 +1,80 @@
-// let offset = 0
-// const sliderPrev = document.querySelector('.slider-previous')
-// const sliderNext = document.querySelector('.slider-next')
-// const sliderLine = document.querySelector('.slider-line')
-// const buttonNavigator = document.querySelector('.button-navigator')
-// const imgSlider = document.getElementsByClassName("imgSlider")
 
 
+const prev = document.querySelector('#btn-prev'),
+      next = document.querySelector('#btn-next'),
+      slides = document.querySelectorAll('.slide'),
+      dots = document.querySelectorAll('.dot');
 
-//     const draw = (index)=>{
-//     offset =+ index;
-//     sliderLine.style.left = -offset + 'px';
-// }   
+let index = 0;
 
-
-// const init = ()=>{
-//     buttonNavigator.addEventListener('click', (event)=>{       
-//         btnId = event.target.id
-//         draw(btnId)
-//         document.getElementById(offset).style.backgroundColor = "yellow";
-//     })
-
-
-//     sliderPrev.addEventListener('click',(event)=>{
-//         draw(offset-600)
-//         if (offset < 0) {
-//             draw(3000);
-//         }
-//     console.log("Prev " + offset)
-//     })
-
-
-//     sliderNext.addEventListener('click',()=>{
-//         draw(offset+600)
-//         if(offset > 3000){
-//             draw(0)
-//         }
-//     console.log("Next "+ offset)
-//     })
-// }
-// init()
-const slider =document.querySelector('.slider')
-const btn = document.querySelectorAll('.btn')
-const prev = document.querySelector('.prev')
-const next = document.querySelector('.next')
-let offset = 0;
-
-prev.addEventListener('click', ()=>{
-    draw(offset - 600)
-    if(offset < 0){
-        draw(3000)
+const activeSlide = n => {
+    for(let slide of slides ){
+        slide.classList.remove('active');
     }
+    slides[n].classList.add('active');
+}
+
+const activeDot = n => {
+    for(let dot of dots ){
+        dot.classList.remove('active');
+    }
+    dots[n].classList.add('active');
+}
+
+const prepareCurrentSlider=(ind)=>{
+    activeSlide(ind)
+    activeDot(ind)
+}
+
+const nextSlide = ()=>{
+    if(index == slides.length - 1){
+        index = 0;
+        prepareCurrentSlider(index)
+    } else {
+        index++;
+        prepareCurrentSlider(index)
+
+    }
+}
+const prevSlide = ()=>{
+    if(index == 0){
+        index = slides.length - 1;
+        prepareCurrentSlider(index)
+
+    } else {
+        index--;
+        prepareCurrentSlider(index)
+    }
+}
+
+dots.forEach((item, indexOn)=>{
+    item.addEventListener('click', ()=>{
+        index = indexOn
+        prepareCurrentSlider(index)
+    })
 })
+// next.addEventListener('click',nextSlide)
+// prev.addEventListener('click',prevSlide)
 
-next.addEventListener('click',()=>{
-  draw( offset + 600)
-  if(offset > 3000){
-      draw(0)
-  }  
-})
+const wripper = document.querySelector('.wrapper')
 
-const draw = (index)=>{
-    offset =+ index;
-    slider.style.left = -offset + 'px';
-}  
+let x1 = null;
 
+const mouseStart = (event)=>{
+    x1 = event.clientX
+}
+function mousemove(event){
+    if(!x1){
+        return false;
+    }
+    let x2 = event.clientX
+    let xDif = x2 - x1;
+    if(xDif > 0){
+        console.log('right')
+    }else{
+        console.log('left')
+    }
+}
 
-
-function avtiveLink(){
-    btn.forEach((item) =>
-        item.classList.remove('active'))
-        this.classList.add('active')
-    };
-btn.forEach((item) =>
-item.addEventListener('click', avtiveLink))
-
-btn.forEach((item) =>
-item.addEventListener('click', (avtiveLink)=>{
-    btnId = avtiveLink.target.id
-     draw(btnId)
-}))
+wripper.addEventListener('mouseup', mousemove,false);
+wripper.addEventListener('mousedown', mouseStart,false);

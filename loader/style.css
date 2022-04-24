@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.loader1 svg{
+    fill: transparent;
+    width: 200px;
+    height: 200px;
+    stroke-width: 20px;
+    stroke-dasharray: 330;
+    stroke: rgb(0, 0, 0);
+    animation: rotate 3s infinite linear;
+} 
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        stroke: rgb(26, 255, 0);
+    }
+    50%{
+        stroke: blue;
+     }
+
+    100%{
+        stroke: rgb(26, 255, 0);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.loader2 svg{
+    fill: transparent;
+    width: 200px;
+    height: 200px;
+    stroke-width: 20px;
+    stroke: rgb(193, 205, 126);
+    animation: rotate 3s infinite linear;
+}
+
+.loader2 svg circle{
+    stroke-dasharray: 480;
+    animation: stroke 3s  infinite linear;
+}
+@keyframes stroke{
+    0%{
+        stroke-dashoffset: 480;
+    }
+    100%{ 
+        stroke-dashoffset: -480;
+    }
+}
+
+
+.loader3{
+    /* margin: 60px auto; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.dot{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dot::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+.dot:nth-child(1){
+    animation: loader3 3s  infinite;
+    /* animation-delay: 300ms; */
+}.dot:nth-child(2){
+    animation: loader3 3s  infinite;
+    animation-delay: 100ms;
+}.dot:nth-child(3){
+    animation: loader3 3s  infinite;
+    animation-delay: 200ms;
+}.dot:nth-child(4){
+    animation: loader3 3s  infinite;
+    animation-delay: 300ms;
+}.dot:nth-child(5){
+    animation: loader3 3s  infinite;
+    animation-delay:400ms;
+}.dot:nth-child(6){
+    animation: loader3 3s  infinite;
+    animation-delay: 500ms;
+}
+@keyframes loader3 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loader4{
+    width: 300px;
+    height: 400px;
+    /* border: 1px solid black; */
+    position: relative;
+    /* animation: loader4 3s infinite ; */
+}
+.stand{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: bisque;
+    z-index: 1;
+}
+.stand:nth-child(2){
+    bottom: 0;
+}
+
+.oprah{
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: black;
+}
+.oprah:nth-child(3){
+    right: 0;
+}
+.flask1{
+    width: 100%;
+    height: 50%;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 200px solid #24375B; 
+}
+.flask2{
+    width: 100%;
+    height: 50%;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #24375B; 
+}
+
+@keyframes loader4 {
+    100%{
+        transform: rotate(180deg);
+        /* animation-delay: 3s; */
+        
+    }
+}
+
+.sand{
+    position: absolute;
+    height: 300px; 
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10% 0 0 0;
+    border-bottom: 100px solid rgb(255, 0, 0);
+    border-left: 100px solid rgb(98, 255, 0);
+    border-right: 100px solid rgb(85, 0, 255);
+    border-top: 100px solid rgb(255, 0, 136);
+
+}
+
