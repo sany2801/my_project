@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    color: rgba(66, 66, 66, 1);
+    font-family: 'Raleway', sans-serif;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h1{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 5rem;
+}
+h2{
+    margin-bottom: 55px;
+    font-size: 30px;
+    font-weight: 700;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 24px;
+
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header{
+    padding: 1rem 0;
+    margin-bottom: 56px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);    
+}
+
+.logo{
+    width: 85px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(images/AEOX.png);
+}
+.nav-header{
+    align-items: center;
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+}
+main{
+    width: 100%;
+    height:  600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 70px;
+}
+.main-section{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.main-tittle{
+    width: 30%;
+}
+
+.main-tittle p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.main-button{
+    background-color: rgba(66, 66, 66, 1);
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 20px;
+}
+.main-fhoto{
+    width: 825px;
+    height: 600px;
+    background-image: url(images/photos.png);
+    background-size: cover;
+}
+.advantages{
+    width: 100%;
+}
+.advantages h2{
+    margin-bottom: 3.4rem;
+}
+
+.advantages-photo{
+    width: 610px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/advantagesPhoto.png);
+    margin-right: 100px;
+}
+.advantages-section {
+    width: 90%;
+    display: flex;
+}
+.advantages-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.advantages-list div {
+    width: 270px;
+}
+.advantages-list div p:nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}.advantages-list div p:nth-child(2){
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}.advantages-list div p:nth-child(3){
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.types{
+    width: 175px;
+    height: 175px;
+    position: relative;
+    margin-right: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.label_input::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid rgba(66, 66, 66, 1);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.label_input::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgba(66, 66, 66, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: 27px;
+    left: 27px;
+    display: none;
+} 
+.type-kitchen:checked  + .label_input::after{
+    display: block;
+}
+
+.label_input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+.type-kitchen{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    width: 20px;
+    font-size: 20px;
+    appearance: none;
+}
+.types p {
+    position: absolute;
+    /* bottom: -30px; */
+}
+.the_form{
+    display: flex;
+
+}
+
+.island{
+    background-image: url(images/island.png);
+}
+.angular{
+    background-image: url(images/angular.png);
+}
+.straight{
+    background-image: url(images/straight.png);
+}
+.bar{
+    background-image: url(images/bar.png);
+}
+
+
