@@ -53,8 +53,8 @@ dots.forEach((item, indexOn)=>{
         prepareCurrentSlider(index)
     })
 })
-// next.addEventListener('click',nextSlide)
-// prev.addEventListener('click',prevSlide)
+next.addEventListener('click',nextSlide)
+prev.addEventListener('click',prevSlide)
 
 const wripper = document.querySelector('.wrapper')
 
@@ -76,5 +76,5 @@ function mousemove(event){
     }
 }
 
-wripper.addEventListener('mouseup', mousemove,false);
-wripper.addEventListener('mousedown', mouseStart,false);
+// wripper.addEventListener('mouseup', mousemove,false);
+// wripper.addEventListener('mousedown', mouseStart,false);
