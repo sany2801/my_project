@@ -1,69 +1,65 @@
-
-
-const prev = document.querySelector('#btn-prev'),
-      next = document.querySelector('#btn-next'),
-      slides = document.querySelectorAll('.slide'),
-      dots = document.querySelectorAll('.dot');
-
-let index = 0;
-
-const activeSlide = n => {
-    for(let slide of slides ){
-        slide.classList.remove('active');
-    }
-    slides[n].classList.add('active');
-}
-
-const activeDot = n => {
-    for(let dot of dots ){
-        dot.classList.remove('active');
-    }
-    dots[n].classList.add('active');
-}
-
-const prepareCurrentSlider=(ind)=>{
+const prev = document.querySelector('.prev')
+const next = document.querySelector('.next')
+const dots = document.querySelectorAll('.dot')
+const slides = document.querySelectorAll('.slider')
+const slide = document.querySelector('.line-slider')
+let offset = 0;
+const init = (ind)=>{
     activeSlide(ind)
     activeDot(ind)
 }
-
-const nextSlide = ()=>{
-    if(index == slides.length - 1){
-        index = 0;
-        prepareCurrentSlider(index)
-    } else {
-        index++;
-        prepareCurrentSlider(index)
-
+const activeDot = (index) =>{
+    for(let dot of dots){
+        dot.classList.remove('active')
     }
-}
-const prevSlide = ()=>{
-    if(index == 0){
-        index = slides.length - 1;
-        prepareCurrentSlider(index)
-
-    } else {
-        index--;
-        prepareCurrentSlider(index)
-    }
+    dots[index].classList.add('active')
 }
 
-dots.forEach((item, indexOn)=>{
-    item.addEventListener('click', ()=>{
-        index = indexOn
-        prepareCurrentSlider(index)
+const activeSlide = (index) =>{
+    console.log(index)
+    for(let slide of slides){
+        slide.classList.remove('active-slide')
+    }
+    slides[index].classList.add('active-slide')
+}
+
+const nextSlide = () =>{
+    if(offset == slides.length - 1){
+        offset = 0
+        init(offset)
+    }else{
+        offset++;
+        init(offset)
+    }
+}
+const prevSlide = () =>{
+    if(offset == 0){
+        offset = slides.length - 1
+        init(offset)
+    }else{
+        offset--;
+        init(offset)
+    }
+}
+
+dots.forEach((item, indexDot)=>{
+    item.addEventListener('click',()=>{
+        offset = indexDot;
+        init(offset)
     })
 })
-// next.addEventListener('click',nextSlide)
-// prev.addEventListener('click',prevSlide)
 
-const wripper = document.querySelector('.wrapper')
+next.addEventListener('click', nextSlide)
+prev.addEventListener('click', prevSlide)
 
-let x1 = null;
+// setInterval(nextSlide, 2500
 
-const mouseStart = (event)=>{
+let x = null;
+
+const mouseStart = (event) =>{
     x1 = event.clientX
 }
-function mousemove(event){
+const mouseMove = (event) =>{
     if(!x1){
         return false;
     }
@@ -71,10 +67,11 @@ function mousemove(event){
     let xDif = x2 - x1;
     if(xDif > 0){
         console.log('right')
+        prevSlide()
     }else{
         console.log('left')
+        nextSlide()
     }
 }
-
-wripper.addEventListener('mouseup', mousemove,false);
-wripper.addEventListener('mousedown', mouseStart,false);
+slide.addEventListener('mouseup', mouseMove, false)
+slide.addEventListener('mousedown', mouseStart, false)

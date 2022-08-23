@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 5px solid black; */
+}
+
+.wrapper{
+    margin: 250px auto;
+    width: 200px;
+    height:100px;
+    position: relative;
+    perspective: 2000px;
+    border: 1px solid black;
+}
+.carusel{
+    /* overflow: hidden; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    /* animation: rotate 10s linear infinite; */
+    transform: rotateX(-8deg);
+}
+@keyframes rotate {
+    0%{
+       /* transform:  rotateX(-10deg); */
+    }
+    100%{
+        transform: rotateX(-8deg) rotateY(-360deg) ;
+    }
+}
+.dot{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    line-height: 300px;
+    display: block;
+    background-size: 100% 100%;
+
+}
+.dot:nth-child(1){
+    transform: rotateY(0deg) translateZ(502px); 
+    background-image: url(images/Frame\ 1.png);
+}.dot:nth-child(2){
+    transform: rotateY(22.5deg) translateZ(502px); 
+    background-image: url(images/Frame\ 2.png);
+}.dot:nth-child(3){
+    transform: rotateY(45deg) translateZ(502px); 
+    background-image: url(images/Frame\ 3.png);
+}.dot:nth-child(4){
+    transform: rotateY(67.5deg) translateZ(502px); 
+    background-image: url(images/Frame\ 4.png);
+}.dot:nth-child(5){
+    transform: rotateY(90deg) translateZ(502px); 
+    background-image: url(images/Frame\ 5.png);
+}.dot:nth-child(6){
+    transform: rotateY(112.5deg) translateZ(502px); 
+    background-image: url(images/Frame\ 6.png);
+}.dot:nth-child(7){
+    transform: rotateY(135deg) translateZ(502px); 
+    background-image: url(images/Frame\ 7.png);
+}.dot:nth-child(8){
+    transform: rotateY(157.5deg) translateZ(502px); 
+    background-image: url(images/Frame\ 8.png);
+}.dot:nth-child(9){
+    transform: rotateY(180deg) translateZ(502px); 
+    background-image: url(images/Frame\ 9.png);
+}.dot:nth-child(10){
+    transform: rotateY(202.5deg) translateZ(502px); 
+    background-image: url(images/Frame\ 10.png);
+}.dot:nth-child(11){
+    transform: rotateY(225deg) translateZ(502px); 
+    background-image: url(images/Frame\ 11.png);
+}.dot:nth-child(12){
+    transform: rotateY(247.5deg) translateZ(502px); 
+    background-image: url(images/Frame\ 12.png);
+}.dot:nth-child(13){
+    transform: rotateY(270deg) translateZ(502px); 
+    background-image: url(images/Frame\ 13.png);
+}.dot:nth-child(14){
+    transform: rotateY(292.5deg) translateZ(502px); 
+    background-image: url(images/Frame\ 14.png);
+}.dot:nth-child(15){
+    transform: rotateY(315deg) translateZ(502px); 
+    background-image: url(images/Frame\ 15.png);
+}.dot:nth-child(16){
+    transform: rotateY(337.5deg) translateZ(502px); 
+    background-image: url(images/Frame\ 16.png);
+}

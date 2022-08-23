@@ -37,7 +37,7 @@ const rotate = ()=>{
         setTimeout(() => {
             rotate2()
           
-        }, 5820); 
+        },5820); 
     }
     const init = ()=>{
         btnInit.addEventListener('click',()=>{
