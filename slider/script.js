@@ -48,6 +48,8 @@ dots.forEach((item, indexDot)=>{
         init(offset)
     })
 })
+next.addEventListener('click',nextSlide)
+prev.addEventListener('click',prevSlide)
 
 next.addEventListener('click', nextSlide)
 prev.addEventListener('click', prevSlide)
@@ -75,3 +77,6 @@ const mouseMove = (event) =>{
 }
 slide.addEventListener('mouseup', mouseMove, false)
 slide.addEventListener('mousedown', mouseStart, false)
+
+// wripper.addEventListener('mouseup', mousemove,false);
+// wripper.addEventListener('mousedown', mouseStart,false);

@@ -106,7 +106,10 @@
     }
 }
 
+
+
 .loader4{
+<<<<<<< HEAD
     width: 200px;
     height: 200px;
     display: flex;
@@ -228,6 +231,169 @@
 .loader6{
     /* margin: 0 auto; */
     display: flex;
+=======
+    padding: 2rem 0;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.lader4__dot{
+    width: 300px;
+    height: 300px;
+    /* border-radius: 50%; */
+}
+.lader4__dot:nth-child(1){
+    background-color: rgb(122, 122, 255);
+}.lader4__dot:nth-child(2){
+    background-color: rgb(255, 0, 0);
+}.lader4__dot:nth-child(3){
+    background-color: rgb(0, 255, 81);
+}.lader4__dot:nth-child(1){
+    background-color: rgb(0, 255, 153);
+    /* transform:translate(-100px, 200px); */
+    /* transform: matrix(4.0, 1.0, 1.0, 1.0, 1.0, 1.0); */
+    transform: perspective(17px) rotate(90deg);
+    /* transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); */
+    /* transform: rotate(18deg); */
+    /* transform: rotate3d(1, 2.0, 3.0, 10deg); */
+    /* transform: rotateX(10deg); */
+    /* transform: rotateY(10deg); */
+    /* transform: rotateZ(10deg); */
+    /* transform: translate(12px, 50%); */
+    /* transform: translate3d(12px, 50%, 3em); */
+    /* transform: translateX(2em); */
+    /* transform: translateY(3in); */
+    /* transform: translateZ(2px); */
+    /* transform: scale(2, 0.5); */
+    /* transform: scale3d(2.5, 1.2, 0.3); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(0.5); */
+    /* transform: scaleZ(0.3); */
+    /* transform: skew(30deg, 20deg); */
+    /* transform: skewX(30deg); */
+    /* transform: skewY(1.07rad); */
+}
+
+
+.pers250 {
+    perspective: 250px;
+    -webkit-perspective: 250px;
+}
+.pers350 {
+    perspective: 350px;
+    -webkit-perspective: 350px;
+}
+.pers500 {
+    perspective: 500px;
+    -webkit-perspective: 500px;
+}
+
+/* Определяем div.container, div.cube, и свойства граней куба */
+ .container {
+   width: 200px;
+   height: 200px;
+   margin: 75px 0 0 75px;
+   border: none;
+}
+.cube {
+   width: 100%;
+   height: 100%;
+   backface-visibility: visible;
+   perspective-origin: 150% 150%;
+   transform-style: preserve-3d;
+   -webkit-backface-visibility: visible;
+   -webkit-perspective-origin: 150% 150%;
+   -webkit-transform-style: preserve-3d;
+}
+.face {
+   display: block;
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   border: none;
+   line-height: 100px;
+   font-family: sans-serif;
+   font-size: 60px;
+   color: white;
+   text-align: center;
+}
+
+/* Определяем каждую грань в зависимости от направления */
+ .front {
+   background: rgba(0, 0, 0, 0.3);
+   transform: translateZ(50px);
+   -webkit-transform: translateZ(50px);
+}
+.back {
+   background: rgba(0, 255, 0, 1);
+   color: black;
+   transform: rotateY(180deg) translateZ(50px);
+   -webkit-transform: rotateY(180deg) translateZ(50px);
+}
+.right {
+   background: rgba(196, 0, 0, 0.7);
+   transform: rotateY(90deg) translateZ(50px);
+   -webkit-transform: rotateY(90deg) translateZ(50px);
+}
+.left {
+   background: rgba(0, 0, 196, 0.7);
+   transform: rotateY(-90deg) translateZ(50px);
+   -webkit-transform: rotateY(-90deg) translateZ(50px);
+}
+.top {
+   background: rgba(196, 196, 0, 0.7);
+   transform: rotateX(90deg) translateZ(50px);
+   -webkit-transform: rotateX(90deg) translateZ(50px)
+}
+.bottom {
+   background: rgba(196, 0, 196, 0.7);
+   transform: rotateX(-90deg) translateZ(50px);
+   -webkit-transform: rotateX(-90deg) translateZ(50px);
+}
+
+/* Делаем таблицу немного лучше */
+th, p, td {
+   background-color: #EEEEEE;
+   padding: 10px;
+   font-family: sans-serif;
+   text-align: left;
+}
+
+.wrapp{
+    width: 600px;
+    height: 600px;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+}
+.window{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    z-index: 2;
+    /* overflow: hidden; */
+}
+.ray{
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    width: 282px;
+    height: 700px;
+    background-color: yellow;
+    transform-origin: 0px 0px;
+    transform: rotate(-45deg);
+}
+
+.say{
+    width: 800px;
+    height: 300px;
+    background-color: red;
+    border-bottom-left-radius: 180px;
+    position: relative;
+>>>>>>> eaa9df3c3ff3afd03c3e16babbbeacbac56b4296
 }
 .wrapper__dot6{
     display: flex;
@@ -239,6 +405,7 @@
 }
 
 
+<<<<<<< HEAD
 .loader6__dot{
     position: absolute;
     width: 40px;
@@ -299,10 +466,86 @@
 
     100%{
         transform: translateX(0px);
+=======
+.say::after{
+    content: "";
+    position: absolute;
+    bottom: -270px;
+    left: 100px;
+    width: 0; 
+    height: 0;
+    border-left: 115px solid transparent;
+    border-right: 115px solid transparent;
+    border-top: 280px solid rgb(255, 0, 0);
+    transform-origin: 100% 1px;
+    transform: rotate(45deg);
+}
+.say::before{
+    content: "thwrthbg";
+    font-size: 100px;
+    margin: 2rem 10rem;
+    position: absolute;
+    top: 0;
+}
+
+.heart{
+    margin-top: 3rem;
+    width: 200px;
+    height: 200px;
+    /* background-color: #000000; */
+    position: relative;
+    animation: scale 500ms linear infinite;
+}
+.blesk{
+    position: absolute;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    border-top: 10px solid rgb(255, 255, 255);
+    top: 25px;
+    left: 40px;
+    transform: rotate(-35deg);
+}
+.heart::after,
+.heart::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 160px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 100px 100px 0 0;
+    transform-origin: 100% 100%;
+    transform: rotate(45deg);
+    box-shadow: 1px 1px 50px 10px #FF0000;
+    /* animation: scale 500ms linear infinite; */
+}
+
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    70%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(1.4);
+        
+>>>>>>> eaa9df3c3ff3afd03c3e16babbbeacbac56b4296
     }
     
 }
+.heart::before{
+    transform-origin: 0 100%;
+    transform: rotate(-45deg);
+    left: 100px;
+    /* animation: scale2 500ms linear infinite; */
+}
 
+<<<<<<< HEAD
 @keyframes rotate-6 {
     0%{
         bottom: 0;
@@ -392,6 +635,21 @@
 @keyframes loader7 {
     50%{
         transform: translatey(-10px) rotateX(60deg);
+=======
+@keyframes scale2 {
+    0%{
+        transform:rotate(-45deg) scale(1);
+    }
+    50%{
+        transform:rotate(-45deg) scale(1.2);
+    }
+    70%{
+        transform:rotate(-45deg) scale(1);
+    }
+    80%{
+        transform:rotate(-45deg) scale(1.4);
+        
+>>>>>>> eaa9df3c3ff3afd03c3e16babbbeacbac56b4296
     }
 }
 
