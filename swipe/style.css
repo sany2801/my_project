@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.wrapper{
+    width: 100%;
+    height: 400px;
+    margin: 3rem auto;
+    /* position: absolute; */
+    overflow: hidden;
+}
+.slider{
+    width: 1052px;
+    /* width: 80%; */
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    position: relative;
+}
+.nav-slider{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: rgb(0, 0, 0, 0, 0);
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    box-shadow: -3px 5px 12px rgba(0, 0, 0, 0.25);
+}
+.next{
+    right: -65px;
+}
+.prev{
+    left: -65px;
+}
+.line__slider{
+    width: 2127px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* left: -538px; */
+    transition: all ease .3s;
+}
+.slide{
+    width: 514px;
+    height: 399px;
+    border: 1px solid rgba(66, 66, 66, 0.1);
+    position: relative;
+    /* border: 4px solid rgb(170, 255, 0); */
+}
+.slide:nth-child(1)::after{
+    content: "Угловая";
+}
+.slide:nth-child(1)::before{
+    content: "Дуб";
+}
+.slide:nth-child(2)::after{
+    content: "Постформинг";
+}
+.slide:nth-child(2)::before{
+    content: "Прямая";
+}
+.slide:nth-child(3)::after{
+    content: "Угловая";
+}
+.slide:nth-child(3)::before{
+    content: "Дуб";
+}
+.slide:nth-child(4)::after{
+    content: "Угловая";
+}
+.slide:nth-child(4)::before{
+    content: "Дуб";
+}
+.slide::after, .slide::before{
+    background: rgba(66, 66, 66, 0.4);
+    border-radius: 30px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 5px 16px;
+    position: relative;
+    top: 90%;
+    left: 24px;
+    z-index: 2;
+
+}
+
+.slide div{
+    position: absolute;
+}
+.slide div:nth-child(1){
+    width: 230px;
+    height: 150px;
+    background-image: url(/galery1.png);
+    top: 24px;
+    left: 24px;
+}
+.slide div:nth-child(2){
+    width: 220px;
+    height: 210px;
+    background-image: url(/galery2.png);
+    right: 24px;
+    top: 24px;
+}
+.slide div:nth-child(3){
+    width: 230px;
+    height: 180px;
+    background-image: url(/galery3.png);
+    bottom: 24px;
+    left: 24px;
+}
+.slide div:nth-child(4){
+    width: 220px;
+    height: 125px;
+    background-image: url(/galery4.png);
+    bottom: 24px;
+    right: 24px;
+}
+@media(max-width:1190px){
+    .slider{
+        width: 514px;
+    }
+}
+@media(max-width:640px){
+    .line__slider{
+        left: 0;
+    }
+    .next{
+        right: 0;
+    }
+    .prev{
+        left: 0;
+    }
+    .slider{
+        overflow: hidden;
+    }  
+}
+
+.wrapper__form{
+    width: 70%;
+    margin: 40px auto;
+    /* position: relative; */
+    /* padding: 5rem; */
+}
+.form::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(/b4d657e7ef262b88eb5f7ac021edda87.gif) center / 50px no-repeat ;
+    background-color: rgba(0, 0, 0, 0.644);
+    opacity: 0;
+    visibility: hidden;
+}
+.form.sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+.form__input{
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem;
+    outline: none;
+}
+.form__label{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form__submit{
+    width: 100%;
+    align-items: center;
+    background-color: chocolate;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+}
