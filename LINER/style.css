@@ -1,0 +1,23 @@
+*{
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 70%;
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 50px;
+}
+.wrp{
+    background-image: url(/Vector\ 17.png);
+    background-size:cover;
+
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+

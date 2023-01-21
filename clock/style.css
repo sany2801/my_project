@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+.wrapper{
+    display: flex;
+    justify-content:center;
+    margin-top: 200px;
+}
+.clock{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.clock p{
+    width: 30%;
+    height: 100%;
+    font-size: 30px;
+}
+.clock2{
+    width: 500px;
+    height: 500px;
+    background-image: url(images/1647004698_1-abrakadabra-fun-p-tsiferblat-dlya-chasov-shablon-2.png);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    background-color: black;
+    bottom: 50%;
+    left: 248px;
+    transform-origin: 50% 100%;
+    
+    /* transition:  linear 1s; */
+    /* transition: all linear 1s; */
+}
+.hour-hand{
+    width: 5px;
+    height: 25%;
+    left: 246px;
+}
+.minute-hand{
+    width: 5px;
+    height: 30%;
+}
+.second-hand{
+    width: 2px;
+    height: 35%;
+    /* animation: rotate infinite linear 60s; */
+
+}
+
+.block{
+    display: flex;
+}
+.wrapp{
+    width: 500px;
+    height: 500px;
+}
+
+.arrow2{
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    background-color: black;
+    bottom: 50%;
+    left: 248px;
+    transform-origin: 50% 100%;
+    /* transition: linear 1s; */
+    transition: all linear 1s;
+    animation: rotate infinite linear 60s;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}

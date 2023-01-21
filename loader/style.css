@@ -1,9 +1,15 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     font-family: 'Raleway';
     
+}
+.qwt{
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    transform: ;
 }
 
 
@@ -18,7 +24,7 @@
     stroke-width: 20px;
     stroke-dasharray: 300;
     stroke: rgb(0, 0, 0);
-    animation: rotate 1s infinite linear ;
+    animation: rotate 1s infinite;
 } 
 
 @keyframes rotate{
@@ -26,10 +32,6 @@
         transform: rotate(0deg);
         stroke: rgb(26, 255, 0);
     }
-    50%{
-        stroke: blue;
-     }
-
     100%{
         stroke: rgb(26, 255, 0);
         transform: rotate(360deg);
@@ -109,7 +111,6 @@
 
 
 .loader4{
-<<<<<<< HEAD
     width: 200px;
     height: 200px;
     display: flex;
@@ -231,7 +232,6 @@
 .loader6{
     /* margin: 0 auto; */
     display: flex;
-=======
     padding: 2rem 0;
     width: 200px;
     display: flex;
@@ -393,7 +393,6 @@ th, p, td {
     background-color: red;
     border-bottom-left-radius: 180px;
     position: relative;
->>>>>>> eaa9df3c3ff3afd03c3e16babbbeacbac56b4296
 }
 .wrapper__dot6{
     display: flex;
@@ -405,7 +404,6 @@ th, p, td {
 }
 
 
-<<<<<<< HEAD
 .loader6__dot{
     position: absolute;
     width: 40px;
@@ -466,75 +464,6 @@ th, p, td {
 
     100%{
         transform: translateX(0px);
-=======
-.say::after{
-    content: "";
-    position: absolute;
-    bottom: -270px;
-    left: 100px;
-    width: 0; 
-    height: 0;
-    border-left: 115px solid transparent;
-    border-right: 115px solid transparent;
-    border-top: 280px solid rgb(255, 0, 0);
-    transform-origin: 100% 1px;
-    transform: rotate(45deg);
-}
-.say::before{
-    content: "thwrthbg";
-    font-size: 100px;
-    margin: 2rem 10rem;
-    position: absolute;
-    top: 0;
-}
-
-.heart{
-    margin-top: 3rem;
-    width: 200px;
-    height: 200px;
-    /* background-color: #000000; */
-    position: relative;
-    animation: scale 500ms linear infinite;
-}
-.blesk{
-    position: absolute;
-    width: 60px;
-    height:60px;
-    border-radius: 50%;
-    background-color: #ff0000;
-    border-top: 10px solid rgb(255, 255, 255);
-    top: 25px;
-    left: 40px;
-    transform: rotate(-35deg);
-}
-.heart::after,
-.heart::before{
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 160px;
-    background-color: rgb(255, 0, 0);
-    border-radius: 100px 100px 0 0;
-    transform-origin: 100% 100%;
-    transform: rotate(45deg);
-    box-shadow: 1px 1px 50px 10px #FF0000;
-    /* animation: scale 500ms linear infinite; */
-}
-
-@keyframes scale {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    70%{
-        transform: scale(1);
-    }
-    80%{
-        transform: scale(1.4);
-        
->>>>>>> eaa9df3c3ff3afd03c3e16babbbeacbac56b4296
     }
     
 }
@@ -545,7 +474,6 @@ th, p, td {
     /* animation: scale2 500ms linear infinite; */
 }
 
-<<<<<<< HEAD
 @keyframes rotate-6 {
     0%{
         bottom: 0;
@@ -635,21 +563,6 @@ th, p, td {
 @keyframes loader7 {
     50%{
         transform: translatey(-10px) rotateX(60deg);
-=======
-@keyframes scale2 {
-    0%{
-        transform:rotate(-45deg) scale(1);
-    }
-    50%{
-        transform:rotate(-45deg) scale(1.2);
-    }
-    70%{
-        transform:rotate(-45deg) scale(1);
-    }
-    80%{
-        transform:rotate(-45deg) scale(1.4);
-        
->>>>>>> eaa9df3c3ff3afd03c3e16babbbeacbac56b4296
     }
 }
 

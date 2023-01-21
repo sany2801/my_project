@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 .wrapper{
     width: 100%;
@@ -183,4 +183,23 @@
     font-size: 30px;
     color: white;
     border-radius: 20px;
+}
+
+.wrap{
+    width: 70%;
+    height: 400px;
+    margin: 30px auto;
+    position: relative;
+}
+.carusel{
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+.dot{
+    width: 50%;
+    height: 100%;
+    position: absolute;
 }
