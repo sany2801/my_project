@@ -22,21 +22,18 @@ console.log(line_1)
 
 const generation2 = ()=>{
     const line_2 =[]
-    let num = randomNum(2,0)
     const newNumbwers1 =  numbers2.filter(item=> item !=line_1[0] && item !=line_1[1] && item !=line_1[2])
     console.log(newNumbwers1)
     const newNumbwers2 =  numbers2.filter(item=> item !=line_1[3] && item !=line_1[4] && item !=line_1[5] && item !=line_2[0] && item !=line_2[1] && item !=line_2[2])
     // console.log(newNumbwers2)
     const newNumbwers3 =  numbers2.filter(item=> item !=line_1[6] && item !=line_1[7] && item !=line_1[8])
     // console.log(newNumbwers3)
-        for(i=0; i<=2; i++){
-            console.log(newNumbwers1.splice(num,1))
-            console.log(newNumbwers1)
-        }
+    let num = randomNum(2,0)
+        
         return line_2
 }
 const line_2 = generation2()
-// console.log(line_2)
+console.log(line_2)
 
 
 
