@@ -23,7 +23,7 @@ const rotate2 = ()=>{
         // wrapperBall.style.transform = `rotate(${allresult.indexOf(index)*9.72}deg)`;
         wrapperBall.style.transform = `rotate(${((timePas/205)*allresult.indexOf(randomRes))}deg )`
         if(timePas > 2000) clearInterval(timer)
-    },3)
+    },1)
     return randomRes
 }
 
@@ -33,7 +33,7 @@ const rotate = ()=>{
         let timePas = Date.now() - start;
         wrapperBall.style.transform = `rotate(${timePas/4}deg)`;
         if(timePas > 5760) clearInterval(timer)
-        },4)    
+        },1)    
         setTimeout(() => {
             rotate2()
           

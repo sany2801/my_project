@@ -307,7 +307,7 @@ const generation6 = () =>{
         if(count1.length===1){
             line_6.push(count1[0])
             newNumbwers1 = newNumbwers1.filter(item=> item != count1[0])
-            line_6.push()
+            // line_6.push
             console.log(count1[0])
             console.log(newNumbwers1)
         }

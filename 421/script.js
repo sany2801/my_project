@@ -3,7 +3,8 @@
 
 
  const init = (num)=>{
-    for (i = 0 ;num>=4; i++) {
+        console.log(num)
+        for (i = 0 ;num>=4; i++) {
         
         if(num%2===0){
             num = num/2
@@ -15,5 +16,5 @@
     }
     console.log('Количество итераций '+ i)
  }
- init(1000)
+ init(2**55)
 
