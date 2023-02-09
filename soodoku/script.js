@@ -297,26 +297,27 @@ const generation6 = () =>{
 
         let count1 = newNumbwers1.filter(item=>
         item != line_1[0] && item != line_2[0] && item != line_3[0])
-       
+        if(count1.length===1){
+            line_6.push(count1[0])
+            newNumbwers1 = newNumbwers1.filter(item=> item != count1[0])
+            console.log(count1[0])
+            console.log(newNumbwers1)
+        }
         let count2 = newNumbwers1.filter(item=>
             item != line_1[1] && item != line_2[1] && item != line_3[1])
         let count3 = newNumbwers1.filter(item=>
             item != line_1[2] && item != line_2[2] && item != line_3[2])
         console.log(count1,count2,count3)
-
-        if(count1.length===1){
-            line_6.push(count1[0])
-            newNumbwers1 = newNumbwers1.filter(item=> item != count1[0])
-            // line_6.push
-            console.log(count1[0])
-            console.log(newNumbwers1)
+        for(let i = newNumbwers1.length-1; i>=0; --i){
+            // let num = randomNum(i,1)
+            // line_6.push(newNumbwers1.splice(num,0)[0])
+            // console.log(newNumbwers1[i])
         }
-
-
     let newNumbwers2 = numbers2.filter(item=>
         item != line_4[3] && item != line_4[4] && item != line_4[5] &&
         item != line_5[3] && item != line_5[4] && item != line_5[5])
     console.log(newNumbwers2)
+
     let newNumbwers3 = numbers2.filter(item=>
         item != line_4[6] && item != line_4[7] && item != line_4[8] &&
         item != line_5[6] && item != line_5[7] && item != line_5[8])
