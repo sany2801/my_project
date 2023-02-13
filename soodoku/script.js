@@ -334,7 +334,7 @@ const generation6 = () =>{
                     line_6[1] = newNumbwers1[0]
                 }
             }
-            else if()
+            // else if()
         }
             
 
