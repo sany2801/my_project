@@ -139,6 +139,7 @@ const generation2 = () => {
 };
 let line_2 = generation2();
 console.log(line_2);
+
 const generation3 = () => {
   const line_3 = [];
   const newNumbwers1 = line_1.filter(
@@ -185,8 +186,10 @@ const generation3 = () => {
   }
   return line_3;
 };
+
 let line_3 = generation3();
 console.log(line_3);
+
 const generation4 = () => {
   const line_4 = [];
   let count_1 = numbers2.filter(
@@ -194,7 +197,7 @@ const generation4 = () => {
   );
   // console.log(count_1)
   count_1 = count_1[randomNum(count_1.length - 1, 0)];
-  // console.log(count_1)
+  console.log(count_1);
   let count_2 = numbers2.filter(
     (item) =>
       item != line_1[1] &&
@@ -281,7 +284,7 @@ const generation4 = () => {
   );
   // console.log(count_8)
   count_8 = count_8[randomNum(count_8.length - 1, 0)];
-  // console.log(count_8)
+  console.log(count_8);
 
   let count_9 = numbers2.filter(
     (item) =>
@@ -488,280 +491,31 @@ const generation5 = () => {
 };
 generation5();
 let line_5 = generation5();
-while (line_5.includes(undefined)) {
-  line_5 = generation5();
-}
+// while (line_5.includes(undefined)) {
+//   line_5 = generation5();
+// }
 console.log(line_5);
-
-const generation6 = () => {
-  const line_6 = [];
-  let newNumbwers1 = numbers2.filter(
-    (item) =>
-      item != line_4[0] &&
-      item != line_4[1] &&
-      item != line_4[2] &&
-      item != line_5[0] &&
-      item != line_5[1] &&
-      item != line_5[2]
-  );
-  // console.log(newNumbwers1)
-  let num1_count1 = newNumbwers1.filter(
-    (item) => item != line_1[0] && item != line_2[0] && item != line_3[0]
-  );
-  let num1_count2 = newNumbwers1.filter(
-    (item) => item != line_1[1] && item != line_2[1] && item != line_3[1]
-  );
-  let num1_count3 = newNumbwers1.filter(
-    (item) => item != line_1[2] && item != line_2[2] && item != line_3[2]
-  );
-  let arrCount = [num1_count1, num1_count2, num1_count3];
-  // console.log(arrCount)
-
-  for (let i = 0; i < arrCount.length; i++) {
-    if (arrCount[i].length === 1) {
-      // console.log(true, i)
-      line_6[i] = arrCount[i][0];
-      newNumbwers1 = newNumbwers1.filter((item) => item != arrCount[i][0]);
-      // console.log(newNumbwers1)
-      if (i === 0) {
-        for (let i = newNumbwers1.length - 1; i >= 0; --i) {
-          let num = randomNum(i, 0);
-          line_6.push(newNumbwers1.splice(num, 1)[0]);
-        }
-      } else if (i === 1) {
-        // for (let i = newNumbwers1.length - 1; i >= 0; --i) {
-        line_6[0] = newNumbwers1[randomNum(0, 1)];
-        // }
-        newNumbwers1 = newNumbwers1.filter((item) => item != line_6[0]);
-        line_6.push(newNumbwers1[0]);
-        // console.log(newNumbwers1)
-      } else if (i === 2) {
-        line_6[0] = newNumbwers1[randomNum(0, 1)];
-        newNumbwers1 = newNumbwers1.filter((item) => item != line_6[0]);
-        line_6[1] = newNumbwers1[0];
-      }
-    } else if (
-      arrCount[0].length === 2 &&
-      arrCount[1].length === 2 &&
-      arrCount[2].length === 2
-    ) {
-      // console.log(num1_count1,num1_count2,num1_count3)
-      // console.log(newNumbwers1)
-      for (let i = num1_count1.length - 1; i >= 1; --i) {
-        let num = randomNum(i, 0);
-        line_6.push(num1_count1.splice(num, 1)[0]);
-        if (num1_count2.includes(line_6[0])) {
-          line_6[1] = num1_count2.filter((item) => item != line_6[0])[0];
-          line_6[2] = num1_count3.filter((item) => item != line_6[1])[0];
-        }
-        if (num1_count3.includes(line_6[0])) {
-          line_6[2] = num1_count3.filter((item) => item != line_6[0])[0];
-          line_6[1] = num1_count2.filter((item) => item != line_6[2])[0];
-        }
-      }
-    }
-  }
-
-  let newNumbwers2 = numbers2.filter(
-    (item) =>
-      item != line_4[3] &&
-      item != line_4[4] &&
-      item != line_4[5] &&
-      item != line_5[3] &&
-      item != line_5[4] &&
-      item != line_5[5]
-  );
-  // console.log(newNumbwers2);
-  let num2_count1 = newNumbwers2.filter(
-    (item) => item != line_1[3] && item != line_2[3] && item != line_3[3]
-  );
-  let num2_count2 = newNumbwers2.filter(
-    (item) => item != line_1[4] && item != line_2[4] && item != line_3[4]
-  );
-  let num2_count3 = newNumbwers2.filter(
-    (item) => item != line_1[5] && item != line_2[5] && item != line_3[5]
-  );
-
-  let arrCount2 = [num2_count1, num2_count2, num2_count3];
-  // console.log(num2_count1, num2_count2, num2_count3);
-
-  for (let i = 0; i < arrCount2.length; i++) {
-    if (arrCount2[i].length === 1) {
-      // console.log(i);
-      line_6[i + 3] = arrCount2[i][0];
-      newNumbwers2 = newNumbwers2.filter((item) => item != arrCount2[i][0]);
-      // console.log(newNumbwers2);
-      if (i === 0) {
-        for (let i = newNumbwers2.length - 1; i >= 0; --i) {
-          let num = randomNum(i, 0);
-          line_6.push(newNumbwers2.splice(num, 1)[0]);
-        }
-      } else if (i === 1) {
-        // for (let i = newNumbwers1.length - 1; i >= 0; --i) {
-        line_6[3] = newNumbwers2[randomNum(0, 1)];
-        // }
-        newNumbwers2 = newNumbwers2.filter((item) => item != line_6[3]);
-        line_6.push(newNumbwers2[0]);
-        // console.log(newNumbwers1)
-      } else if (i === 2) {
-        line_6[3] = newNumbwers2[randomNum(0, 1)];
-        newNumbwers2 = newNumbwers2.filter((item) => item != line_6[3]);
-        line_6[4] = newNumbwers2[0];
-      }
-    } else if (
-      arrCount2[0].length === 2 &&
-      arrCount2[1].length === 2 &&
-      arrCount2[2].length === 2
-    ) {
-      // console.log(num2_count1,num2_count2,num2_count3)
-      // console.log(newNumbwers2)
-      for (let i = num2_count1.length - 1; i >= 1; --i) {
-        let num = randomNum(i, 0);
-        line_6.push(num2_count1.splice(num, 1)[0]);
-        if (num2_count2.includes(line_6[3])) {
-          line_6[4] = num2_count2.filter((item) => item != line_6[3])[0];
-          line_6[5] = num2_count3.filter((item) => item != line_6[4])[0];
-        }
-        if (num2_count3.includes(line_6[3])) {
-          line_6[5] = num2_count3.filter((item) => item != line_6[3])[0];
-          line_6[4] = num2_count2.filter((item) => item != line_6[5])[0];
-        }
-      }
-    }
-  }
-
-  let newNumbwers3 = numbers2.filter(
-    (item) =>
-      item != line_4[6] &&
-      item != line_4[7] &&
-      item != line_4[8] &&
-      item != line_5[6] &&
-      item != line_5[7] &&
-      item != line_5[8]
-  );
-  let num3_count1 = newNumbwers3.filter(
-    (item) => item != line_1[6] && item != line_2[6] && item != line_3[6]
-  );
-  let num3_count2 = newNumbwers3.filter(
-    (item) => item != line_1[7] && item != line_2[7] && item != line_3[7]
-  );
-  let num3_count3 = newNumbwers3.filter(
-    (item) => item != line_1[8] && item != line_2[8] && item != line_3[8]
-  );
-
-  let arrCount3 = [num3_count1, num3_count2, num3_count3];
-  // console.log(num3_count1, num3_count2, num3_count3);
-  for (let i = 0; i < arrCount3.length; i++) {
-    if (arrCount3[i].length === 1) {
-      // console.log(i);
-      line_6[i + 6] = arrCount3[i][0];
-      newNumbwers3 = newNumbwers3.filter((item) => item != arrCount3[i][0]);
-      // console.log(newNumbwers3);
-      if (i === 0) {
-        for (let i = newNumbwers3.length - 1; i >= 0; --i) {
-          let num = randomNum(i, 0);
-          line_6.push(newNumbwers3.splice(num, 1)[0]);
-        }
-      } else if (i === 1) {
-        line_6[6] = newNumbwers3[randomNum(0, 1)];
-        newNumbwers3 = newNumbwers3.filter((item) => item != line_6[6]);
-        line_6.push(newNumbwers3[0]);
-        // console.log(newNumbwers3)
-      } else if (i === 2) {
-        line_6[6] = newNumbwers3[randomNum(0, 1)];
-        newNumbwers3 = newNumbwers3.filter((item) => item != line_6[6]);
-        line_6[7] = newNumbwers3[0];
-      }
-    } else if (
-      arrCount3[0].length === 2 &&
-      arrCount3[1].length === 2 &&
-      arrCount3[2].length === 2
-    ) {
-      // console.log(num3_count1, num3_count2, num3_count3);
-      // console.log(newNumbwers3)
-      for (let i = num3_count1.length - 1; i >= 1; --i) {
-        let num = randomNum(i, 0);
-        line_6.push(num3_count1.splice(num, 1)[0]);
-        if (num3_count2.includes(line_6[6])) {
-          line_6[7] = num3_count2.filter((item) => item != line_6[6])[0];
-          line_6[8] = num3_count3.filter((item) => item != line_6[7])[0];
-        }
-        if (num3_count3.includes(line_6[6])) {
-          line_6[8] = num3_count3.filter((item) => item != line_6[6])[0];
-          line_6[7] = num3_count2.filter((item) => item != line_6[8])[0];
-        }
-      }
-    }
-  }
-  // console.log(newNumbwers3);
-  return line_6;
-};
-let line_6 = generation6();
-console.log(line_6);
-
-// const generation789 = () => {
-//   const line_7 = [];
-//   const line_8 = [];
-//   const line_9 = [];
-//   let newNumbwers1 = numbers2.filter(
-//     (item) =>
-//       item != line_1[0] &&
-//       item != line_2[0] &&
-//       item != line_3[0] &&
-//       item != line_4[0] &&
-//       item != line_5[0] &&
-//       item != line_6[0]
-//   );
-//   let newNumbwers2 = numbers2.filter(
-//     (item) =>
-//       item != line_1[1] &&
-//       item != line_2[1] &&
-//       item != line_3[1] &&
-//       item != line_4[1] &&
-//       item != line_5[1] &&
-//       item != line_6[1]
-//   );
-//   let newNumbwers3 = numbers2.filter(
-//     (item) =>
-//       item != line_1[2] &&
-//       item != line_2[2] &&
-//       item != line_3[2] &&
-//       item != line_4[2] &&
-//       item != line_5[2] &&
-//       item != line_6[2]
-//   );
-//   console.log(newNumbwers1);
-//   console.log(newNumbwers2);
-//   console.log(newNumbwers3);
-
-//   for (let i = 0; i <= 3; i++) {}
-// };
-// generation789();
 
 const init = () => {
   const result = [];
-  // result.push(line_1, line_2, line_3, line_4, line_5, line_6);
   result.push(
     (line_1 = generation1()),
     (line_2 = generation2()),
     (line_3 = generation3()),
     (line_4 = generation4()),
-    (line_5 = generation5()),
-    (line_6 = generation6())
+    (line_5 = generation5())
+    // (line_6 = generation6())
   );
   return result;
 };
-// console.log(init());
+
+// // console.log(init());
 let result = init();
 console.log(result);
 
-for (let i = 0; i < result.length; i++) {
-  console.log(result[i]);
-  for (let y = 0; y < 9; y++) {
-    // console.log(result[i][y]);
-    while (result[i][y] === undefined) {
-      result = init();
-      console.log(result);
-    }
+for (let i = 0; i < 9; i++) {
+  while (result[i].includes(undefined) || result[3][9] === undefined) {
+    result = init();
+    console.log(result);
   }
 }

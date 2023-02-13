@@ -1,42 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
 }
-body{
-    background-color: antiquewhite;
-    height: 100vh;
+body {
+  background-color: antiquewhite;
+  height: 100vh;
 }
-.wrapper{
-    width: 80%;
-    height: 80%;
-    margin: 100px auto;
-    /* display: flex; */
-    
+.wrapper {
+  width: 80%;
+  height: 80%;
+  margin: 100px auto;
+  /* display: flex; */
 }
-.game_field{
-    width: 606px;
-    height: 606px;
-    background-color: aliceblue;
-    display: flex;
-    flex-wrap: wrap;
-    border: 3px solid black;
+.game_field {
+  width: 606px;
+  height: 614px;
+  background-color: aliceblue;
+  /* display: flex; */
+  flex-wrap: wrap;
+  border: 3px solid black;
 }
-.section{
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-    display: flex;
-    flex-wrap: wrap;
+.section {
+  display: flex;
 }
-.num_section{
-    width: 66px;
-    height: 66px;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+.section:nth-child(3n) {
+  border-bottom: 3px solid black;
 }
 
+.num_section {
+  width: 66.66px;
+  height: 66.66px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.game_control{
-    width: 50%;
+.num_section:nth-child(3n) {
+  border-right: 3px solid black;
+}
+
+.game_control {
+  width: 50%;
+}
+
+.num__section {
+  font-size: 40px;
 }
