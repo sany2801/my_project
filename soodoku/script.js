@@ -514,7 +514,7 @@ let result = init();
 console.log(result);
 
 for (let i = 0; i < 9; i++) {
-  while (result[i].includes(undefined) || result[3][9] === undefined) {
+  while (result[i].includes(undefined) || result[3][8] === undefined) {
     result = init();
     console.log(result);
   }
