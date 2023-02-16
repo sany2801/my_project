@@ -15,7 +15,7 @@ const generation1 = () => {
   return line_1;
 };
 let line_1 = generation1();
-console.log(line_1);
+// console.log(line_1);
 
 const generation2 = () => {
   const line_2 = [];
@@ -138,7 +138,7 @@ const generation2 = () => {
   return line_2;
 };
 let line_2 = generation2();
-console.log(line_2);
+// console.log(line_2);
 const generation3 = () => {
   const line_3 = [];
   const newNumbwers1 = line_1.filter(
@@ -186,7 +186,7 @@ const generation3 = () => {
   return line_3;
 };
 let line_3 = generation3();
-console.log(line_3);
+// console.log(line_3);
 const generation4 = () => {
   const line_4 = [];
   let count_1 = numbers2.filter(
@@ -317,7 +317,7 @@ let line_4 = generation4();
 while (line_4.includes(undefined)) {
   line_4 = generation4();
 }
-console.log(line_4);
+// console.log(line_4);
 
 const generation5 = () => {
   const line_5 = [];
@@ -491,7 +491,7 @@ let line_5 = generation5();
 while (line_5.includes(undefined)) {
   line_5 = generation5();
 }
-console.log(line_5);
+// console.log(line_5);
 
 const generation6 = () => {
   const line_6 = [];
@@ -697,50 +697,27 @@ const generation6 = () => {
   return line_6;
 };
 let line_6 = generation6();
-console.log(line_6);
+// console.log(line_6);
 
-// const generation789 = () => {
-//   const line_7 = [];
-//   const line_8 = [];
-//   const line_9 = [];
-//   let newNumbwers1 = numbers2.filter(
-//     (item) =>
-//       item != line_1[0] &&
-//       item != line_2[0] &&
-//       item != line_3[0] &&
-//       item != line_4[0] &&
-//       item != line_5[0] &&
-//       item != line_6[0]
-//   );
-//   let newNumbwers2 = numbers2.filter(
-//     (item) =>
-//       item != line_1[1] &&
-//       item != line_2[1] &&
-//       item != line_3[1] &&
-//       item != line_4[1] &&
-//       item != line_5[1] &&
-//       item != line_6[1]
-//   );
-//   let newNumbwers3 = numbers2.filter(
-//     (item) =>
-//       item != line_1[2] &&
-//       item != line_2[2] &&
-//       item != line_3[2] &&
-//       item != line_4[2] &&
-//       item != line_5[2] &&
-//       item != line_6[2]
-//   );
-//   console.log(newNumbwers1);
-//   console.log(newNumbwers2);
-//   console.log(newNumbwers3);
+const validation = (result) =>{
+  let res;
+  for(let i = 0; i < result.length; i++){
+    // console.log(!result[i].includes(undefined) && result[i].length === 9)
+    console.log(result[i])
+    if(!result[i].includes(undefined) && result[i].length === 9){
+      res = true;
+    }else{
+      res = false;
+      break;
+    }
 
-//   for (let i = 0; i <= 3; i++) {}
-// };
-// generation789();
+  }
+  return res;
+}
+
 
 const init = () => {
   const result = [];
-  // result.push(line_1, line_2, line_3, line_4, line_5, line_6);
   result.push(
     (line_1 = generation1()),
     (line_2 = generation2()),
@@ -748,20 +725,26 @@ const init = () => {
     (line_4 = generation4()),
     (line_5 = generation5()),
     (line_6 = generation6())
-  );
-  return result;
-};
-// console.log(init());
-let result = init();
-console.log(result);
+    );
 
-for (let i = 0; i < result.length; i++) {
-  console.log(result[i]);
-  for (let y = 0; y < 9; y++) {
-    // console.log(result[i][y]);
-    while (result[i][y] === undefined) {
-      result = init();
-      console.log(result);
+    if(validation(result) === true){
+      return result
+    }else{
+      return init()
+    }
+
+  };
+  let resultArr = init()
+  console.log(resultArr)
+  
+  const draw = ()=>{
+    const section = document.querySelectorAll('.section')
+    for(let i = 0; i<section.length; i++){
+      console.log(section[i].children)
+      for(let y = 0; y<9; y++){
+        section[i].children[y].innerHTML =`
+        <p>${resultArr[i][y]}</p>`
+      }
     }
   }
-}
+  draw()
