@@ -185,6 +185,7 @@ const generation3 = () => {
   }
   return line_3;
 };
+
 let line_3 = generation3();
 // console.log(line_3);
 const generation4 = () => {
@@ -194,7 +195,7 @@ const generation4 = () => {
   );
   // console.log(count_1)
   count_1 = count_1[randomNum(count_1.length - 1, 0)];
-  // console.log(count_1)
+  console.log(count_1);
   let count_2 = numbers2.filter(
     (item) =>
       item != line_1[1] &&
@@ -281,7 +282,7 @@ const generation4 = () => {
   );
   // console.log(count_8)
   count_8 = count_8[randomNum(count_8.length - 1, 0)];
-  // console.log(count_8)
+  console.log(count_8);
 
   let count_9 = numbers2.filter(
     (item) =>

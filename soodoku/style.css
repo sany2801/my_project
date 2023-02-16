@@ -47,6 +47,14 @@ body{
     border-right: 3px solid rgb(0, 0, 0);
 }
 
-.game_control{
-    width: 50%;
+.num_section:nth-child(3n) {
+  border-right: 3px solid black;
+}
+
+.game_control {
+  width: 50%;
+}
+
+.num__section {
+  font-size: 40px;
 }
