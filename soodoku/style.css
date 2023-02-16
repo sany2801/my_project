@@ -16,26 +16,36 @@ body{
     
 }
 .game_field{
-    width: 606px;
-    height: 606px;
+    /* width: 600px; */
+    /* height: 600px; */
     background-color: aliceblue;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     border: 3px solid black;
 }
+
 .section{
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+}
+.section:nth-child(3n){
+    border-bottom: 2px solid black;
+
 }
 .num_section{
     width: 66px;
     height: 66px;
     border: 1px solid rgba(0, 0, 0, 0.125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+.num_section:nth-child(3n){
+    border-right: 3px solid rgb(0, 0, 0);
+}
 
 .game_control{
     width: 50%;
