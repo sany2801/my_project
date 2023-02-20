@@ -17,7 +17,7 @@ const generation1 = () => {
   return line_1;
 };
 let line_1 = generation1();
-console.log(line_1);
+// console.log("RESULT 1 ",line_1);
 
 ////////===============LINE 2 ==========////////////////
 const generation2 = () => {
@@ -141,7 +141,7 @@ const generation2 = () => {
   return line_2;
 };
 let line_2 = generation2();
-console.log(line_2);
+// console.log("RESULT 2 ", line_2);
 
 ///------------ LINE 3 -----------//////////
 const generation3 = () => {
@@ -191,7 +191,7 @@ const generation3 = () => {
   return line_3;
 };
 let line_3 = generation3();
-console.log(line_3);
+// console.log("RESULT 3 ",line_3);
 
 ///------------ LINE 4 -----------//////////
 const generation4 = () => {
@@ -324,7 +324,7 @@ let line_4 = generation4();
 while (line_4.includes(undefined)) {
   line_4 = generation4();
 }
-console.log(line_4);
+// console.log("RESULT 4 ",line_4);
 
 /////===========LINE 5===============/////////
 const generation5 = () => {
@@ -499,9 +499,9 @@ let line_5 = generation5();
 while (line_5.includes(undefined)) {
   line_5 = generation5();
 }
-console.log(line_5);
+// console.log("RESULT 5", line_5);
 
-///////==========LINE 6=================////////////
+///////==========LINE 6 =================////////////
 const generation6 = () => {
   const line_6 = [];
   let newNumbwers1 = numbers2.filter(
@@ -706,37 +706,92 @@ const generation6 = () => {
   return line_6;
 };
 let line_6 = generation6();
-console.log(line_6);
+// console.log("RESULT 6",line_6);
 
 /////=================LINE 7 ==========////////////
-const generation7 = () =>{
+const generation7 = () => {
   let line_7 = [];
-  arrCount1 = numbers2.filter(item => 
-    item !== line_1[0] && item !== line_2[0] && 
-    item !== line_3[0] && item !== line_4[0] &&
-    item !== line_5[0] && item !== line_6[0])
-    console.log(arrCount1)
+  for (let i = 0; i < 9; i++) {
+    let arrCount = numbers2.filter(
+      (item) =>
+        item !== line_1[i] &&
+        item !== line_2[i] &&
+        item !== line_3[i] &&
+        item !== line_4[i] &&
+        item !== line_5[i] &&
+        item !== line_6[i] &&
+        !line_7.includes(item)
+    );
+    line_7.push(arrCount[randomNum(0, arrCount.length - 1)]);
+    // console.log(arrCount);
+  }
   return line_7;
-}
-let line_7 = generation7()
-console.log(line_7)
+};
+let line_7 = generation7();
+// console.log("RESULT 7", line_7);
+
+/////=================LINE 8 ==========////////////
+const generation8 = () => {
+  let line_8 = [];
+  for (let i = 0; i < 9; i++) {
+    let arrCount = numbers2.filter(
+      (item) =>
+        item !== line_1[i] &&
+        item !== line_2[i] &&
+        item !== line_3[i] &&
+        item !== line_4[i] &&
+        item !== line_5[i] &&
+        item !== line_6[i] &&
+        item !== line_7[i] &&
+        !line_8.includes(item)
+    );
+    line_8.push(arrCount[randomNum(0, arrCount.length - 1)]);
+    // console.log(arrCount);
+  }
+  return line_8;
+};
+let line_8 = generation8();
+// console.log("RESULT 8 ", line_8);
+
+/////=================LINE 9 ==========////////////
+const generation9 = () => {
+  let line_9 = [];
+  for (let i = 0; i < 9; i++) {
+    let arrCount = numbers2.filter(
+      (item) =>
+        item !== line_1[i] &&
+        item !== line_2[i] &&
+        item !== line_3[i] &&
+        item !== line_4[i] &&
+        item !== line_5[i] &&
+        item !== line_6[i] &&
+        item !== line_7[i] &&
+        item !== line_8[i] &&
+        !line_9.includes(item)
+    );
+    line_9.push(arrCount[randomNum(0, arrCount.length - 1)]);
+    // console.log(arrCount);
+  }
+  return line_9;
+};
+let line_9 = generation9();
+// console.log("RESULT 9 ", line_9);
 
 /////========VALIDATION=========///////////////
-const validation = (result) =>{
+const validation = (result) => {
   let res;
-  for(let i = 0; i < result.length; i++){
+  for (let i = 0; i < result.length; i++) {
     // console.log(!result[i].includes(undefined) && result[i].length === 9)
     // console.log(result[i])
-    if(!result[i].includes(undefined) && result[i].length === 9){
+    if (!result[i].includes(undefined) && result[i].length === 9) {
       res = true;
-    }else{
+    } else {
       res = false;
       break;
     }
-
   }
   return res;
-}
+};
 
 //////////=============== I N I T ========//////////////////
 const init = () => {
@@ -747,27 +802,188 @@ const init = () => {
     (line_3 = generation3()),
     (line_4 = generation4()),
     (line_5 = generation5()),
-    (line_6 = generation6())
-    );
+    (line_6 = generation6()),
+    (line_7 = generation7()),
+    (line_8 = generation8()),
+    (line_9 = generation9())
+  );
 
-    if(validation(result) === true){
-      return result
-    }else{
-      return init()
-    }
-
-  };
-  let resultArr = init()
-  // console.log(resultArr)
+  if (validation(result) === true) {
+    return result;
+  } else {
+    return init();
+  }
+};
+let resultArr = init();
+// console.log(resultArr)
 
 ///////////============= DRAW ======/////////////
-  const draw = ()=>{
-    const section = document.querySelectorAll('.section')
-    for(let i = 0; i<section.length; i++){
-      // console.log(section[i].children)
-      for(let y = 0; y<9; y++){
-        section[i].children[y].innerHTML =`<p>${resultArr[i][y]}</p>`
-      }
+const section = document.querySelectorAll(".section");
+const draw = () => {
+  for (let i = 0; i < section.length; i++) {
+    // console.log(section[i].children)
+    for (let y = 0; y < 9; y++) {
+      section[i].children[y].innerHTML = `<p>${resultArr[i][y]}</p>`;
     }
   }
-  draw()
+};
+draw();
+
+const sq_1 = document.querySelectorAll(".sq_1");
+const sq_2 = document.querySelectorAll(".sq_2");
+const sq_3 = document.querySelectorAll(".sq_3");
+const sq_4 = document.querySelectorAll(".sq_4");
+const sq_5 = document.querySelectorAll(".sq_5");
+const sq_6 = document.querySelectorAll(".sq_6");
+const sq_7 = document.querySelectorAll(".sq_7");
+const sq_8 = document.querySelectorAll(".sq_8");
+const sq_9 = document.querySelectorAll(".sq_9");
+
+const ln_1 = document.querySelectorAll(".ln_1");
+const ln_2 = document.querySelectorAll(".ln_2");
+const ln_3 = document.querySelectorAll(".ln_3");
+const ln_4 = document.querySelectorAll(".ln_4");
+const ln_5 = document.querySelectorAll(".ln_5");
+const ln_6 = document.querySelectorAll(".ln_6");
+const ln_7 = document.querySelectorAll(".ln_7");
+const ln_8 = document.querySelectorAll(".ln_8");
+const ln_9 = document.querySelectorAll(".ln_9");
+
+const field = [sq_1, sq_2, sq_3, sq_4, sq_5, sq_6, sq_7, sq_8, sq_9];
+// console.log(field);
+for (let y = 0; y < field.length; y++) {
+  for (let i = 0; i < 4; i++) {
+    field[y][randomNum(0, 8)].innerHTML = " ";
+    // field[y][randomNum(0, 8)].children[0].style.display = "none";
+  }
+}
+
+const gameField = document.querySelector(".game_field");
+
+const initDraw = (line) => {
+  for (let i = 0; i < 9; i++) {
+    line[i].classList.add("active-line");
+  }
+};
+const paint = (line, sq) => {
+  switch (line) {
+    case "ln_1":
+      initDraw(ln_1);
+      break;
+    case "ln_2":
+      initDraw(ln_2);
+      break;
+    case "ln_3":
+      initDraw(ln_3);
+      break;
+    case "ln_4":
+      initDraw(ln_4);
+      break;
+    case "ln_5":
+      initDraw(ln_5);
+      break;
+    case "ln_6":
+      initDraw(ln_6);
+      break;
+    case "ln_7":
+      initDraw(ln_7);
+      break;
+    case "ln_8":
+      initDraw(ln_8);
+      break;
+    case "ln_9":
+      initDraw(ln_9);
+      break;
+  }
+  switch (sq) {
+    case "sq_1":
+      initDraw(sq_1);
+      break;
+    case "sq_2":
+      initDraw(sq_2);
+      break;
+    case "sq_3":
+      initDraw(sq_3);
+      break;
+    case "sq_4":
+      initDraw(sq_4);
+      break;
+    case "sq_5":
+      initDraw(sq_5);
+      break;
+    case "sq_6":
+      initDraw(sq_6);
+      break;
+    case "sq_7":
+      initDraw(sq_7);
+      break;
+    case "sq_8":
+      initDraw(sq_8);
+      break;
+    case "sq_9":
+      initDraw(sq_9);
+      break;
+  }
+};
+let activeNum;
+gameField.addEventListener("click", (event) => {
+  if (
+    event.target.classList.length !== 0 &&
+    event.target.classList[0] !== "game_field"
+  ) {
+    for (let i = 0; i < 9; i++) {
+      for (let y = 0; y < 9; y++) {
+        field[i][y].classList.remove("active");
+        field[i][y].classList.remove("active-line");
+        event.target.classList.add("active");
+        activeNum = event.target;
+        section[i].classList.remove("active-line");
+        paint(event.target.classList[2], event.target.classList[1]);
+        event.target.parentNode.classList.add("active-line");
+      }
+    }
+    console.log(activeNum);
+  } else {
+    for (let i = 0; i < 9; i++) {
+      for (let y = 0; y < 9; y++) {
+        field[i][y].classList.remove("active");
+        field[i][y].classList.remove("active-line");
+        section[i].classList.remove("active-line");
+      }
+      paint(
+        event.target.closest("div").classList[2],
+        event.target.closest("div").classList[1]
+      );
+      event.target.closest("div").parentNode.classList.add("active-line");
+      event.target.closest("div").classList.add("active");
+    }
+  }
+});
+
+const activeSection = () => {
+  const numSection = document.querySelectorAll(".num_section");
+  for (let i = 0; i < 81; i++) {
+    if (
+      numSection[i].classList.contains("active")
+      // !!numSection[i].children[0]
+    ) {
+      return numSection[i];
+    }
+    break;
+  }
+};
+// console.log(activeSection());
+// let activeNum = activeSection();
+
+const resNav = () => {
+  let result;
+  const clav = document.querySelector(".clav");
+  clav.addEventListener("click", (event) => {
+    console.log(!activeNum.children[0]);
+    if (+event.target.textContent && !activeNum.children[0]) {
+      result = event.target.textContent;
+      activeNum.innerHTML = `<p style = "color: rebeccapurple;">${+result}`;
+    }
+  });
+};
+resNav();
