@@ -1037,7 +1037,7 @@ const init = () => {
     winner.style.display = "none";
     resultArr = generationArr();
     draw();
-    lavelHard(4);
+    lavelHard(0);
   });
 };
 init();
