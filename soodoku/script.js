@@ -1,6 +1,9 @@
 let numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
+const wraper_popap = document.querySelector(".wraper_popap");
+const btnRestart = document.querySelector(".restart_game");
+const btnNewgame = document.querySelectorAll(".newgame");
+const winner = document.querySelector(".winner");
 const randomNum = (min, max) => {
   let num = Math.round(Math.random() * (max - min) + min);
   return num;
@@ -141,7 +144,6 @@ const generation2 = () => {
   return line_2;
 };
 let line_2 = generation2();
-// console.log("RESULT 2 ", line_2);
 
 ///------------ LINE 3 -----------//////////
 const generation3 = () => {
@@ -191,7 +193,6 @@ const generation3 = () => {
   return line_3;
 };
 let line_3 = generation3();
-// console.log("RESULT 3 ",line_3);
 
 ///------------ LINE 4 -----------//////////
 const generation4 = () => {
@@ -324,7 +325,6 @@ let line_4 = generation4();
 while (line_4.includes(undefined)) {
   line_4 = generation4();
 }
-// console.log("RESULT 4 ",line_4);
 
 /////===========LINE 5===============/////////
 const generation5 = () => {
@@ -499,7 +499,6 @@ let line_5 = generation5();
 while (line_5.includes(undefined)) {
   line_5 = generation5();
 }
-// console.log("RESULT 5", line_5);
 
 ///////==========LINE 6 =================////////////
 const generation6 = () => {
@@ -706,7 +705,6 @@ const generation6 = () => {
   return line_6;
 };
 let line_6 = generation6();
-// console.log("RESULT 6",line_6);
 
 /////=================LINE 7 ==========////////////
 const generation7 = () => {
@@ -794,7 +792,7 @@ const validation = (result) => {
 };
 
 //////////=============== I N I T ========//////////////////
-const init = () => {
+const generationArr = () => {
   const result = [];
   result.push(
     (line_1 = generation1()),
@@ -811,10 +809,10 @@ const init = () => {
   if (validation(result) === true) {
     return result;
   } else {
-    return init();
+    return generationArr();
   }
 };
-let resultArr = init();
+let resultArr = generationArr();
 // console.log(resultArr)
 
 ///////////============= DRAW ======/////////////
@@ -850,13 +848,15 @@ const ln_8 = document.querySelectorAll(".ln_8");
 const ln_9 = document.querySelectorAll(".ln_9");
 
 const field = [sq_1, sq_2, sq_3, sq_4, sq_5, sq_6, sq_7, sq_8, sq_9];
-// console.log(field);
-for (let y = 0; y < field.length; y++) {
-  for (let i = 0; i < 4; i++) {
-    field[y][randomNum(0, 8)].innerHTML = " ";
-    // field[y][randomNum(0, 8)].children[0].style.display = "none";
+const lavelHard = (level) => {
+  for (let y = 0; y < field.length; y++) {
+    for (let i = 0; i < level; i++) {
+      field[y][randomNum(0, 8)].innerHTML = " ";
+      // field[y][randomNum(0, 8)].children[0].style.display = "none";
+    }
   }
-}
+};
+lavelHard(4);
 
 const gameField = document.querySelector(".game_field");
 
@@ -942,7 +942,7 @@ gameField.addEventListener("click", (event) => {
         event.target.parentNode.classList.add("active-line");
       }
     }
-    console.log(activeNum);
+    // console.log(activeNum);
   } else {
     for (let i = 0; i < 9; i++) {
       for (let y = 0; y < 9; y++) {
@@ -961,29 +961,81 @@ gameField.addEventListener("click", (event) => {
 });
 
 const activeSection = () => {
-  const numSection = document.querySelectorAll(".num_section");
-  for (let i = 0; i < 81; i++) {
-    if (
-      numSection[i].classList.contains("active")
-      // !!numSection[i].children[0]
-    ) {
-      return numSection[i];
+  let resArr;
+  for (let i = 0; i < 9; i++) {
+    for (let y = 0; y < 9; y++) {
+      if (section[i].children[y].classList.contains("active")) {
+        resArr = resultArr[i][y];
+        // console.log(resArr);
+      }
     }
-    break;
   }
+  return resArr;
 };
-// console.log(activeSection());
-// let activeNum = activeSection();
 
-const resNav = () => {
-  let result;
+const init = () => {
+  let coutErrors = document.querySelector(".cout_errors");
+  let resultUser;
+  let errors = 0;
   const clav = document.querySelector(".clav");
   clav.addEventListener("click", (event) => {
-    console.log(!activeNum.children[0]);
-    if (+event.target.textContent && !activeNum.children[0]) {
-      result = event.target.textContent;
-      activeNum.innerHTML = `<p style = "color: rebeccapurple;">${+result}`;
+    console.log(activeSection());
+    if (
+      +event.target.textContent &&
+      !activeNum.children[0] &&
+      activeSection() === +event.target.textContent
+    ) {
+      resultUser = event.target.textContent;
+      activeNum.innerHTML = `<p style = "color: rebeccapurple;">${+resultUser}`;
+    } else if (
+      activeSection() !== event.target.textContent &&
+      !activeNum.children[0] &&
+      +event.target.textContent
+    ) {
+      gameField.classList.add("error");
+      errors++;
+      coutErrors.innerHTML = errors;
+      // console.log(errors);
+      if (errors === 3) {
+        wraper_popap.style.display = "block";
+      }
+      setTimeout(() => {
+        gameField.classList.remove("error");
+      }, 500);
+    }
+    oter: for (let i = 0; i < 9; i++) {
+      for (let y = 0; y < 9; y++) {
+        if (!section[i].children[y].innerText) {
+          console.log(i, y, !section[i].children[y].innerText);
+          break oter;
+        }
+        if (i === 8 && y === 8) {
+          console.log("winn");
+          winner.style.display = "block";
+        }
+      }
     }
   });
+  btnNewgame[1].addEventListener("click", () => {
+    wraper_popap.style.display = "none";
+    errors = 0;
+    coutErrors.innerHTML = errors;
+    resultArr = generationArr();
+    draw();
+    lavelHard(4);
+  });
+  btnRestart.addEventListener("click", () => {
+    errors--;
+    coutErrors.innerHTML = errors;
+    wraper_popap.style.display = "none";
+  });
+  btnNewgame[0].addEventListener("click", () => {
+    errors = 0;
+    coutErrors.innerHTML = errors;
+    winner.style.display = "none";
+    resultArr = generationArr();
+    draw();
+    lavelHard(4);
+  });
 };
-resNav();
+init();

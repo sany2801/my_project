@@ -4,6 +4,10 @@
   box-sizing: border-box;
   /* border: 1px solid black; */
 }
+button {
+  border: none;
+  background-color: transparent;
+}
 body {
   background-image: url(img/2d8f9c5bead82895cad217948ab4661c.jpg);
   background-size: cover;
@@ -22,7 +26,7 @@ h1 {
 }
 .wrapper {
   width: 90%;
-  /* height: 100%; */
+  position: relative;
   margin: 100px auto;
   display: flex;
   justify-content: space-around;
@@ -30,11 +34,40 @@ h1 {
 .game_field {
   width: 600px;
   height: 609px;
+  /* background-color: aliceblue; */
+}
+.error {
+  animation: vibro linear 0.4s;
+}
+.errors {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
   background-color: aliceblue;
+  padding: 0.4rem;
+  margin-bottom: 2rem;
+}
+@keyframes vibro {
+  20% {
+    transform: rotate(1deg);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
 }
 
 .section {
   display: flex;
+  background-color: aliceblue;
 }
 .num_section {
   width: calc(600px / 9);
@@ -49,7 +82,7 @@ h1 {
   transition: all ease 0.4s;
   cursor: pointer;
 }
-.section:nth-child(3n) {
+.section:nth-child(3n + 1) {
   border-bottom: 3px solid black;
 }
 .section:nth-child(1) {
@@ -63,7 +96,6 @@ h1 {
 }
 
 .game_control {
-  /* background-color: rgba(228, 130, 130, 0.968); */
   width: 600px;
   height: 600px;
   display: flex;
@@ -110,4 +142,112 @@ p {
 }
 .active {
   background-color: rgb(190, 200, 239);
+}
+
+.wraper_popap {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.691);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.popap {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  top: 25%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.popa_tittle {
+  font-size: 40px;
+  margin-bottom: 1rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.popap_discription {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgba(154, 142, 142, 0.837);
+  margin-bottom: 2rem;
+}
+.restart_game {
+  width: 100%;
+  background-color: rgb(138, 99, 215);
+  padding: 10px;
+  font-size: 20px;
+  color: aliceblue;
+  margin-bottom: 1rem;
+}
+
+.popap .newgame {
+  background-color: transparent;
+  padding: 0;
+  font-size: 20px;
+  color: blue;
+  cursor: pointer;
+}
+.winner {
+  width: 600px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(134, 158, 100, 0.687);
+  background-image: url(img/winner-gif-1.gif);
+
+  /* animation: winn linear 0.4s; */
+  display: none;
+}
+.winner div {
+  width: 80%;
+  height: 100%;
+  background-image: url(/img/winner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+@keyframes winn {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .game_field {
+    width: 400px;
+    height: 400px;
+  }
+  .num_section {
+    width: calc(400px / 9);
+    height: calc(400px / 9);
+  }
+  .game_control {
+    width: 80%;
+    height: 90px;
+  }
+  .clav {
+    flex-wrap: nowrap;
+    width: 80%;
+  }
+  .clav button {
+    font-size: 35px;
+    width: 70px;
+    height: 100%;
+  }
+  .errors {
+    margin-top: 2rem;
+  }
 }

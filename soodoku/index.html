@@ -12,6 +12,9 @@
     <h1>SUDOKU</h1>
     <div class="wrapper">
       <div class="game_field">
+        <div class="winner">
+          <div></div>
+        </div>
         <div class="section" id="1">
           <div class="num_section sq_1 ln_1"></div>
           <div class="num_section sq_1 ln_2"></div>
@@ -35,10 +38,7 @@
           <div class="num_section sq_3 ln_9"></div>
         </div>
         <div class="section" id="3">
-          <div
-            style="color: rgb(88, 152, 255)"
-            class="num_section sq_1 ln_1"
-          ></div>
+          <div class="num_section sq_1 ln_1"></div>
           <div class="num_section sq_1 ln_2"></div>
           <div class="num_section sq_1 ln_3"></div>
           <div class="num_section sq_2 ln_4"></div>
@@ -116,6 +116,11 @@
         </div>
       </div>
       <div class="game_control">
+        <div class="errors">
+          <span> Ошибок: </span>
+          <span class="cout_errors">0</span>
+          <span>/ 3 </span>
+        </div>
         <div class="clav">
           <button>1</button>
           <button>2</button>
@@ -127,6 +132,16 @@
           <button>8</button>
           <button>9</button>
         </div>
+        <button class="newgame">Новая игра</button>
+      </div>
+    </div>
+    <div class="wraper_popap">
+      <div class="popap">
+        <h2 class="popa_tittle">Игра окончена</h2>
+        <p class="popap_discription">
+          Вы сделали 3 ошибки и проиграли в этой игре
+        </p>
+        <button class="restart_game">Второй шанс</button>
         <button class="newgame">Новая игра</button>
       </div>
     </div>
