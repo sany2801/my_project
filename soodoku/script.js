@@ -927,6 +927,7 @@ const paint = (line, sq) => {
 };
 let activeNum;
 gameField.addEventListener("click", (event) => {
+  console.log(event.target);
   if (
     event.target.classList.length !== 0 &&
     event.target.classList[0] !== "game_field"
@@ -1012,6 +1013,7 @@ const init = () => {
         if (i === 8 && y === 8) {
           console.log("winn");
           winner.style.display = "block";
+          window.addEventListener("click", activeSection, false);
         }
       }
     }

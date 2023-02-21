@@ -84,7 +84,7 @@ h1 {
   transition: all ease 0.4s;
   cursor: pointer;
 }
-.section:nth-child(3n + 1) {
+.section:nth-child(3n) {
   border-bottom: 3px solid black;
 }
 .section:nth-child(1) {
@@ -136,6 +136,7 @@ p {
   font-size: 30px;
   padding: 2rem;
   border-radius: 20px;
+  z-index: 1;
 }
 
 .active-line {
@@ -152,6 +153,7 @@ p {
   position: absolute;
   top: 0;
   display: none;
+  z-index: 2;
 }
 
 .popap {
@@ -192,20 +194,23 @@ p {
   font-size: 20px;
   color: blue;
   cursor: pointer;
+  margin: 0 auto;
 }
 .winner {
-  width: 600px;
+  position: absolute;
+  top: 0;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  background-color: rgba(134, 158, 100, 0.687);
+  background-color: rgba(90, 204, 232, 0);
   background-image: url(img/winner-gif-1.gif);
-
-  /* animation: winn linear 0.4s; */
+  background-repeat: no-repeat;
+  background-position: center;
   display: none;
 }
 .winner div {
-  width: 80%;
+  width: 50%;
   height: 100%;
   background-image: url(/img/winner.png);
   background-size: contain;
@@ -258,12 +263,12 @@ p {
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
   }
   .clav button {
     font-size: 22px;
-    width: calc(var(--size) / 9);
+    width: calc(var(--size) / 5);
     height: calc(var(--size) / 9);
     font-weight: 600;
     border-radius: 12px;
