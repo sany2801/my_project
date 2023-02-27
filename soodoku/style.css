@@ -264,6 +264,23 @@ p {
   cursor: pointer;
   margin: 0 auto;
 }
+.blockPause {
+  width: var(--size);
+  height: calc(var(--size) + 8px);
+  background-color: rgba(118, 134, 147, 0.816);
+  background-image: url(/img/1103471.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  z-index: -2;
+  transition: all ease 0.2s;
+}
+.blockPause:hover {
+  background-size: 60%;
+}
 .winner {
   position: absolute;
   top: 0;
@@ -294,23 +311,20 @@ p {
   }
 }
 
-@media (max-width: 375px) {
-  :root {
-    --size: 375px;
-  }
-}
-@media (max-width: 414px) {
-  :root {
-    --size: 414px;
-  }
-}
 @media (max-width: 1200px) {
   :root {
     --size: 500px;
   }
   .wrapper {
+    position: relative;
     width: 100%;
     flex-direction: column;
+  }
+  .blockPause {
+    position: absolute;
+    margin: 0 auto;
+    top: 40px;
+    margin: 0 auto;
   }
   .game_field {
     margin: 40px auto 0;
@@ -350,5 +364,16 @@ p {
   .newgame {
     height: 50px;
     padding: 0;
+  }
+}
+
+@media (max-width: 414px) {
+  :root {
+    --size: 414px;
+  }
+}
+@media (max-width: 375px) {
+  :root {
+    --size: 375px;
   }
 }

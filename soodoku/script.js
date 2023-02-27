@@ -33,6 +33,7 @@ const seconds = document.querySelector(".seconds");
 const difficultyLevel = document.querySelectorAll(".difficulty_level");
 const btnTimerPause = document.querySelector(".pause");
 const btnTimerPlay = document.querySelector(".play");
+const blockPause = document.querySelector(".blockPause");
 
 const randomNum = (min, max) => {
   let num = Math.round(Math.random() * (max - min) + min);
@@ -1084,12 +1085,22 @@ let timerID = setInterval(timer, 1000);
 btnTimerPause.addEventListener("click", () => {
   btnTimerPause.style.display = "none";
   btnTimerPlay.style.display = "block";
+  blockPause.style.zIndex = "1";
   console.log("pause");
   clearInterval(timerID);
 });
 btnTimerPlay.addEventListener("click", () => {
   btnTimerPause.style.display = "block";
   btnTimerPlay.style.display = "none";
+  blockPause.style.zIndex = "-2";
+  console.log("play");
+  timerID = setInterval(timer, 1000);
+});
+
+blockPause.addEventListener("click", () => {
+  btnTimerPause.style.display = "block";
+  btnTimerPlay.style.display = "none";
+  blockPause.style.zIndex = "-2";
   console.log("play");
   timerID = setInterval(timer, 1000);
 });
