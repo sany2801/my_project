@@ -1,9 +1,39 @@
 let numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const wraper_popap = document.querySelector(".wraper_popap");
+const wraper_popap = document.querySelector(".wraper_popap-endgame");
+const popapLevel = document.querySelector(".wraper_popap-level");
 const btnRestart = document.querySelector(".restart_game");
 const btnNewgame = document.querySelectorAll(".newgame");
 const winner = document.querySelector(".winner");
+const section = document.querySelectorAll(".section");
+const sq_1 = document.querySelectorAll(".sq_1");
+const sq_2 = document.querySelectorAll(".sq_2");
+const sq_3 = document.querySelectorAll(".sq_3");
+const sq_4 = document.querySelectorAll(".sq_4");
+const sq_5 = document.querySelectorAll(".sq_5");
+const sq_6 = document.querySelectorAll(".sq_6");
+const sq_7 = document.querySelectorAll(".sq_7");
+const sq_8 = document.querySelectorAll(".sq_8");
+const sq_9 = document.querySelectorAll(".sq_9");
+const ln_1 = document.querySelectorAll(".ln_1");
+const ln_2 = document.querySelectorAll(".ln_2");
+const ln_3 = document.querySelectorAll(".ln_3");
+const ln_4 = document.querySelectorAll(".ln_4");
+const ln_5 = document.querySelectorAll(".ln_5");
+const ln_6 = document.querySelectorAll(".ln_6");
+const ln_7 = document.querySelectorAll(".ln_7");
+const ln_8 = document.querySelectorAll(".ln_8");
+const ln_9 = document.querySelectorAll(".ln_9");
+const gameField = document.querySelector(".game_field");
+let coutErrors = document.querySelector(".cout_errors");
+const clav = document.querySelector(".clav");
+const hours = document.querySelector(".hours");
+const minute = document.querySelector(".minute");
+const seconds = document.querySelector(".seconds");
+const difficultyLevel = document.querySelectorAll(".difficulty_level");
+const btnTimerPause = document.querySelector(".pause");
+const btnTimerPlay = document.querySelector(".play");
+
 const randomNum = (min, max) => {
   let num = Math.round(Math.random() * (max - min) + min);
   return num;
@@ -816,7 +846,6 @@ let resultArr = generationArr();
 // console.log(resultArr)
 
 ///////////============= DRAW ======/////////////
-const section = document.querySelectorAll(".section");
 const draw = () => {
   for (let i = 0; i < section.length; i++) {
     // console.log(section[i].children)
@@ -827,38 +856,15 @@ const draw = () => {
 };
 draw();
 
-const sq_1 = document.querySelectorAll(".sq_1");
-const sq_2 = document.querySelectorAll(".sq_2");
-const sq_3 = document.querySelectorAll(".sq_3");
-const sq_4 = document.querySelectorAll(".sq_4");
-const sq_5 = document.querySelectorAll(".sq_5");
-const sq_6 = document.querySelectorAll(".sq_6");
-const sq_7 = document.querySelectorAll(".sq_7");
-const sq_8 = document.querySelectorAll(".sq_8");
-const sq_9 = document.querySelectorAll(".sq_9");
-
-const ln_1 = document.querySelectorAll(".ln_1");
-const ln_2 = document.querySelectorAll(".ln_2");
-const ln_3 = document.querySelectorAll(".ln_3");
-const ln_4 = document.querySelectorAll(".ln_4");
-const ln_5 = document.querySelectorAll(".ln_5");
-const ln_6 = document.querySelectorAll(".ln_6");
-const ln_7 = document.querySelectorAll(".ln_7");
-const ln_8 = document.querySelectorAll(".ln_8");
-const ln_9 = document.querySelectorAll(".ln_9");
-
 const field = [sq_1, sq_2, sq_3, sq_4, sq_5, sq_6, sq_7, sq_8, sq_9];
-const lavelHard = (level) => {
+const levelHard = (level) => {
   for (let y = 0; y < field.length; y++) {
     for (let i = 0; i < level; i++) {
       field[y][randomNum(0, 8)].innerHTML = " ";
-      // field[y][randomNum(0, 8)].children[0].style.display = "none";
     }
   }
 };
-lavelHard(4);
-
-const gameField = document.querySelector(".game_field");
+levelHard(4);
 
 const initDraw = (line) => {
   for (let i = 0; i < 9; i++) {
@@ -927,7 +933,6 @@ const paint = (line, sq) => {
 };
 let activeNum;
 gameField.addEventListener("click", (event) => {
-  console.log(event.target);
   if (
     event.target.classList.length !== 0 &&
     event.target.classList[0] !== "game_field"
@@ -960,27 +965,23 @@ gameField.addEventListener("click", (event) => {
     }
   }
 });
-
 const activeSection = () => {
   let resArr;
   for (let i = 0; i < 9; i++) {
     for (let y = 0; y < 9; y++) {
       if (section[i].children[y].classList.contains("active")) {
         resArr = resultArr[i][y];
-        // console.log(resArr);
       }
     }
   }
   return resArr;
 };
-
+///////// ERROR ANIMATION///////////////
 const init = () => {
-  let coutErrors = document.querySelector(".cout_errors");
   let resultUser;
   let errors = 0;
-  const clav = document.querySelector(".clav");
   clav.addEventListener("click", (event) => {
-    console.log(activeSection());
+    // console.log(activeSection());
     if (
       +event.target.textContent &&
       !activeNum.children[0] &&
@@ -1007,7 +1008,7 @@ const init = () => {
     oter: for (let i = 0; i < 9; i++) {
       for (let y = 0; y < 9; y++) {
         if (!section[i].children[y].innerText) {
-          console.log(i, y, !section[i].children[y].innerText);
+          // console.log(i, y, !section[i].children[y].innerText);
           break oter;
         }
         if (i === 8 && y === 8) {
@@ -1020,11 +1021,10 @@ const init = () => {
   });
   btnNewgame[1].addEventListener("click", () => {
     wraper_popap.style.display = "none";
+    popapLevel.style.display = "block";
     errors = 0;
     coutErrors.innerHTML = errors;
     resultArr = generationArr();
-    draw();
-    lavelHard(4);
   });
   btnRestart.addEventListener("click", () => {
     errors--;
@@ -1033,11 +1033,82 @@ const init = () => {
   });
   btnNewgame[0].addEventListener("click", () => {
     errors = 0;
+    popapLevel.style.display = "block";
     coutErrors.innerHTML = errors;
     winner.style.display = "none";
     resultArr = generationArr();
-    draw();
-    lavelHard(4);
   });
 };
 init();
+
+/////==================T I M E R ==============
+let sec = 0;
+let min = 0;
+let hrs = 0;
+let interval;
+const timer = () => {
+  ////second
+  sec++;
+  if (sec < 9) {
+    seconds.innerHTML = "0" + sec;
+  }
+  if (sec > 9) {
+    seconds.innerHTML = sec;
+  }
+  if (sec === 60) {
+    min++;
+    sec = 0;
+    minute.innerHTML = "0" + min;
+  }
+  if (min < 9) {
+    minute.innerHTML = "0" + min;
+  }
+  if (min > 9) {
+    minute.innerHTML = min;
+  }
+  if (min === 60) {
+    min = 0;
+    hrs++;
+    hours.innerHTML = "0" + hrs;
+  }
+  if (hrs < 9) {
+    hours.innerHTML = "0" + hrs;
+  }
+  if (hrs > 9) {
+    hours.innerHTML = hrs;
+  }
+};
+
+const timerID = setInterval(timer, 1000);
+
+btnTimerPause.addEventListener("click", () => {
+  console.log("pause");
+  clearInterval(timerID);
+});
+btnTimerPlay.addEventListener("click", () => {
+  console.log("play");
+  // setInterval(timer, 1000);
+});
+/////////////////////// L E V E L ==================
+const levelGame = (level) => {
+  wraper_popap.style.display = "none";
+  popapLevel.style.display = "none";
+  errors = 0;
+  coutErrors.innerHTML = errors;
+  resultArr = generationArr();
+  draw();
+  levelHard(level);
+};
+
+for (let i = 0; i < difficultyLevel.length; i++) {
+  difficultyLevel[i].addEventListener("click", (event) => {
+    let level = event.target.classList[1];
+    if (level === "easy") {
+      levelGame(3);
+    } else if (level === "medium") {
+      levelGame(5);
+    } else if (level === "hard") {
+      levelGame(7);
+    }
+  });
+}

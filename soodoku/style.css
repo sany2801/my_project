@@ -4,8 +4,33 @@
   box-sizing: border-box;
   /* border: 1px solid black; */
 }
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 1rem;
+  margin: 0 0 0 5%;
+  background-color: rgba(240, 248, 255, 0.703);
+  font-size: 30px;
+}
+ul div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  width: var(--size);
+}
+li {
+  margin-right: 2rem;
+}
+a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+}
 :root {
-  --size: 600px;
+  --size: 700px;
 }
 button {
   border: none;
@@ -24,7 +49,7 @@ h1 {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: rgba(172, 183, 165, 0.933);
-  margin: 0 auto 100px;
+  margin: 0 auto 30px;
   border-radius: 40px;
 }
 .wrapper {
@@ -32,7 +57,7 @@ h1 {
   position: relative;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .game_field {
   width: var(size);
@@ -105,6 +130,15 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
+.pause,
+.play {
+  cursor: pointer;
+  font-size: 35px;
+}
+.pause:hover,
+.play:hover {
+  transform: scale(1.1);
+}
 
 p {
   text-align: center;
@@ -146,7 +180,7 @@ p {
   background-color: rgb(190, 200, 239);
 }
 
-.wraper_popap {
+.wraper_popap-endgame {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.691);
@@ -155,21 +189,39 @@ p {
   display: none;
   z-index: 2;
 }
+.wraper_popap-level {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.691);
+  position: absolute;
+  display: none;
+  top: 0;
+  z-index: 2;
+}
 
 .popap {
   width: 400px;
-  height: 300px;
+  height: 350px;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   text-align: center;
   position: relative;
   top: 25%;
   margin: 0 auto;
   padding: 2rem;
 }
+.difficulty_level {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 600;
+  background-color: rgb(183, 170, 234);
+  cursor: pointer;
+}
 .popa_tittle {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 1rem;
   font-family: "Courier New", Courier, monospace;
 }
