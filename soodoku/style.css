@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 500;
   /* border: 1px solid black; */
 }
 ul {
@@ -130,10 +131,22 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
+.timer {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cotrolTimer {
+  position: relative;
+}
 .pause,
 .play {
   cursor: pointer;
   font-size: 35px;
+}
+.play {
+  display: none;
 }
 .pause:hover,
 .play:hover {
@@ -194,7 +207,6 @@ p {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.691);
   position: absolute;
-  display: none;
   top: 0;
   z-index: 2;
 }
@@ -239,7 +251,9 @@ p {
   color: aliceblue;
   margin-bottom: 1rem;
 }
-
+.activeLevel {
+  background-color: chocolate;
+}
 .popap .newgame {
   background-color: transparent;
   padding: 0;

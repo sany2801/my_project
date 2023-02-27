@@ -1079,15 +1079,19 @@ const timer = () => {
   }
 };
 
-const timerID = setInterval(timer, 1000);
+let timerID = setInterval(timer, 1000);
 
 btnTimerPause.addEventListener("click", () => {
+  btnTimerPause.style.display = "none";
+  btnTimerPlay.style.display = "block";
   console.log("pause");
   clearInterval(timerID);
 });
 btnTimerPlay.addEventListener("click", () => {
+  btnTimerPause.style.display = "block";
+  btnTimerPlay.style.display = "none";
   console.log("play");
-  // setInterval(timer, 1000);
+  timerID = setInterval(timer, 1000);
 });
 /////////////////////// L E V E L ==================
 const levelGame = (level) => {
@@ -1098,16 +1102,29 @@ const levelGame = (level) => {
   resultArr = generationArr();
   draw();
   levelHard(level);
+  clearInterval(timerID);
+  sec = 0;
+  min = 0;
+  hrs = 0;
+  timerID = setInterval(timer, 1000);
+  setInterval(timer(), 1000);
 };
 
 for (let i = 0; i < difficultyLevel.length; i++) {
   difficultyLevel[i].addEventListener("click", (event) => {
     let level = event.target.classList[1];
+    console.log(difficultyLevel[i]);
+    for (let y = 0; y < difficultyLevel.length; y++) {
+      difficultyLevel[y].classList.remove("activeLevel");
+    }
     if (level === "easy") {
       levelGame(3);
+      difficultyLevel[0].classList.add("activeLevel");
     } else if (level === "medium") {
       levelGame(5);
+      difficultyLevel[1].classList.add("activeLevel");
     } else if (level === "hard") {
+      difficultyLevel[2].classList.add("activeLevel");
       levelGame(7);
     }
   });
