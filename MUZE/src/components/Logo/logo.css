@@ -1,0 +1,15 @@
+.logo{
+    width: 45px;
+    height: 67px;
+    background-image:url(img//Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper_logo{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+}

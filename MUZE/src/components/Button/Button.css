@@ -1,0 +1,12 @@
+button{
+    padding: .5rem;
+    border: none;
+    background-color: cornflowerblue;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.admin{
+    background-color: rgb(127, 86, 86);
+    color: aliceblue;
+}
