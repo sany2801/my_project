@@ -10,8 +10,6 @@ function App() {
   const [autoRes, setAutores]= useState(0)
 
   const countFmt = new Intl.NumberFormat('ru-RU').format(count);
-  const resFmt = new Intl.NumberFormat('ru-RU').format(res);
-  const autoResFmt = new Intl.NumberFormat('ru-RU').format(autoRes);
   
   const clickHendler = (result)=>{
     setCount(count + result)
