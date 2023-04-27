@@ -1,0 +1,62 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black;  */
+}
+:root{
+    --width: 3px;
+    --height: 300px; 
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    /* background-image: url(wallpaperbetter.com_1366x768.jpg); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    width: 150%;
+    /* transform:translateY(200px) rotate(-35deg) ; */
+    /* border: 1px solid white; */
+   
+}
+.star{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -400px;
+    width: var(--width);
+    height: var(--height);
+    animation: starFall linear 4s infinite; 
+
+}
+@keyframes starFall {
+    100%{
+        
+        margin-top: 500vh;
+    }
+}
+.line{
+    width: 100%;
+    height: 100%;
+    background-color:#FFFFFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(223, 185, 255, 0) 21.37%, #ffffff 100%);
+}
+.round{
+    width: var(--width);
+    height:var(--width);
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px var(--width) var(--width) #FFFFFF;
+}
+
+
