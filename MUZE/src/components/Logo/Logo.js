@@ -5,7 +5,6 @@ const  Logo = ()=>{
         <div className='wrapper_logo'>
             <div className="logo"></div>
             <h1>Muze</h1>
-        <Button className={'admin'}>Log in</Button>
             
         </div>
     )

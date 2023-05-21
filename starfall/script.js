@@ -1,6 +1,14 @@
 const wrap = document.querySelector('.wrapper')
-const count = +
-prompt('колл-во звёзд' , 400)
+const countValue = document.querySelector('.count_input')
+const color = document.querySelector('.color_input')
+const BTN_INIT = document.querySelector('.BTN_INIT')
+const bg = document.querySelectorAll('.bg_input')
+color.addEventListener('click',()=>{
+   console.log(color.value) 
+})
+
+
+
 const randomNum = (min, max) => {
     let num = Math.random() * (max - min) + min;
     return num;
@@ -20,9 +28,27 @@ const star = ()=>{
     star.append(line,round)
     return star;
 }
-console.log(star())
-
-for(i=0; i<=count;i++){
-    // wrap.append('sdvfs')
-    wrap.append(star())
+const bg_Value = ()=>{
+    for(i=0;i<bg.length;i++){
+        if(bg[i].checked){
+            break;
+        }
+    }
+    return bg[i].id
 }
+
+const init = (count)=>{
+    wrap.innerHTML= ``
+    document.body.style.backgroundImage = `url('img/${bg_Value()}.jpg')`;
+    for(i=0; i<count;i++){
+        wrap.append(star())
+    }
+}
+
+
+BTN_INIT.addEventListener('click',()=>{
+
+
+    init(+countValue.value)
+    console.log(+countValue.value)
+})

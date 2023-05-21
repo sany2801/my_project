@@ -3,10 +3,9 @@ import { AddressSuggestions} from 'react-dadata';
 import 'react-dadata/dist/react-dadata.css';
 import restData from "../map/data"
 import Map from "../map/map";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 
-import { useState, useCallback} from "react"
+import { useState} from "react"
 
 var url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address";
 var token = "c8bc0f0128c7944afa9f72fcea2fd8f13793ffd6";
@@ -29,7 +28,6 @@ fetch(url, options)
 .catch(error => console.log("error", error));
 const Form = ()=>{
     const [nameObject, addNameObject] = useState('')
-    const [city, addCity] = useState('')
     const [value, setValue] = useState();
     
 
