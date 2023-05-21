@@ -1,0 +1,84 @@
+*{
+    /* border: 1px solid black; */
+
+}
+.wrapperHome{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../src/images/Frame\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.wrapperAdmin{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(236.64deg, #FFFFFF 4.73%, #96A0F2 38.46%, #96A0F2 57.81%, #ededed 91.1%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.restaranList{
+    width: 90%;
+    height: 80vh;
+    overflow:auto;
+     display: flex;
+     flex-direction: column;
+     align-items:center
+}
+
+.restaranList ul {
+    width: 100%;
+}
+.restaranList ul li{
+    height: 110px;
+    background-color:#ffffff;
+    margin: 20px 0;
+    border-radius: 20px;
+    list-style: none;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.restaranList::-webkit-scrollbar {
+    width: 22px;               /* ширина всей полосы прокрутки */
+}
+.restaranList::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* цвет зоны отслеживания */
+  }
+.restaranList::-webkit-scrollbar-thumb {
+    background-color: rgb(225, 255, 0);    /* цвет бегунка */
+  }
+.restaranOption{
+    display: grid;
+    grid-template-areas:
+    "restaranName restaranName restaranName "
+    "adresTittle  adresValue btn"
+    "tittleDel valueDel btn ";
+}
+.restaranName{
+    text-align: center;
+    grid-area: restaranName;
+}
+.adresTittle{
+  grid-area: adresTittle;
+}
+.adresValue{
+    grid-area: adresValue;
+}
+.tittleDel{
+    grid-area: tittleDel;
+}
+.valueDel{
+    grid-area: valueDel;
+} 
+
+.admin{
+    grid-area: btn;
+}

@@ -1,0 +1,108 @@
+*{
+}
+
+.wrapperForm{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:rgba(0, 0, 0, 0.414);
+}
+.formSection{
+    width: 30%;
+    height: 60%;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    /* align-items:center; */
+}
+
+.formAuthorization{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items:center; */
+    position: relative;
+    /* background-color:beige */
+}
+.formAuthorization h2{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800;
+    text-align: center;
+    font-size: 64px;
+}
+.formAuthorization input{
+    height: 40px;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    cursor:text;
+}
+
+.inputPassword{
+    width: 100%;
+    position: relative;
+}
+.password-control{
+    width: 30px;
+    height: 20px;
+    background-image: url(../../images/PasswordControl.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+.password-controlActive{
+    background-image: url(../../images/free-icon-eye-159604.png);
+    width: 30px;
+    height: 20px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+.formAuthorization input:focus{
+    outline: none;
+    background-color:beige;
+
+}
+.formAuthorization button{
+    background-color: rgb(96, 211, 96);
+    width: 100%;
+    font-size: 30px;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+.btnClose{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 30px;
+    cursor: pointer;
+    right: 0;
+}
+.btnClose span{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color:black;
+}
+.btnClose span:nth-child(1){
+    transform: rotate(45deg);
+}
+.btnClose span{
+transform: rotate(-45deg);
+}
+
+
