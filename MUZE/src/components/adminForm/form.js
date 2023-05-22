@@ -58,7 +58,6 @@ const Form = ()=>{
         }
         Map()
   
-  let img = '../images/Frame 45.png'
     return(
             <div className="formAdmin">
                 <form className="form">
