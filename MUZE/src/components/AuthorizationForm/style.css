@@ -1,33 +1,11 @@
-*{
-}
-
-.wrapperForm{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    background-color:rgba(0, 0, 0, 0.414);
-}
-.formSection{
-    width: 30%;
-    height: 60%;
-    background-color:rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    /* align-items:center; */
-}
 
 .formAuthorization{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items:center; */
     position: relative;
-    /* background-color:beige */
 }
 .formAuthorization h2{
     font-family:'Courier New', Courier, monospace;
@@ -87,6 +65,9 @@
 .btnClose{
     width: 40px;
     height: 40px;
+    background-image:url(../../images/close.png);
+    background-position: center;
+    background-size:contain;
     position: absolute;
     margin-top: 30px;
     cursor: pointer;
@@ -97,6 +78,8 @@
     width: 100%;
     height: 3px;
     background-color:black;
+    bottom: 18px;
+    z-index: -2;
 }
 .btnClose span:nth-child(1){
     transform: rotate(45deg);

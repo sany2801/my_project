@@ -1,7 +1,11 @@
+import { useState } from 'react'
 import './Button.css'
-const Button = ({children, className})=>{
+import { useDispatch, useSelector } from 'react-redux'
+const Button = ({children, className, active, onClick})=>{
+    
+
     return(
-        <button className={className}>
+        <button className={className} disabled={active} onClick={onClick} >
             {children}
         </button>
     )

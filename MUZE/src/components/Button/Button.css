@@ -7,6 +7,16 @@ button{
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+*:disabled {
+    /* background-color: dimgrey; */
+    background-image: url(../../images/images.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(155, 150, 150);
+    opacity: 1;
+    cursor:not-allowed;
+}
 .admin{
     background-color: #AABF8E;
     color: rgb(0, 0, 0);

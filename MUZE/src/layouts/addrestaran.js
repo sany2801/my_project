@@ -10,7 +10,7 @@ const Addrestaran = () => {
             <div className='formWraper'>
                 <Form/>
             </div>
-            <Map/>
+            <Map center={[55.75396, 37.620393]} zoom={11}/>
         </div>
     );
 };

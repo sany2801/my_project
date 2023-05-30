@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(11, 19, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper div{
+    width: 800px;
+    height: 800px;
+    background-image: url(./kisspng-wheel-game-show-prize-fortune-5ac3856c32ee34.9575146515227631162086.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+span{
+    width: 300px;
+    height: 3px;
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    top: 391px;
+    left: 100px;
+    transform: all ease 4s;
+    /* animation: rotate 3s cubic-bezier(0, 0, 0, 1.0005); */
+    transform-origin: 100% 50%;
+
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(3600deg);
+    }
+}

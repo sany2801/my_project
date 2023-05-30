@@ -29,7 +29,7 @@
     background-color:rgb(255, 255, 255);
     transform: scale(0.5);
     transition: 0.4s all;
-    width: 50vh;
+    width:  80vw
 }
 .modal__content.active{
     transform: scale(1);

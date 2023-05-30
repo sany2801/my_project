@@ -7,7 +7,7 @@ import Form from './components/adminForm/form';
 import Map from './components/map/map';
 import Menu from './components/menu/menu';
 import AutorizationPage from './layouts/AutorizationPage';
-import Addrestaran from './pages/addrestaran';
+import Addrestaran from './layouts/addrestaran';
 import AdminPanel from './layouts/adminPanel';
 function App() {
   return (

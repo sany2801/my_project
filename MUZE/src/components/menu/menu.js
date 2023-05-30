@@ -2,7 +2,7 @@ import menu from "./menu.json"
 import "./menu.css"
 // const image = menu.pizza[0].img
 // menu[0].pizza.map(item=>(console.log(item.size.dough.thin)))
-console.log(menu[0].pizza)
+// console.log(menu[0].pizza)
 
 menu[0].pizza.push(
     {
