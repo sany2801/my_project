@@ -1,845 +1,1266 @@
+{
+    "pizza":[
+                    {   
+                    "name":"Баварская",
+                    "id": 346346,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
 
-    [
-        {
-        "tittle": "Пицца",
-        "img": "https://s359vla.storage.yandex.net/rdisk/bc425512a1dc8daa75768e92e596c395d24d7fb2302b0ed5bb64c3bcdd8dfa71/645da49e/7JhwR05tPHdsQVLX_s_l-6TJ7Pa4vWxGkAWa2pw84nSDpMrQ15Yn4uBfqN27MWNIB3vU6bmnGxSshc8xdYz7Uw==?uid=325189121&filename=Rectangle%2019.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=325189121&fsize=5541&hid=da13ac35a28b56efcc1141221a9ee319&media_type=image&tknv=v2&etag=21d2da2cfdb1800fe27a9ed3209e594a&rtoken=TXFAQH3Cui1g&force_default=yes&ycrid=na-b279a60da5e3ed5b8eee1103dd7cbb73-downloader13e&ts=5fb75e11be380&s=0e0a4916c7f31f1bb40660dd5324d1081a14a1f6b9f949b7ad2e7c03decc0cd1&pb=U2FsdGVkX1_umFys45pzS6uDcTEjmJnM8VAMzlfWxKI_BshnxoipiJeS0lyGDS8CHSJEoZ9wTJ8PM0mfs8H-UCEAHdMT4v7ABA5jvVwq9zo",
-        "pizza":[
-            {   
-                "name":"Баварская",
-                "id": 346346,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, колбаски из курицы и свинины, колбаса Пепперони, запеченный сладкий перец, карамелизированный лук, соус Барбекю, сырный соус",
-                "img":"https://3.downloader.disk.yandex.ru/preview/848e930c04ad76dbd59492ccc29e078fd364805269b497e4242fb8aef3c8abb1/inf/v-nP42GSHfFa_0mr0Ej7l3o6PV7o31W64drqA_0tMnukJ7I1My_v6iNDhjWWzr4kgMncI7wWyN_I26SculEGkQ%3D%3D?uid=325189121&filename=r_5868_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Апетитная",
-                "id": 685461345,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, бекон, курица, соус Барбекю, томаты Черри, приправа к пицце, масло чесночное.",
-                "img":"https://3.downloader.disk.yandex.ru/preview/a8da699c993d4261002a5eed007d15687436bfad47b6bd62218e0d676690f9cc/inf/dsREl_08ZXLePd5i0TM_IxNAlk2a0WmQI7lAzqpxg18xckMeiKqQX27VvZxXnO79f_NevrCGg8MjQ578LK2q6g%3D%3D?uid=325189121&filename=r_8_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },    
-            {
-                
-                "name":"Сицилийская",
-                "id": 346531456,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, курица, шампиньоны, перец Пепперони, перец Чили, приправа к пицце, масло чесночное."                ,
-                "img":"https://4.downloader.disk.yandex.ru/preview/8794edcfd61eeb2a6273536bdfeb27115f4c056810f7c24390beadf7dbc2f9b2/inf/velfOs041t561GwFcZwpFsRE24LuXxlV1G0Mrkw8k2f-JTrR2ycv9k2-_AvsJZe1CCGiqrmxjH0oiUrnxj-jGA%3D%3D?uid=325189121&filename=r_39_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Римская",
-                "id": 341653146,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, курица, бекон, сырный соус, маринованные огурцы, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/27c89f87a7226837ff366bd77e5f04dc36ba55e2ebd00a72187c5fc3c738070b/inf/jlSV6Q0s-AbW-UxJBk8PQtu68We5yKK82o1eUAMt4iSf7VgllGABNg_T0fdkg2AVjerJMCJsGT5Ce8mxLp2akA%3D%3D?uid=325189121&filename=r_99_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Пикантная",
-                "id": 314631467,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, курица, ананасы, приправа к пицце, масло чесночное.",
-                "img":"https://2.downloader.disk.yandex.ru/preview/88ead3591621edc57a2ed0d0eb527b99d028aef29f5393c789d8ff786ce8588c/inf/rrDLfAcYjtFUYPsyI6ab4OAyFTk9N64w4gY5KDZ7_6-R81q_yZjFb0XN2hVC_xljo3goGKBr-7s0nTNyi8Xf-A%3D%3D?uid=325189121&filename=r_45_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Чикен барбекю",
-                "id": 314631,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, курица, бекон, лук, соус барбекю, приправа к пицце, масло чесночное.",
-                "img":"https://2.downloader.disk.yandex.ru/preview/c2f255738a70d01e70d491577e3070a1d836eed8452abc8557e856b21baba8e4/inf/Eb7aDNN3SyZbfZoHBZKdVNfJh-g4RT2WUoIE3dHC1pRfUG2hU9pg2t6zodwtz8jJI3fTKI1GXZofnLN5NjNywA%3D%3D?uid=325189121&filename=r_3900_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Чикен барбекю и опята",
-                "id": 31461346,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протёртых томатов, Моцарелла, курица в соусе барбекю, запеченный сладкий перец, маринованные опята, соус Ранч, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/2430229776a18c046495b6b86fa6f124936434c8df34972cff4af02a29b8fdfd/inf/9GR9AJxZoouN7y7kbjxXuHo6PV7o31W64drqA_0tMntj2IWI61IBwmTqZ_rbrBlr1Bs3TXGSfmQmwBAZQJAQ5g%3D%3D?uid=325189121&filename=r_4916_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Ромео",
-                "id": 3416134,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, ветчина, свинина, соус Ранч, приправа к пицце, масло чесночное.",
-                "img":"https://2.downloader.disk.yandex.ru/preview/057b762c7afe1aadb45798bdd369a0c11c459867dd5655b26e63a40ea82a3ab1/inf/RyIlmYmO3jU7ewY5WWL4keAyFTk9N64w4gY5KDZ7_69oL3gFxj3HqjPhtzX7SC4xIjCeW92Xz-Qi-auB4zc78w%3D%3D?uid=325189121&filename=r_41_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Экстра",
-                "id": 57254754,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, бекон, свинина, охотничий соус, маринованные огурцы, Халапеньо, приправа к пицце, масло чесночное.",
-                "img":"https://3.downloader.disk.yandex.ru/preview/7ecfe20a9d9fb85af0a920a379caa700cbf673acc33a8c61483e0eda5806fe42/inf/vksmCFVjKD5D7imtnN82TtfJh-g4RT2WUoIE3dHC1pS_Iae0n78WXdXZlRCg1N8zCGKHRF_P-cDAFeqoRK7knA%3D%3D?uid=325189121&filename=r_3901_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Огненная",
-                "id": 34161346,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, свинина, бекон, перец Чили, маринованные луковички, Халапеньо, Охотничий соус, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/a33c48abb5f8681a76853241d5eeca2b470afe73c544567eabcd0577171e8893/inf/-Jr7et4jldfdOK7bmiHaTNfJh-g4RT2WUoIE3dHC1pSlWt1mAZ9QGghMDOK00fL9nra0nZbvBfoqmtXYL-oCwA%3D%3D?uid=325189121&filename=r_55_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Прошутто и руккола",
-                "id": 987654,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протёртых томатов, Моцарелла, прошутто, руккола, томаты черри, Джюгас, масло чесночное.",
-                "img":"https://2.downloader.disk.yandex.ru/preview/cedbc5c20c546dff5553074008e614be0f8762041a78eabb29bc876bf3dca4b1/inf/zybtZvb0vMdyyCwv1EJeVno6PV7o31W64drqA_0tMnv0wjyRCD-ESsIS0KrsxrIT4VnBNTnpfECLpmLSxa7oaw%3D%3D?uid=325189121&filename=r_4647_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Флорентийская",
-                "id": 345613,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, ветчина, свинина, соус Ранч, лук порей, маринованные опята, приправа к пицце, масло чесночное.",
-                "img":"https://2.downloader.disk.yandex.ru/preview/bbbb4d756311a60bd85775dc48a69ee3df39e79d3c953d7141040616122d0b81/inf/JTbiw_1qlO6RTYqVZ6cH5eAyFTk9N64w4gY5KDZ7_6_uz8JhAUU5Z4owMSdxLyJcqQ9fcMD5ALtaRsEObCcPzQ%3D%3D?uid=325189121&filename=r_25_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"С копчёными колбасками",
-                "id": 3154761,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протёртых томатов, Моцарелла, копчёные колбаски, бекон, томаты черри, красный лук, горчичный соус, соус Барбекю, Халапеньо, приправа к пицце, масло чесночное.",
-                "img":"https://s108vla.storage.yandex.net/rdisk/ed12226e1bccb32a3d421735cd90cca59e301cf2db91aba2a8e864f337d04271/645e947e/7JhwR05tPHdsQVLX_s_l-4wk3ztsiSLRDQKXJd1b0BqAMUDKFw2BwnmJFAKwJl6utQWbSAjxb0wlXlyqJUMyPw==?uid=325189121&filename=r_4919_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&fsize=137873&hid=701715dd5c191471ce30f92895d2a937&media_type=image&tknv=v2&etag=13a44589095bdf71bb8d230809a5e2c2&rtoken=b3xcP7A68mDd&force_default=yes&ycrid=na-dcfee7e4e16f4dfd3557ed58ab80bcb5-downloader1f&ts=5fb842d4f9b80&s=940256bfa64633b2269b6c02f2014083e10420727a05f125c69bbab112ba3dfb&pb=U2FsdGVkX1-zTC7zp2tX4VGOrMUJ1QdODwTUlRNL_Buc28h_RFKB_AJC-Dioas7qJKQ8jSXNhAVkWdN-PxWlQE2OrpyS5vDp6PMDCPZH-4k"
-            },
-            {
-                
-                "name":"Охотничья",
-                "id": 13466,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, лук, шампиньоны, бекон, говядина, Охотничий соус, перец Чили, приправа к пицце, масло чесночное.",
-                "img":"https://2.downloader.disk.yandex.ru/preview/62a11b2542fa166bcb77f6e63316969a9f8366f31bda470dbf0f7089f3b42f91/inf/ZR2VtFD_lPX1xIsVAT8cjOAyFTk9N64w4gY5KDZ7_6-7_W8cUTKCnaPlcb-614nKqoofTIPq9D9kqaz102J8PA%3D%3D?uid=325189121&filename=r_23_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Соренто",
-                "id": 134613145,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, говядина, бекон, соус барбекю, сладкий перец, приправа к пицце, масло чесночное",
-                "img":"https://4.downloader.disk.yandex.ru/preview/535eb3be0059af88ac1d31410230b49233ab6ba162fa9b4e6810a5d642063493/inf/Vth7gC3u3NjKxKdZ9g2_t8P7V8batn3POy8FxsStfRN-7PR-ybHS8rvZqoj_hdmg6MKZkorcrHEo4cOuGq1EmQ%3D%3D?uid=325189121&filename=r_88_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Супер мясная",
-                "id": 1346436,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, ветчина, бекон, салями, лук, фарш из говядины, горчичный соус, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/61ade527986f781494bd0e8a7fc934ce4f585e7bed4e3f72018ff0549c41c7a2/inf/7lDJkUWsISParlBj0vQWT9fJh-g4RT2WUoIE3dHC1pSEGSAV9ztGpq-oHhnv0mDx87ouljc1j-CShY6sl-KI5g%3D%3D?uid=325189121&filename=r_3898_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Студенческая",
-                "id": 34763467,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, ветчина, сосиски, приправа к пицце, масло чесночное.",
-                "img":"https://4.downloader.disk.yandex.ru/preview/31d25f23a64b5a4d492c0f44b9d1f486484dc0b8ad44f096c8a45802926a5245/inf/fdt78yIenO63JpaC_NwLFeAyFTk9N64w4gY5KDZ7_6_5BLoH9ABkmlP_cctetUvtP1r4Ity_TM1iCLHPbvch4A%3D%3D?uid=325189121&filename=r_15_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },   
-            {
-                
-                "name":"Чизбургер",
-                "id": 6034675,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"сырный соус, Моцарелла, фарш из говядины, лук, маринованные огурцы, помидоры, Чеддер, горчичный соус, чесночное масло, кунжут.",
-                "img":"https://4.downloader.disk.yandex.ru/preview/ddbbd86432314728916d0ea2cd26ac4452853512cae7a764377bf21084f4963f/inf/8nUVSjhaD3fNmaW5B6bpqNfJh-g4RT2WUoIE3dHC1pRD_dVwFaWa6TdynmKHV_rD0igU9KeOktnLDplxUUMXiQ%3D%3D?uid=325189121&filename=r_4495_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Темпо",
-                "id": 4361465,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, салями, бекон, помидоры, сметанный соус с чесноком, приправа к пицце, масло чесночное.",
-                "img":"https://3.downloader.disk.yandex.ru/preview/453dde2a383364c726afaacac640dcf4b118563d1b2898d0e525f2d124ff344c/inf/-0eRmq6gQx7WoD5k5zF2q6AM4DRjayw0uw4p5OMyK0o7cyRoSL82CJzeNzL5VkdcEOJuYc8EZSI7nOIlLBSWFQ%3D%3D?uid=325189121&filename=r_75_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Особенная",
-                "id": 3456787563,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, салями, ветчина, шампиньоны, Халапеньо, маслины, приправа к пицце, масло чесночное",
-                "img":"https://3.downloader.disk.yandex.ru/preview/a5fc10710100c40a89d897b501e2a14b1bcbd396a241b17e31e1e940879bcff8/inf/4q1fS8c5tKti7osXq8X3luAyFTk9N64w4gY5KDZ7_69Vm5fQsFm8cd-diCoApX-fkL5mBS-m1VNWlkVuZc-gzw%3D%3D?uid=325189121&filename=r_53_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Супер Пепперони",
-                "id": 343455478,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, колбаса пепперони, приправа к пицце, масло чесночное.",
-                "img":"https://4.downloader.disk.yandex.ru/preview/da55e26c1108c9f00fb81da14f29855cab5ddbed65ffcff35c267925e50f719b/inf/5ywWUnR4I1_T2Jfvx94fL9fJh-g4RT2WUoIE3dHC1pQOmMwRu0IY1L4Ccy7yS0MNiuOuF4UjoW5lt4Wed6vXwA%3D%3D?uid=325189121&filename=r_3899_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Повседневная",
-                "id": 65835687,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, колбаса пепперони, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/2e67847b7cce958a5bbdf4ede1912d355024c3011876f718848ac4efbcc38d93/inf/bMXnWxye-BKbyF31iaPkBEUeAFEo8DAwu2ZeO14_C5iVkoIRArapbbi3ze-0OUR19x1apzZqTlh-HGK9zMbuaQ%3D%3D?uid=325189121&filename=r_13_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Народная",
-                "id": 8965383765,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, ветчина, шампиньоны, маринованные огурцы, приправа к пицце, масло чесночное.",
-                "img":"https://4.downloader.disk.yandex.ru/preview/bd247951b93fa0ba82df0f709ef111523d9fa05275164233058374490f57b0eb/inf/BbZ2v5qIMR77jM3aw4k3C-Ct_0pOZdkf3sXZoURfOJTvab_VUwkwFeawvNs6Ld3UW-A51Rh4H5Vdq85RZflAEg%3D%3D?uid=325189121&filename=r_17_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Гавайская",
-                "id": 3567856,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, ветчина, ананасы, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/06a83e0ebce55216bb95a448c6722ab6d0301bc01fa357fda0b34e75170c3d18/inf/SOSk2ooAyPHIiD-Qk8asZOAyFTk9N64w4gY5KDZ7_6_yn8ESqKjSfYvhNC3sPv5o9Bn9HR-sAXTHdhP3ScQytw%3D%3D?uid=325189121&filename=r_19_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Везувий",
-                "id": 56783567,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, ветчина, приправа к пицце, масло чесночное.",
-                "img":"https://2.downloader.disk.yandex.ru/preview/b0eb716588cdfeaac3e3b30a93df25234fac6e1c6a958aafb4f44c1262c28672/inf/-0eRmq6gQx7WoD5k5zF2q6j62b1-MLPSBqa_hZxlK50dflsJW68Do3yLdOsJVhPxd2exBFhoHYZaSCObMBZTdQ%3D%3D?uid=325189121&filename=r_7_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            }, 
-            {
-                
-                "name":"Деревенская",
-                "id": 13461346,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, бекон, лук, яйцо, маринованные огурцы, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/27c89f87a7226837ff366bd77e5f04dc36ba55e2ebd00a72187c5fc3c738070b/inf/jlSV6Q0s-AbW-UxJBk8PQtu68We5yKK82o1eUAMt4iSf7VgllGABNg_T0fdkg2AVjerJMCJsGT5Ce8mxLp2akA%3D%3D?uid=325189121&filename=r_99_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Четыре сыра",
-                "id": 624356524,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, сыр с голубой плесенью, сыр Джюгас, сыр Чеддер, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/025e369ca1188ec4d5bb470dbda23808c6cb72f40abe3058b1306b51c1545a33/inf/DhvA7hZWOAMNv4aLjY91f9fJh-g4RT2WUoIE3dHC1pTDuhzqr7SxvH4AsxPFiAFU4PulEasudCJDuz9SM2MeMQ%3D%3D?uid=325189121&filename=r_3894_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Маргарита",
-                "id": 36346,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, Моццарелла в рассоле, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/4980108b537ece86d769c544f307e32c8729c376aa60f137f5c49e264eb2b2a0/inf/d3aAljOXdNKwo1n2wKvi-2DVKjOVwLY8vt8hHsxage0yxZwMGJPYZx0hSM8Fzplh62YWD_BAJxVSehkCacj_9A%3D%3D?uid=325189121&filename=r_1_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Грибная",
-                "id": 346346,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, шампиньоны, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/70031e82a3395813926d4ff8a5be326653897290ac09875c0a06041f6f5175aa/inf/WwO4p2PDnn__jJR-CUtiileRjJqpz1GljKp5kbJHgAsQuLuG4wMlu13meF5wziHKuYBZ3S9ic4nxHEgRaMSXZw%3D%3D?uid=325189121&filename=r_3_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Маринара с лососем",
-                "id": 3461346,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, лосось, креветки, каперсы, приправа к пицце, масло чесночное.",
-                "img":"https://3.downloader.disk.yandex.ru/preview/29ac984c4da67e7a6d7792b03b485db0bc74c11ad8a00806e8d8dd790d62efda/inf/ZBUY4Anj45Mf-AS10ZewstfJh-g4RT2WUoIE3dHC1pTY2Eh7gMbPwQezKLsvi1VV6SpzYYJRgyFJy13XzHwSFg%3D%3D?uid=325189121&filename=r_4220_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Греческая",
-                "id": 967538365,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, рассольный сыр, томаты Черри, шпинат, сметанный соус с чесноком, приправа к пицце, масло чесночное.",
-                "img":"https://2.downloader.disk.yandex.ru/preview/20c18a506a5234b15ae46106fea818f9ada5a9862d96731040babadf06aaa8ab/inf/jV8z0NJYnONDnk2mcURcg9fJh-g4RT2WUoIE3dHC1pS9W2b4u5RRSqlyadGXDCmWPq7aSP2NdWVGxRXxU_IFKA%3D%3D?uid=325189121&filename=r_89_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"4 сезона",
-                "id": 24572547,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протертых томатов, Моцарелла, ветчина, шампиньоны, креветки, мидии, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/f274c21a521da2b2f2d9c3a60d5624aeaa3060fb79406cbf87159c10106fe3b6/inf/jV8z0NJYnONDnk2mcURcg9fJh-g4RT2WUoIE3dHC1pT5SmUcQK2JXKucg6qSh30e-Y2mUwc29eUAnOnSQNMYHg%3D%3D?uid=325189121&filename=r_63_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            },
-            {
-                
-                "name":"Диабло",
-                "id": 1305673416543,
-                "size":[
-                    {
-                        "dough":"Тонкое",
-                        "id": "thin",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    },
-                    {
-                        "dough":"Пышное",
-                        "id": "lush",
-                        "small":["21 см", "215 г"],
-                        "midle":["26 см","360 г"],
-                        "large":["31 см", "550 г"]
-                    }
-                ],
-                "price":[10, 20, 30, 40],
-                "compound":"соус из протёртых томатов, Моцарелла, салями, колбаса Пепперони, имбирный соус, красный лук, Халапеньо, приправа к пицце, масло чесночное.",
-                "img":"https://1.downloader.disk.yandex.ru/preview/a33c48abb5f8681a76853241d5eeca2b470afe73c544567eabcd0577171e8893/inf/-Jr7et4jldfdOK7bmiHaTNfJh-g4RT2WUoIE3dHC1pSlWt1mAZ9QGghMDOK00fL9nra0nZbvBfoqmtXYL-oCwA%3D%3D?uid=325189121&filename=r_55_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
-            }
-        ]
-    },
-
-        {
-        "tittle": "Бургеры и закуски",
-        "burger":[
-            {
-
-            },
-            {
-
-            }
-        ]
-    },
-    {    
-        "salad":[
-            {
-
-            },
-            {
-
-            }
-        ]
-    },
-    {
-        "hot_dishes":[
-            {
-
-            },
-            {
-
-            }
-        ]
-    },
-    {
-        "deser":[
-            {
-
-            },
-            {
-
-            }
-        ]
-    }
-]
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, колбаски из курицы и свинины, колбаса Пепперони, запеченный сладкий перец, карамелизированный лук, соус Барбекю, сырный соус",
+                    "img":"https://3.downloader.disk.yandex.ru/preview/848e930c04ad76dbd59492ccc29e078fd364805269b497e4242fb8aef3c8abb1/inf/v-nP42GSHfFa_0mr0Ej7l3o6PV7o31W64drqA_0tMnukJ7I1My_v6iNDhjWWzr4kgMncI7wWyN_I26SculEGkQ%3D%3D?uid=325189121&filename=r_5868_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Апетитная",
+                    "id": 685461345,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, бекон, курица, соус Барбекю, томаты Черри, приправа к пицце, масло чесночное.",
+                    "img":"https://3.downloader.disk.yandex.ru/preview/a8da699c993d4261002a5eed007d15687436bfad47b6bd62218e0d676690f9cc/inf/dsREl_08ZXLePd5i0TM_IxNAlk2a0WmQI7lAzqpxg18xckMeiKqQX27VvZxXnO79f_NevrCGg8MjQ578LK2q6g%3D%3D?uid=325189121&filename=r_8_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },    
+                {
+                    
+                    "name":"Сицилийская",
+                    "id": 346531456,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, курица, шампиньоны, перец Пепперони, перец Чили, приправа к пицце, масло чесночное."                ,
+                    "img":"https://4.downloader.disk.yandex.ru/preview/8794edcfd61eeb2a6273536bdfeb27115f4c056810f7c24390beadf7dbc2f9b2/inf/velfOs041t561GwFcZwpFsRE24LuXxlV1G0Mrkw8k2f-JTrR2ycv9k2-_AvsJZe1CCGiqrmxjH0oiUrnxj-jGA%3D%3D?uid=325189121&filename=r_39_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Римская",
+                    "id": 341653146,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, курица, бекон, сырный соус, маринованные огурцы, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/27c89f87a7226837ff366bd77e5f04dc36ba55e2ebd00a72187c5fc3c738070b/inf/jlSV6Q0s-AbW-UxJBk8PQtu68We5yKK82o1eUAMt4iSf7VgllGABNg_T0fdkg2AVjerJMCJsGT5Ce8mxLp2akA%3D%3D?uid=325189121&filename=r_99_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Пикантная",
+                    "id": 314631467,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, курица, ананасы, приправа к пицце, масло чесночное.",
+                    "img":"https://2.downloader.disk.yandex.ru/preview/88ead3591621edc57a2ed0d0eb527b99d028aef29f5393c789d8ff786ce8588c/inf/rrDLfAcYjtFUYPsyI6ab4OAyFTk9N64w4gY5KDZ7_6-R81q_yZjFb0XN2hVC_xljo3goGKBr-7s0nTNyi8Xf-A%3D%3D?uid=325189121&filename=r_45_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Чикен барбекю",
+                    "id": 314631,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, курица, бекон, лук, соус барбекю, приправа к пицце, масло чесночное.",
+                    "img":"https://2.downloader.disk.yandex.ru/preview/c2f255738a70d01e70d491577e3070a1d836eed8452abc8557e856b21baba8e4/inf/Eb7aDNN3SyZbfZoHBZKdVNfJh-g4RT2WUoIE3dHC1pRfUG2hU9pg2t6zodwtz8jJI3fTKI1GXZofnLN5NjNywA%3D%3D?uid=325189121&filename=r_3900_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Чикен барбекю и опята",
+                    "id": 31461346,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протёртых томатов, Моцарелла, курица в соусе барбекю, запеченный сладкий перец, маринованные опята, соус Ранч, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/2430229776a18c046495b6b86fa6f124936434c8df34972cff4af02a29b8fdfd/inf/9GR9AJxZoouN7y7kbjxXuHo6PV7o31W64drqA_0tMntj2IWI61IBwmTqZ_rbrBlr1Bs3TXGSfmQmwBAZQJAQ5g%3D%3D?uid=325189121&filename=r_4916_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Ромео",
+                    "id": 3416134,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, ветчина, свинина, соус Ранч, приправа к пицце, масло чесночное.",
+                    "img":"https://2.downloader.disk.yandex.ru/preview/057b762c7afe1aadb45798bdd369a0c11c459867dd5655b26e63a40ea82a3ab1/inf/RyIlmYmO3jU7ewY5WWL4keAyFTk9N64w4gY5KDZ7_69oL3gFxj3HqjPhtzX7SC4xIjCeW92Xz-Qi-auB4zc78w%3D%3D?uid=325189121&filename=r_41_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Экстра",
+                    "id": 57254754,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, бекон, свинина, охотничий соус, маринованные огурцы, Халапеньо, приправа к пицце, масло чесночное.",
+                    "img":"https://3.downloader.disk.yandex.ru/preview/7ecfe20a9d9fb85af0a920a379caa700cbf673acc33a8c61483e0eda5806fe42/inf/vksmCFVjKD5D7imtnN82TtfJh-g4RT2WUoIE3dHC1pS_Iae0n78WXdXZlRCg1N8zCGKHRF_P-cDAFeqoRK7knA%3D%3D?uid=325189121&filename=r_3901_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Огненная",
+                    "id": 34161346,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, свинина, бекон, перец Чили, маринованные луковички, Халапеньо, Охотничий соус, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/a33c48abb5f8681a76853241d5eeca2b470afe73c544567eabcd0577171e8893/inf/-Jr7et4jldfdOK7bmiHaTNfJh-g4RT2WUoIE3dHC1pSlWt1mAZ9QGghMDOK00fL9nra0nZbvBfoqmtXYL-oCwA%3D%3D?uid=325189121&filename=r_55_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Прошутто и руккола",
+                    "id": 987654,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протёртых томатов, Моцарелла, прошутто, руккола, томаты черри, Джюгас, масло чесночное.",
+                    "img":"https://2.downloader.disk.yandex.ru/preview/cedbc5c20c546dff5553074008e614be0f8762041a78eabb29bc876bf3dca4b1/inf/zybtZvb0vMdyyCwv1EJeVno6PV7o31W64drqA_0tMnv0wjyRCD-ESsIS0KrsxrIT4VnBNTnpfECLpmLSxa7oaw%3D%3D?uid=325189121&filename=r_4647_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Флорентийская",
+                    "id": 345613,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, ветчина, свинина, соус Ранч, лук порей, маринованные опята, приправа к пицце, масло чесночное.",
+                    "img":"https://2.downloader.disk.yandex.ru/preview/bbbb4d756311a60bd85775dc48a69ee3df39e79d3c953d7141040616122d0b81/inf/JTbiw_1qlO6RTYqVZ6cH5eAyFTk9N64w4gY5KDZ7_6_uz8JhAUU5Z4owMSdxLyJcqQ9fcMD5ALtaRsEObCcPzQ%3D%3D?uid=325189121&filename=r_25_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"С копчёными колбасками",
+                    "id": 3154761,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протёртых томатов, Моцарелла, копчёные колбаски, бекон, томаты черри, красный лук, горчичный соус, соус Барбекю, Халапеньо, приправа к пицце, масло чесночное.",
+                    "img":"https://s108vla.storage.yandex.net/rdisk/ed12226e1bccb32a3d421735cd90cca59e301cf2db91aba2a8e864f337d04271/645e947e/7JhwR05tPHdsQVLX_s_l-4wk3ztsiSLRDQKXJd1b0BqAMUDKFw2BwnmJFAKwJl6utQWbSAjxb0wlXlyqJUMyPw==?uid=325189121&filename=r_4919_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&fsize=137873&hid=701715dd5c191471ce30f92895d2a937&media_type=image&tknv=v2&etag=13a44589095bdf71bb8d230809a5e2c2&rtoken=b3xcP7A68mDd&force_default=yes&ycrid=na-dcfee7e4e16f4dfd3557ed58ab80bcb5-downloader1f&ts=5fb842d4f9b80&s=940256bfa64633b2269b6c02f2014083e10420727a05f125c69bbab112ba3dfb&pb=U2FsdGVkX1-zTC7zp2tX4VGOrMUJ1QdODwTUlRNL_Buc28h_RFKB_AJC-Dioas7qJKQ8jSXNhAVkWdN-PxWlQE2OrpyS5vDp6PMDCPZH-4k"
+                },
+                {
+                    
+                    "name":"Охотничья",
+                    "id": 13466,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, лук, шампиньоны, бекон, говядина, Охотничий соус, перец Чили, приправа к пицце, масло чесночное.",
+                    "img":"https://2.downloader.disk.yandex.ru/preview/62a11b2542fa166bcb77f6e63316969a9f8366f31bda470dbf0f7089f3b42f91/inf/ZR2VtFD_lPX1xIsVAT8cjOAyFTk9N64w4gY5KDZ7_6-7_W8cUTKCnaPlcb-614nKqoofTIPq9D9kqaz102J8PA%3D%3D?uid=325189121&filename=r_23_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Соренто",
+                    "id": 134613145,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, говядина, бекон, соус барбекю, сладкий перец, приправа к пицце, масло чесночное",
+                    "img":"https://4.downloader.disk.yandex.ru/preview/535eb3be0059af88ac1d31410230b49233ab6ba162fa9b4e6810a5d642063493/inf/Vth7gC3u3NjKxKdZ9g2_t8P7V8batn3POy8FxsStfRN-7PR-ybHS8rvZqoj_hdmg6MKZkorcrHEo4cOuGq1EmQ%3D%3D?uid=325189121&filename=r_88_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Супер мясная",
+                    "id": 1346436,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, ветчина, бекон, салями, лук, фарш из говядины, горчичный соус, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/61ade527986f781494bd0e8a7fc934ce4f585e7bed4e3f72018ff0549c41c7a2/inf/7lDJkUWsISParlBj0vQWT9fJh-g4RT2WUoIE3dHC1pSEGSAV9ztGpq-oHhnv0mDx87ouljc1j-CShY6sl-KI5g%3D%3D?uid=325189121&filename=r_3898_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Студенческая",
+                    "id": 34763467,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, ветчина, сосиски, приправа к пицце, масло чесночное.",
+                    "img":"https://4.downloader.disk.yandex.ru/preview/31d25f23a64b5a4d492c0f44b9d1f486484dc0b8ad44f096c8a45802926a5245/inf/fdt78yIenO63JpaC_NwLFeAyFTk9N64w4gY5KDZ7_6_5BLoH9ABkmlP_cctetUvtP1r4Ity_TM1iCLHPbvch4A%3D%3D?uid=325189121&filename=r_15_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },   
+                {
+                    
+                    "name":"Чизбургер",
+                    "id": 6034675,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"сырный соус, Моцарелла, фарш из говядины, лук, маринованные огурцы, помидоры, Чеддер, горчичный соус, чесночное масло, кунжут.",
+                    "img":"https://4.downloader.disk.yandex.ru/preview/ddbbd86432314728916d0ea2cd26ac4452853512cae7a764377bf21084f4963f/inf/8nUVSjhaD3fNmaW5B6bpqNfJh-g4RT2WUoIE3dHC1pRD_dVwFaWa6TdynmKHV_rD0igU9KeOktnLDplxUUMXiQ%3D%3D?uid=325189121&filename=r_4495_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Темпо",
+                    "id": 4361465,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, салями, бекон, помидоры, сметанный соус с чесноком, приправа к пицце, масло чесночное.",
+                    "img":"https://3.downloader.disk.yandex.ru/preview/453dde2a383364c726afaacac640dcf4b118563d1b2898d0e525f2d124ff344c/inf/-0eRmq6gQx7WoD5k5zF2q6AM4DRjayw0uw4p5OMyK0o7cyRoSL82CJzeNzL5VkdcEOJuYc8EZSI7nOIlLBSWFQ%3D%3D?uid=325189121&filename=r_75_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Особенная",
+                    "id": 3456787563,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, салями, ветчина, шампиньоны, Халапеньо, маслины, приправа к пицце, масло чесночное",
+                    "img":"https://3.downloader.disk.yandex.ru/preview/a5fc10710100c40a89d897b501e2a14b1bcbd396a241b17e31e1e940879bcff8/inf/4q1fS8c5tKti7osXq8X3luAyFTk9N64w4gY5KDZ7_69Vm5fQsFm8cd-diCoApX-fkL5mBS-m1VNWlkVuZc-gzw%3D%3D?uid=325189121&filename=r_53_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Супер Пепперони",
+                    "id": 343455478,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, колбаса пепперони, приправа к пицце, масло чесночное.",
+                    "img":"https://4.downloader.disk.yandex.ru/preview/da55e26c1108c9f00fb81da14f29855cab5ddbed65ffcff35c267925e50f719b/inf/5ywWUnR4I1_T2Jfvx94fL9fJh-g4RT2WUoIE3dHC1pQOmMwRu0IY1L4Ccy7yS0MNiuOuF4UjoW5lt4Wed6vXwA%3D%3D?uid=325189121&filename=r_3899_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Повседневная",
+                    "id": 65835687,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, колбаса пепперони, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/2e67847b7cce958a5bbdf4ede1912d355024c3011876f718848ac4efbcc38d93/inf/bMXnWxye-BKbyF31iaPkBEUeAFEo8DAwu2ZeO14_C5iVkoIRArapbbi3ze-0OUR19x1apzZqTlh-HGK9zMbuaQ%3D%3D?uid=325189121&filename=r_13_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Народная",
+                    "id": 8965383765,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, ветчина, шампиньоны, маринованные огурцы, приправа к пицце, масло чесночное.",
+                    "img":"https://4.downloader.disk.yandex.ru/preview/bd247951b93fa0ba82df0f709ef111523d9fa05275164233058374490f57b0eb/inf/BbZ2v5qIMR77jM3aw4k3C-Ct_0pOZdkf3sXZoURfOJTvab_VUwkwFeawvNs6Ld3UW-A51Rh4H5Vdq85RZflAEg%3D%3D?uid=325189121&filename=r_17_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Гавайская",
+                    "id": 3567856,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, ветчина, ананасы, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/06a83e0ebce55216bb95a448c6722ab6d0301bc01fa357fda0b34e75170c3d18/inf/SOSk2ooAyPHIiD-Qk8asZOAyFTk9N64w4gY5KDZ7_6_yn8ESqKjSfYvhNC3sPv5o9Bn9HR-sAXTHdhP3ScQytw%3D%3D?uid=325189121&filename=r_19_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Везувий",
+                    "id": 56783567,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, ветчина, приправа к пицце, масло чесночное.",
+                    "img":"https://2.downloader.disk.yandex.ru/preview/b0eb716588cdfeaac3e3b30a93df25234fac6e1c6a958aafb4f44c1262c28672/inf/-0eRmq6gQx7WoD5k5zF2q6j62b1-MLPSBqa_hZxlK50dflsJW68Do3yLdOsJVhPxd2exBFhoHYZaSCObMBZTdQ%3D%3D?uid=325189121&filename=r_7_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                }, 
+                {
+                    
+                    "name":"Деревенская",
+                    "id": 13461346,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, бекон, лук, яйцо, маринованные огурцы, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/27c89f87a7226837ff366bd77e5f04dc36ba55e2ebd00a72187c5fc3c738070b/inf/jlSV6Q0s-AbW-UxJBk8PQtu68We5yKK82o1eUAMt4iSf7VgllGABNg_T0fdkg2AVjerJMCJsGT5Ce8mxLp2akA%3D%3D?uid=325189121&filename=r_99_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Четыре сыра",
+                    "id": 624356524,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, сыр с голубой плесенью, сыр Джюгас, сыр Чеддер, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/025e369ca1188ec4d5bb470dbda23808c6cb72f40abe3058b1306b51c1545a33/inf/DhvA7hZWOAMNv4aLjY91f9fJh-g4RT2WUoIE3dHC1pTDuhzqr7SxvH4AsxPFiAFU4PulEasudCJDuz9SM2MeMQ%3D%3D?uid=325189121&filename=r_3894_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Маргарита",
+                    "id": 36346,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, Моццарелла в рассоле, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/4980108b537ece86d769c544f307e32c8729c376aa60f137f5c49e264eb2b2a0/inf/d3aAljOXdNKwo1n2wKvi-2DVKjOVwLY8vt8hHsxage0yxZwMGJPYZx0hSM8Fzplh62YWD_BAJxVSehkCacj_9A%3D%3D?uid=325189121&filename=r_1_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Грибная",
+                    "id": 346346,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, шампиньоны, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/70031e82a3395813926d4ff8a5be326653897290ac09875c0a06041f6f5175aa/inf/WwO4p2PDnn__jJR-CUtiileRjJqpz1GljKp5kbJHgAsQuLuG4wMlu13meF5wziHKuYBZ3S9ic4nxHEgRaMSXZw%3D%3D?uid=325189121&filename=r_3_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Маринара с лососем",
+                    "id": 3461346,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, лосось, креветки, каперсы, приправа к пицце, масло чесночное.",
+                    "img":"https://3.downloader.disk.yandex.ru/preview/29ac984c4da67e7a6d7792b03b485db0bc74c11ad8a00806e8d8dd790d62efda/inf/ZBUY4Anj45Mf-AS10ZewstfJh-g4RT2WUoIE3dHC1pTY2Eh7gMbPwQezKLsvi1VV6SpzYYJRgyFJy13XzHwSFg%3D%3D?uid=325189121&filename=r_4220_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Греческая",
+                    "id": 967538365,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, рассольный сыр, томаты Черри, шпинат, сметанный соус с чесноком, приправа к пицце, масло чесночное.",
+                    "img":"https://2.downloader.disk.yandex.ru/preview/20c18a506a5234b15ae46106fea818f9ada5a9862d96731040babadf06aaa8ab/inf/jV8z0NJYnONDnk2mcURcg9fJh-g4RT2WUoIE3dHC1pS9W2b4u5RRSqlyadGXDCmWPq7aSP2NdWVGxRXxU_IFKA%3D%3D?uid=325189121&filename=r_89_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"4 сезона",
+                    "id": 24572547,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протертых томатов, Моцарелла, ветчина, шампиньоны, креветки, мидии, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/f274c21a521da2b2f2d9c3a60d5624aeaa3060fb79406cbf87159c10106fe3b6/inf/jV8z0NJYnONDnk2mcURcg9fJh-g4RT2WUoIE3dHC1pT5SmUcQK2JXKucg6qSh30e-Y2mUwc29eUAnOnSQNMYHg%3D%3D?uid=325189121&filename=r_63_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                },
+                {
+                    
+                    "name":"Диабло",
+                    "id": 1305673416543,
+                    "size":[
+                        {
+                            "dough":"Тонкое",
+                            "id": "thin",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        },
+                        {
+                            "dough":"Пышное",
+                            "id": "lush",
+                            "small":["21 см", "215 г"],
+                            "midle":["26 см","360 г"],
+                            "large":["31 см", "550 г"]
+                        }
+                    ],
+                    "price":[10, 20, 30, 40],
+                    "compound":"соус из протёртых томатов, Моцарелла, салями, колбаса Пепперони, имбирный соус, красный лук, Халапеньо, приправа к пицце, масло чесночное.",
+                    "img":"https://1.downloader.disk.yandex.ru/preview/a33c48abb5f8681a76853241d5eeca2b470afe73c544567eabcd0577171e8893/inf/-Jr7et4jldfdOK7bmiHaTNfJh-g4RT2WUoIE3dHC1pSlWt1mAZ9QGghMDOK00fL9nra0nZbvBfoqmtXYL-oCwA%3D%3D?uid=325189121&filename=r_55_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
+                }
+    ],
+    "salads": [
+                {
+                  "id": "s1jkl2345dfg67mn",
+                  "name": "Цезарь с курицей",
+                  "composition": "Листовой салат, куриное филе, сухарики, пармезан, соус Цезарь",
+                  "weight": "250г",
+                  "price": 7.99,
+                  "photo": "https://example.com/салат/цезарь_с_курицей.jpg"
+                },
+                {
+                  "id": "s2dfg234njkl78mn",
+                  "name": "Греческий салат",
+                  "composition": "Помидоры, огурцы, болгарский перец, красный лук, оливки, сыр Фета, маслины",
+                  "weight": "200г",
+                  "price": 6.99,
+                  "photo": "https://example.com/салат/греческий_салат.jpg"
+                },
+                {
+                  "id": "s3gh56dfg23jkl8qw",
+                  "name": "Салат Чабата",
+                  "composition": "Свежие овощи, куриное филе, сыр, соус Чабата",
+                  "weight": "220г",
+                  "price": 7.99,
+                  "photo": "https://example.com/салат/салат_чабата.jpg"
+                },
+                {
+                  "id": "s4bnm2345dfg67kj1",
+                  "name": "Морской салат",
+                  "composition": "Кальмары, креветки, мидии, крабовое мясо, микс салатов, соус майонез",
+                  "weight": "250г",
+                  "price": 9.99,
+                  "photo": "https://example.com/салат/морской_салат.jpg"
+                },
+                {
+                  "id": "s5dfg23kl56dfg78nm2",
+                  "name": "Салат с ростбифом",
+                  "composition": "Ростбиф, свежие овощи, салат, горчичный соус",
+                  "weight": "230г",
+                  "price": 8.99,
+                  "photo": "https://example.com/салат/салат_с_ростбифом.jpg"
+                },
+                {
+                  "id": "s6jkl2345dfg67mn3",
+                  "name": "Салат Нисуаз",
+                  "composition": "Тунец, помидоры, яйца, зеленые фасоль, микс салатов, соус Нисуаз",
+                  "weight": "240г",
+                  "price": 9.99,
+                  "photo": "https://example.com/салат/салат_низуаз.jpg"
+                },
+                {
+                  "id": "s7kl2345dfg67mn4",
+                  "name": "Арбузный салат",
+                  "composition": "Арбуз, огурцы, сыр Фета, базилик, оливковое масло",
+                  "weight": "180г",
+                  "price": 6.99,
+                  "photo": "https://example.com/салат/арбузный_салат.jpg"
+                },
+                {
+                  "id": "s8dfg23kl56dfg78nm5",
+                  "name": "Салат с авокадо",
+                  "composition": "Авокадо, помидоры, огурцы, микс салатов, соус йогурт",
+                  "weight": "200г",
+                  "price": 7.99,
+                  "photo": "https://example.com/салат/салат_с_авокадо.jpg"
+                },
+                {
+                  "id": "s9kl2345dfg67mn6",
+                  "name": "Салат с курицей и ананасом",
+                  "composition": "Куриное филе, ананас, микс салатов, соус майонез",
+                  "weight": "220г",
+                  "price": 8.99,
+                  "photo": "https://example.com/салат/салат_с_курицей_и_ананасом.jpg"
+                },
+                {
+                  "id": "s10jkl2345dfg67mn7",
+                  "name": "Салат Цезарь",
+                  "composition": "Листовой салат, куриное филе, сухарики, пармезан, соус Цезарь",
+                  "weight": "240г",
+                  "price": 8.99,
+                  "photo": "https://example.com/салат/салат_цезарь.jpg"
+                }
+    ],
+    "burgers": [
+                {
+                  "id": "b1ahd3467bfz9cm",
+                  "name": "Чизбургер",
+                  "composition": "Говяжий рубленый котлета, сыр, лук, маринованные огурцы, кетчуп",
+                  "weight": "200г",
+                  "price": 6.99,
+                  "photo": "https://example.com/бургер/чизбургер.jpg"
+                },
+                {
+                  "id": "b2dfg25kj6qhn9l",
+                  "name": "Бейконбургер",
+                  "composition": "Говяжий рубленый котлета, бекон, сыр, лук, маринованные огурцы, соус",
+                  "weight": "250г",
+                  "price": 7.99,
+                  "photo": "https://example.com/бургер/бейконбургер.jpg"
+                },
+                {
+                  "id": "b3jkl2345dfg67mn",
+                  "name": "Вегетарианский бургер",
+                  "composition": "Овощная котлета, сыр, лук, помидоры, маринованные огурцы, соус",
+                  "weight": "180г",
+                  "price": 5.99,
+                  "photo": "https://example.com/бургер/вегетарианский_бургер.jpg"
+                },
+                {
+                  "id": "b4mnb56jk8dfg32lh",
+                  "name": "Куриный бургер",
+                  "composition": "Куриная котлета, салат, помидоры, маринованные огурцы, майонез",
+                  "weight": "220г",
+                  "price": 6.99,
+                  "photo": "https://example.com/бургер/куриный_бургер.jpg"
+                },
+                {
+                  "id": "b5poi23jkl56dfg78mn",
+                  "name": "Фишбургер",
+                  "composition": "Филе рыбы, салат, сыр, лук, тар-тар соус",
+                  "weight": "180г",
+                  "price": 7.99,
+                  "photo": "https://example.com/бургер/фишбургер.jpg"
+                },
+                {
+                  "id": "b6dfg234njkl78mn",
+                  "name": "Картофельный бургер",
+                  "composition": "Картофельный котлета, салат, помидоры, маринованные огурцы, соус",
+                  "weight": "200г",
+                  "price": 5.99,
+                  "photo": "https://example.com/бургер/картофельный_бургер.jpg"
+                },
+                {
+                  "id": "b7gh56dfg23jkl8qw",
+                  "name": "Мексиканский бургер",
+                  "composition": "Говяжий рубленый котлета, гуакамоле, чеддер, салат, помидоры",
+                  "weight": "220г",
+                  "price": 8.99,
+                  "photo": "https://example.com/бургер/мексиканский_бургер.jpg"
+                },
+                {
+                  "id": "b8bnm2345dfg67kj1",
+                  "name": "Чикен Рэнч",
+                  "composition": "Куриная котлета, салат, бекон, сыр, лук, ранч-соус",
+                  "weight": "230г",
+                  "price": 7.99,
+                  "photo": "https://example.com/бургер/чикен_рэнч.jpg"
+                },
+                {
+                  "id": "b9dfg23kl56dfg78nm2",
+                  "name": "Сырный бургер",
+                  "composition": "Говяжий рубленый котлета, сыр, лук, маринованные огурцы, сырный соус",
+                  "weight": "210г",
+                  "price": 6.99,
+                  "photo": "https://example.com/бургер/сырный_бургер.jpg"
+                },
+                {
+                  "id": "b10jkl2345dfg67mn3",
+                  "name": "Грильбургер",
+                  "composition": "Говяжий рубленый котлета, бекон, сыр, лук, помидоры, гриль-соус",
+                  "weight": "240г",
+                  "price": 8.99,
+                  "photo": "https://example.com/бургер/грильбургер.jpg"
+                }
+    ],
+    "soups": [
+                {
+                  "id": "p1jkl2345dfg67mn",
+                  "name": "Борщ",
+                  "composition": "Свекла, капуста, морковь, лук, картофель, мясо, сметана",
+                  "weight": "300г",
+                  "price": 4.99,
+                  "photo": "https://example.com/суп/борщ.jpg"
+                },
+                {
+                  "id": "p2dfg234njkl78mn",
+                  "name": "Солянка",
+                  "composition": "Мясо, колбаса, маринованные огурцы, лимон, каперсы, сметана",
+                  "weight": "350г",
+                  "price": 5.99,
+                  "photo": "https://example.com/суп/солянка.jpg"
+                },
+                {
+                  "id": "p3gh56dfg23jkl8qw",
+                  "name": "Томатный суп",
+                  "composition": "Томаты, морковь, лук, картофель, сливки, зелень",
+                  "weight": "320г",
+                  "price": 4.99,
+                  "photo": "https://example.com/суп/томатный_суп.jpg"
+                },
+                {
+                  "id": "p4bnm2345dfg67kj1",
+                  "name": "Грибной суп",
+                  "composition": "Свежие грибы, лук, картофель, морковь, сливки, зелень",
+                  "weight": "300г",
+                  "price": 5.99,
+                  "photo": "https://example.com/суп/грибной_суп.jpg"
+                },
+                {
+                  "id": "p5dfg23kl56dfg78nm2",
+                  "name": "Уха",
+                  "composition": "Рыба, картофель, морковь, лук, лавровый лист, зелень",
+                  "weight": "350г",
+                  "price": 6.99,
+                  "photo": "https://example.com/суп/уха.jpg"
+                },
+                {
+                  "id": "p6jkl2345dfg67mn3",
+                  "name": "Гороховый суп",
+                  "composition": "Свежий горошек, картофель, морковь, лук, сливки, зелень",
+                  "weight": "300г",
+                  "price": 4.99,
+                  "photo": "https://example.com/суп/гороховый_суп.jpg"
+                },
+                {
+                  "id": "p7kl2345dfg67mn4",
+                  "name": "Лапша с курицей",
+                  "composition": "Куриное филе, лапша, морковь, лук, зелень, специи",
+                  "weight": "320г",
+                  "price": 5.99,
+                  "photo": "https://example.com/суп/лапша_с_курицей.jpg"
+                },
+                {
+                  "id": "p8dfg23kl56dfg78nm5",
+                  "name": "Гаспачо",
+                  "composition": "Свежие овощи, оливковое масло, лук, хлеб, уксус",
+                  "weight": "300г",
+                  "price": 5.99,
+                  "photo": "https://example.com/суп/гаспачо.jpg"
+                },
+                {
+                  "id": "p9kl2345dfg67mn6",
+                  "name": "Крем-суп из шампиньонов",
+                  "composition": "Шампиньоны, лук, сливки, сливочное масло, зелень",
+                  "weight": "320г",
+                  "price": 6.99,
+                  "photo": "https://example.com/суп/крем_суп_из_шампиньонов.jpg"
+                },
+                {
+                  "id": "p10jkl2345dfg67mn7",
+                  "name": "Фасолевый суп",
+                  "composition": "Белая фасоль, морковь, лук, картофель, сметана, зелень",
+                  "weight": "300г",
+                  "price": 4.99,
+                  "photo": "https://example.com/суп/фасолевый_суп.jpg"
+                }
+    ],       
+    "drinks": [
+              {
+                "id": "d1jkl2345dfg67mn",
+                "name": "Кола",
+                "composition": "Газированный напиток",
+                "volume": "0.5л",
+                "price": 1.99,
+                "photo": "https://example.com/напиток/кола.jpg"
+              },
+              {
+                "id": "d2dfg234njkl78mn",
+                "name": "Сок апельсиновый",
+                "composition": "100% натуральный сок",
+                "volume": "0.3л",
+                "price": 2.99,
+                "photo": "https://example.com/напиток/сок_апельсиновый.jpg"
+              },
+              {
+                "id": "d3gh56dfg23jkl8qw",
+                "name": "Лимонад",
+                "composition": "Безалкогольный газированный напиток",
+                "volume": "0.5л",
+                "price": 1.99,
+                "photo": "https://example.com/напиток/лимонад.jpg"
+              },
+              {
+                "id": "d4bnm2345dfg67kj1",
+                "name": "Чай",
+                "composition": "Черный чай",
+                "volume": "0.3л",
+                "price": 1.99,
+                "photo": "https://example.com/напиток/чай.jpg"
+              },
+              {
+                "id": "d5dfg23kl56dfg78nm2",
+                "name": "Кофе",
+                "composition": "Ароматный кофе",
+                "volume": "0.3л",
+                "price": 2.99,
+                "photo": "https://example.com/напиток/кофе.jpg"
+              },
+              {
+                "id": "d6jkl2345dfg67mn3",
+                "name": "Морс",
+                "composition": "Натуральный плодовый напиток",
+                "volume": "0.3л",
+                "price": 2.99,
+                "photo": "https://example.com/напиток/морс.jpg"
+              },
+              {
+                "id": "d7kl2345dfg67mn4",
+                "name": "Минеральная вода",
+                "composition": "Газированная вода",
+                "volume": "0.5л",
+                "price": 1.99,
+                "photo": "https://example.com/напиток/минеральная_вода.jpg"
+              },
+              {
+                "id": "d8dfg23kl56dfg78nm5",
+                "name": "Сок яблочный",
+                "composition": "100% натуральный сок",
+                "volume": "0.3л",
+                "price": 2.99,
+                "photo": "https://example.com/напиток/сок_яблочный.jpg"
+              },
+              {
+                "id": "d9kl2345dfg67mn6",
+                "name": "Фреш ананасовый",
+                "composition": "Свежевыжатый ананасовый сок",
+                "volume": "0.3л",
+                "price": 3.99,
+                "photo": "https://example.com/напиток/фреш_ананасовый.jpg"
+              },
+              {
+                "id": "d10jkl2345dfg67mn7",
+                "name": "Молоко",
+                "composition": "Натуральное коровье молоко",
+                "volume": "0.3л",
+                "price": 1.99,
+                "photo": "https://example.com/напиток/молоко.jpg"
+              }
+    ],
+    "desserts": [
+                {
+                  "id": "d1jkl2345dfg67mn",
+                  "name": "Шоколадный торт",
+                  "composition": "Шоколадный бисквит, шоколадный крем, шоколадная глазурь",
+                  "weight": "150г",
+                  "price": 4.99,
+                  "photo": "https://example.com/десерт/шоколадный_торт.jpg"
+                },
+                {
+                  "id": "d2dfg234njkl78mn",
+                  "name": "Тирамису",
+                  "composition": "Савоярди, маскарпоне, кофе, какао",
+                  "weight": "120г",
+                  "price": 3.99,
+                  "photo": "https://example.com/десерт/тирамису.jpg"
+                },
+                {
+                  "id": "d3gh56dfg23jkl8qw",
+                  "name": "Чизкейк",
+                  "composition": "Сливочный сыр, печенье, ягоды",
+                  "weight": "130г",
+                  "price": 4.99,
+                  "photo": "https://example.com/десерт/чизкейк.jpg"
+                },
+                {
+                  "id": "d4bnm2345dfg67kj1",
+                  "name": "Клубничный пирог",
+                  "composition": "Слоеное тесто, свежие клубники, сахарная пудра",
+                  "weight": "120г",
+                  "price": 3.99,
+                  "photo": "https://example.com/десерт/клубничный_пирог.jpg"
+                },
+                {
+                  "id": "d5dfg23kl56dfg78nm2",
+                  "name": "Фруктовый салат",
+                  "composition": "Сезонные фрукты, сироп, мятная веточка",
+                  "weight": "200г",
+                  "price": 3.99,
+                  "photo": "https://example.com/десерт/фруктовый_салат.jpg"
+                },
+                {
+                  "id": "d6jkl2345dfg67mn3",
+                  "name": "Панна-котта",
+                  "composition": "Сливки, желатин, ваниль, карамельный соус",
+                  "weight": "150г",
+                  "price": 4.99,
+                  "photo": "https://example.com/десерт/панна_котта.jpg"
+                },
+                {
+                  "id": "d7kl2345dfg67mn4",
+                  "name": "Мороженое",
+                  "composition": "Различные вкусы: ваниль, шоколад, клубника и др.",
+                  "weight": "100г",
+                  "price": 2.99,
+                  "photo": "https://example.com/десерт/мороженое.jpg"
+                },
+                {
+                  "id": "d8dfg23kl56dfg78nm5",
+                  "name": "Шарлотка",
+                  "composition": "Яблоки, песочное тесто, корица",
+                  "weight": "150г",
+                  "price": 3.99,
+                  "photo": "https://example.com/десерт/шарлотка.jpg"
+                },
+                {
+                  "id": "d9kl2345dfg67mn6",
+                  "name": "Маффин",
+                  "composition": "Мука, сахар, яйца, масло, шоколадные капли",
+                  "weight": "120г",
+                  "price": 3.99,
+                  "photo": "https://example.com/десерт/маффин.jpg"
+                },
+                {
+                  "id": "d10jkl2345dfg67mn7",
+                  "name": "Фруктовый пирог",
+                  "composition": "Свежие фрукты, слоеное тесто, сахарная пудра",
+                  "weight": "130г",
+                  "price": 3.99,
+                  "photo": "https://example.com/десерт/фруктовый_пирог.jpg"
+                }
+    ],
+    "snacks": [
+                {
+                  "id": "s1jkl2345dfg67mn",
+                  "name": "Картофель фри",
+                  "composition": "Картофель, растительное масло, соль",
+                  "weight": "200г",
+                  "price": 2.99,
+                  "photo": "https://example.com/закуска/картофель_фри.jpg"
+                },
+                {
+                  "id": "s2dfg234njkl78mn",
+                  "name": "Чесночные гренки",
+                  "composition": "Хлеб, чеснок, растительное масло",
+                  "weight": "150г",
+                  "price": 1.99,
+                  "photo": "https://example.com/закуска/чесночные_гренки.jpg"
+                },
+                {
+                  "id": "s3gh56dfg23jkl8qw",
+                  "name": "Куриные крылья",
+                  "composition": "Куриные крылья, соус барбекю",
+                  "weight": "180г",
+                  "price": 3.99,
+                  "photo": "https://example.com/закуска/куриные_крылья.jpg"
+                },
+                {
+                  "id": "s4bnm2345dfg67kj1",
+                  "name": "Фрикадельки",
+                  "composition": "Фарш мясной, лук, яйцо, панировочные сухари",
+                  "weight": "150г",
+                  "price": 2.99,
+                  "photo": "https://example.com/закуска/фрикадельки.jpg"
+                },
+                {
+                  "id": "s5dfg23kl56dfg78nm2",
+                  "name": "Моцарелла с томатами",
+                  "composition": "Моцарелла, свежие томаты, базилик, оливковое масло",
+                  "weight": "200г",
+                  "price": 4.99,
+                  "photo": "https://example.com/закуска/моцарелла_с_томатами.jpg"
+                },
+                {
+                  "id": "s6jkl2345dfg67mn3",
+                  "name": "Сырные шарики",
+                  "composition": "Сыр, панировочные сухари",
+                  "weight": "150г",
+                  "price": 3.99,
+                  "photo": "https://example.com/закуска/сырные_шарики.jpg"
+                },
+                {
+                  "id": "s7kl2345dfg67mn4",
+                  "name": "Гуакамоле с тортильями",
+                  "composition": "Авокадо, помидоры, лук, перец, лайм, тортильи",
+                  "weight": "180г",
+                  "price": 3.99,
+                  "photo": "https://example.com/закуска/гуакамоле_с_тортильями.jpg"
+                }
+    ]
+}
 
 

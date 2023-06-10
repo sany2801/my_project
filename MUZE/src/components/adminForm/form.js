@@ -5,33 +5,16 @@ import { useState} from "react"
 import { useDispatch, useSelector } from "react-redux";
 import Button from "../Button/Button";
 import { useMap, useMapEvents } from "react-leaflet";
-
-var url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address";
-var token = "c8bc0f0128c7944afa9f72fcea2fd8f13793ffd6";
-var query = ';C'
-
-var options = {
-    method: "POST",
-    mode: "cors",
-    headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-        "Authorization": "Token " + token
-    },
-    body: JSON.stringify({query: query})
-}
-
-fetch(url, options)
-.then(response => response.json())
-.catch(error => console.log("error", error));
+import PopapModal from "../popapModal/PopapModal";
 
 
 const Form = ()=>{
-    const [nameObject, addNameObject] = useState('')
-    const [adresValue, setAdresValue] = useState();
+    const [nameObject,addNameObject] = useState('')
+    const [adresValue, setAdresValue] = useState("");
     const [img, setImg] = useState("https://png.pngtree.com/png-vector/20210312/ourmid/pngtree-outline-camera-icon-png-image_3047239.jpg");
     const [delivery, setDelivery] = useState(false)
-    // const [btnActive, setBtnActive] = useState(true)
+    console.log(adresValue)
+
 
 
     const dispatch = useDispatch()
@@ -42,8 +25,7 @@ const Form = ()=>{
             addNameObject('')
             setAdresValue('')
             setImg("https://png.pngtree.com/png-vector/20210312/ourmid/pngtree-outline-camera-icon-png-image_3047239.jpg")
-
-
+            
             dispatch(
                 {type:"ADD_RES", 
                     payload:{
@@ -60,20 +42,24 @@ const Form = ()=>{
                     }
                 })
             }
+            
         const find = (e)=>{
-            e.preventDefault()
-
-            dispatch(
-                {type:"FIND",
+                setAdresValue(e)
+                console.log(e)
+                dispatch(
+                    {type:"FIND",
                     payload:{
-                        "lat":+adresValue.data.geo_lat,
-                        "lng": +adresValue.data.geo_lon
+                        "lat":+e.data.geo_lat,
+                        "lng": +e.data.geo_lon,
+                        "value": e.value,
+                        
                     }
                 }
-            )
-        }    
-             
-        function fileHandle(e) {
+                )
+            }    
+                    
+    
+        function fileHandle(e) {// картинка   
         if (e.target.files.length) {
             const file = e.target.files[0]
             const reader = new FileReader()
@@ -84,17 +70,24 @@ const Form = ()=>{
         }
     }
 
-    const onOptionChange = e => {
+    const onOptionChange = e => {    // Чекбокс
         if(e.target.value === "true"){
             setDelivery(true)
         }else{
             setDelivery(false)
         }
+    }
 
+    // Модальное окно
+    const [modalActive, setModalActive] = useState(false)
+    const editZoneDelivery = (e)=>{
+        e.preventDefault()
+        setModalActive(true)
+        
     }
 
     return(
-            <div className="formAdmin">
+        <div className="formAdmin">
                 <form className="form">
 
                     <label for="nameObject">Название объекта</label>
@@ -103,8 +96,7 @@ const Form = ()=>{
 
                     <label for="adres">Адрес объекта</label>
                     <div className="inputAdress">
-                    <AddressSuggestions id="adres" token={token} value={query} onChange={setAdresValue}/>
-                    <Button active={!adresValue} className="findAdres" onClick={(e)=>find(e)}></Button>
+                    <AddressSuggestions id="adres" token="c8bc0f0128c7944afa9f72fcea2fd8f13793ffd6" onChange={(e)=>find(e)}/>
                     </div>
 
 
@@ -131,7 +123,7 @@ const Form = ()=>{
                                 ></input>
                         <label for="false">Нет</label>
                     </div>
-                        <Button active={!delivery} onClick={(e)=>console.log(e)}>Настроить зону доставки</Button>
+                        <Button active={!delivery} onClick={(e)=>editZoneDelivery(e)}>Настроить зону доставки</Button>
                
                     
                   
@@ -139,8 +131,11 @@ const Form = ()=>{
                     <Button active={!adresValue} onClick={(e)=>addRess(e)}> Сахранить</Button>
                 </form>
                 
-
+                <PopapModal active={modalActive} setActive={setModalActive}>
+                    <h2>sdvgds</h2>
+                </PopapModal>
             </div>
+            
         )
     }
 export default Form

@@ -10,7 +10,7 @@
     height: 100%;
 }
 input{
-    height: 30px;
+    height: 5%;
     font-size: 30px;
     margin: 0;
     padding: 0;
@@ -34,13 +34,13 @@ label{
 #photo{
     display: none;
 }
-.delivery{
+.delivery, .payment{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.delivery label{
+.delivery label, .payment label{
     width: 140px;
     height: 40px;
     background-color:aliceblue;
@@ -48,7 +48,7 @@ label{
     border: 1px solid black;
     text-align: center;
 }
-.delivery input{
+.delivery input, .payment input{
     display: none;
 }
 #true:checked+label{

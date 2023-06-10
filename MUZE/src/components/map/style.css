@@ -1,5 +1,14 @@
 .leaflet-interactive{
-    stroke:rgb(0, 0, 0);
-    fill: rgba(186, 180, 3, 0.779);
-    fill-opacity: .4;
+    /* stroke:rgba(0, 0, 0, 0.877); */
+    /* fill: rgba(172, 255, 17, 0.473); */
+    fill-opacity: .2;
+}
+
+.hover{
+    background-color: rgba(0, 0, 0, 0.623);
+    padding: .3rem;
+    font-size: 20px;
+    border-radius: 20px;
+    color:antiquewhite;
+    border: none;
 }
