@@ -13,7 +13,6 @@ const Form = ()=>{
     const [adresValue, setAdresValue] = useState("");
     const [img, setImg] = useState("https://png.pngtree.com/png-vector/20210312/ourmid/pngtree-outline-camera-icon-png-image_3047239.jpg");
     const [delivery, setDelivery] = useState(false)
-    console.log(adresValue)
 
 
 
@@ -69,21 +68,30 @@ const Form = ()=>{
             }
         }
     }
-
     const onOptionChange = e => {    // Чекбокс
         if(e.target.value === "true"){
             setDelivery(true)
+            dispatch({
+                type:"MAP_DRAW",
+                payload:{
+                    poligonDraw:true                    
+                }
+            })
         }else{
             setDelivery(false)
+            dispatch({
+                type:"MAP_DRAW",
+                payload:{
+                    poligonDraw:false                    
+                }
+            })
         }
     }
 
     // Модальное окно
-    const [modalActive, setModalActive] = useState(false)
     const editZoneDelivery = (e)=>{
         e.preventDefault()
-        setModalActive(true)
-        
+
     }
 
     return(
@@ -131,9 +139,9 @@ const Form = ()=>{
                     <Button active={!adresValue} onClick={(e)=>addRess(e)}> Сахранить</Button>
                 </form>
                 
-                <PopapModal active={modalActive} setActive={setModalActive}>
+                {/* <PopapModal active={modalActive} setActive={setModalActive}>
                     <h2>sdvgds</h2>
-                </PopapModal>
+                </PopapModal> */}
             </div>
             
         )

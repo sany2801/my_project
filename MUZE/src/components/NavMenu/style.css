@@ -1,0 +1,63 @@
+.nav_wrapper{
+    width:  100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* background-color: rgb(128, 201, 45); */
+}
+
+.nav_wrapper ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: auto;
+    height: 100px;
+}
+.wrapper_ordering{
+    display: flex;    
+    height: calc(100vh - 200px);
+}
+.list_menu{
+    width: 50%;
+    overflow: auto;
+} 
+.list_menu li{
+    background-color:antiquewhite;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 14px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.order_list{
+    width: 50%;
+}
+.composition{
+    width: 100%;
+    font-size: 20px;
+}
+.price{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+::-webkit-scrollbar {
+    width: 20px;               /* ширина всей полосы прокрутки */
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* цвет зоны отслеживания */
+  }
+::-webkit-scrollbar-thumb {
+    background-color: rgb(225, 255, 0);    /* цвет бегунка */
+  }
+  .order_list{
+    height: 100%;
+    overflow: auto;
+  }

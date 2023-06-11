@@ -5,11 +5,11 @@ const Order = ({numberOrder, sumOrder, adresOrder}) => {
     return (
         <div className='order'>
             <h2>Номер заказа:</h2>
-            <h3>{"numberOrder"}</h3>
+            <h3>{numberOrder}</h3>
             <h2>Сумма заказа:</h2>
-            <h3>{"sumOrder"}</h3>
+            <h3>{sumOrder}</h3>
             <h2>Адрес доставки:</h2>
-            <h4>{"adresOrderadresOrderadresOrbvdfbbngsdfrnbsgfr dfbgfrd deradresOrderadresOrder"}</h4>
+            <h4>{adresOrder}</h4>
        </div>
 
     );

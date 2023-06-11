@@ -12,8 +12,10 @@ import { Provider } from 'react-redux';
 const defaultState = {
   reslist : restData.restList,
   markerPosition: [{lat:55.75396 , lng:37.620393, value:"Москва", adresStart:[], geostart:[]},  11],
-  route: [{lat:55.75396 , lng:37.620393, value:"Москва", adresStart:[], geostart:[]},  11]
-
+  route: [{lat:55.75396 , lng:37.620393, value:"Москва", adresStart:[], geostart:[]},  11],
+  mapDraw : [{poligonDraw:false}],
+  list: [],
+  orderlist: []
 }
 
 
@@ -25,6 +27,12 @@ const reducer  = (state = defaultState, action) => {
       return {...state, markerPosition:[action.payload]}
     case "ADD_ROUTE":
       return {...state, route:[action.payload]}
+    case "MAP_DRAW":
+      return {...state, mapDraw:[action.payload]}
+    case "LIST_ORDER":
+      return{...state, list:[...state.list, action.payload]}
+      case "ADD_ORDER":
+      return{...state, orderlist:[...state.orderlist, action.payload]}
     default:
       return state
   }

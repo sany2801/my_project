@@ -1,6 +1,9 @@
-{
-    "pizza":[
-                    {   
+[ 
+{   
+    "tittle":"Пицца",
+    "img": "https://1.downloader.disk.yandex.ru/preview/8adcba5281b982ba0349a20cc3b54137484fa98913c6bae559a5ff2aba3ff99f/inf/n1AE-vxTKjV_DcdgJqNWiA9uXHDuu18oN_Z40Zt9MUXLENkGZRKEUD37ez8-W34brUBp3E8ZCHb_5Sq1-QtSGA%3D%3D?uid=325189121&filename=Rectangle%2019.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=325189121&tknv=v2&size=1855x964",
+    "list":[
+                {   
                     "name":"Баварская",
                     "id": 346346,
                     "size":[
@@ -20,8 +23,8 @@
                         }
                     ],
 
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, колбаски из курицы и свинины, колбаса Пепперони, запеченный сладкий перец, карамелизированный лук, соус Барбекю, сырный соус",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, колбаски из курицы и свинины, колбаса Пепперони, запеченный сладкий перец, карамелизированный лук, соус Барбекю, сырный соус",
                     "img":"https://3.downloader.disk.yandex.ru/preview/848e930c04ad76dbd59492ccc29e078fd364805269b497e4242fb8aef3c8abb1/inf/v-nP42GSHfFa_0mr0Ej7l3o6PV7o31W64drqA_0tMnukJ7I1My_v6iNDhjWWzr4kgMncI7wWyN_I26SculEGkQ%3D%3D?uid=325189121&filename=r_5868_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -44,8 +47,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, бекон, курица, соус Барбекю, томаты Черри, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, бекон, курица, соус Барбекю, томаты Черри, приправа к пицце, масло чесночное.",
                     "img":"https://3.downloader.disk.yandex.ru/preview/a8da699c993d4261002a5eed007d15687436bfad47b6bd62218e0d676690f9cc/inf/dsREl_08ZXLePd5i0TM_IxNAlk2a0WmQI7lAzqpxg18xckMeiKqQX27VvZxXnO79f_NevrCGg8MjQ578LK2q6g%3D%3D?uid=325189121&filename=r_8_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },    
                 {
@@ -68,8 +71,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, курица, шампиньоны, перец Пепперони, перец Чили, приправа к пицце, масло чесночное."                ,
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, курица, шампиньоны, перец Пепперони, перец Чили, приправа к пицце, масло чесночное."                ,
                     "img":"https://4.downloader.disk.yandex.ru/preview/8794edcfd61eeb2a6273536bdfeb27115f4c056810f7c24390beadf7dbc2f9b2/inf/velfOs041t561GwFcZwpFsRE24LuXxlV1G0Mrkw8k2f-JTrR2ycv9k2-_AvsJZe1CCGiqrmxjH0oiUrnxj-jGA%3D%3D?uid=325189121&filename=r_39_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -92,8 +95,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, курица, бекон, сырный соус, маринованные огурцы, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, курица, бекон, сырный соус, маринованные огурцы, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/27c89f87a7226837ff366bd77e5f04dc36ba55e2ebd00a72187c5fc3c738070b/inf/jlSV6Q0s-AbW-UxJBk8PQtu68We5yKK82o1eUAMt4iSf7VgllGABNg_T0fdkg2AVjerJMCJsGT5Ce8mxLp2akA%3D%3D?uid=325189121&filename=r_99_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -116,8 +119,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, курица, ананасы, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, курица, ананасы, приправа к пицце, масло чесночное.",
                     "img":"https://2.downloader.disk.yandex.ru/preview/88ead3591621edc57a2ed0d0eb527b99d028aef29f5393c789d8ff786ce8588c/inf/rrDLfAcYjtFUYPsyI6ab4OAyFTk9N64w4gY5KDZ7_6-R81q_yZjFb0XN2hVC_xljo3goGKBr-7s0nTNyi8Xf-A%3D%3D?uid=325189121&filename=r_45_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -140,8 +143,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, курица, бекон, лук, соус барбекю, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, курица, бекон, лук, соус барбекю, приправа к пицце, масло чесночное.",
                     "img":"https://2.downloader.disk.yandex.ru/preview/c2f255738a70d01e70d491577e3070a1d836eed8452abc8557e856b21baba8e4/inf/Eb7aDNN3SyZbfZoHBZKdVNfJh-g4RT2WUoIE3dHC1pRfUG2hU9pg2t6zodwtz8jJI3fTKI1GXZofnLN5NjNywA%3D%3D?uid=325189121&filename=r_3900_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -164,8 +167,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протёртых томатов, Моцарелла, курица в соусе барбекю, запеченный сладкий перец, маринованные опята, соус Ранч, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протёртых томатов, Моцарелла, курица в соусе барбекю, запеченный сладкий перец, маринованные опята, соус Ранч, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/2430229776a18c046495b6b86fa6f124936434c8df34972cff4af02a29b8fdfd/inf/9GR9AJxZoouN7y7kbjxXuHo6PV7o31W64drqA_0tMntj2IWI61IBwmTqZ_rbrBlr1Bs3TXGSfmQmwBAZQJAQ5g%3D%3D?uid=325189121&filename=r_4916_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -188,8 +191,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, ветчина, свинина, соус Ранч, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, ветчина, свинина, соус Ранч, приправа к пицце, масло чесночное.",
                     "img":"https://2.downloader.disk.yandex.ru/preview/057b762c7afe1aadb45798bdd369a0c11c459867dd5655b26e63a40ea82a3ab1/inf/RyIlmYmO3jU7ewY5WWL4keAyFTk9N64w4gY5KDZ7_69oL3gFxj3HqjPhtzX7SC4xIjCeW92Xz-Qi-auB4zc78w%3D%3D?uid=325189121&filename=r_41_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -212,8 +215,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, бекон, свинина, охотничий соус, маринованные огурцы, Халапеньо, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, бекон, свинина, охотничий соус, маринованные огурцы, Халапеньо, приправа к пицце, масло чесночное.",
                     "img":"https://3.downloader.disk.yandex.ru/preview/7ecfe20a9d9fb85af0a920a379caa700cbf673acc33a8c61483e0eda5806fe42/inf/vksmCFVjKD5D7imtnN82TtfJh-g4RT2WUoIE3dHC1pS_Iae0n78WXdXZlRCg1N8zCGKHRF_P-cDAFeqoRK7knA%3D%3D?uid=325189121&filename=r_3901_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -236,8 +239,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, свинина, бекон, перец Чили, маринованные луковички, Халапеньо, Охотничий соус, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, свинина, бекон, перец Чили, маринованные луковички, Халапеньо, Охотничий соус, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/a33c48abb5f8681a76853241d5eeca2b470afe73c544567eabcd0577171e8893/inf/-Jr7et4jldfdOK7bmiHaTNfJh-g4RT2WUoIE3dHC1pSlWt1mAZ9QGghMDOK00fL9nra0nZbvBfoqmtXYL-oCwA%3D%3D?uid=325189121&filename=r_55_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -260,8 +263,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протёртых томатов, Моцарелла, прошутто, руккола, томаты черри, Джюгас, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протёртых томатов, Моцарелла, прошутто, руккола, томаты черри, Джюгас, масло чесночное.",
                     "img":"https://2.downloader.disk.yandex.ru/preview/cedbc5c20c546dff5553074008e614be0f8762041a78eabb29bc876bf3dca4b1/inf/zybtZvb0vMdyyCwv1EJeVno6PV7o31W64drqA_0tMnv0wjyRCD-ESsIS0KrsxrIT4VnBNTnpfECLpmLSxa7oaw%3D%3D?uid=325189121&filename=r_4647_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -284,8 +287,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, ветчина, свинина, соус Ранч, лук порей, маринованные опята, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, ветчина, свинина, соус Ранч, лук порей, маринованные опята, приправа к пицце, масло чесночное.",
                     "img":"https://2.downloader.disk.yandex.ru/preview/bbbb4d756311a60bd85775dc48a69ee3df39e79d3c953d7141040616122d0b81/inf/JTbiw_1qlO6RTYqVZ6cH5eAyFTk9N64w4gY5KDZ7_6_uz8JhAUU5Z4owMSdxLyJcqQ9fcMD5ALtaRsEObCcPzQ%3D%3D?uid=325189121&filename=r_25_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -308,8 +311,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протёртых томатов, Моцарелла, копчёные колбаски, бекон, томаты черри, красный лук, горчичный соус, соус Барбекю, Халапеньо, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протёртых томатов, Моцарелла, копчёные колбаски, бекон, томаты черри, красный лук, горчичный соус, соус Барбекю, Халапеньо, приправа к пицце, масло чесночное.",
                     "img":"https://s108vla.storage.yandex.net/rdisk/ed12226e1bccb32a3d421735cd90cca59e301cf2db91aba2a8e864f337d04271/645e947e/7JhwR05tPHdsQVLX_s_l-4wk3ztsiSLRDQKXJd1b0BqAMUDKFw2BwnmJFAKwJl6utQWbSAjxb0wlXlyqJUMyPw==?uid=325189121&filename=r_4919_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&fsize=137873&hid=701715dd5c191471ce30f92895d2a937&media_type=image&tknv=v2&etag=13a44589095bdf71bb8d230809a5e2c2&rtoken=b3xcP7A68mDd&force_default=yes&ycrid=na-dcfee7e4e16f4dfd3557ed58ab80bcb5-downloader1f&ts=5fb842d4f9b80&s=940256bfa64633b2269b6c02f2014083e10420727a05f125c69bbab112ba3dfb&pb=U2FsdGVkX1-zTC7zp2tX4VGOrMUJ1QdODwTUlRNL_Buc28h_RFKB_AJC-Dioas7qJKQ8jSXNhAVkWdN-PxWlQE2OrpyS5vDp6PMDCPZH-4k"
                 },
                 {
@@ -332,8 +335,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, лук, шампиньоны, бекон, говядина, Охотничий соус, перец Чили, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, лук, шампиньоны, бекон, говядина, Охотничий соус, перец Чили, приправа к пицце, масло чесночное.",
                     "img":"https://2.downloader.disk.yandex.ru/preview/62a11b2542fa166bcb77f6e63316969a9f8366f31bda470dbf0f7089f3b42f91/inf/ZR2VtFD_lPX1xIsVAT8cjOAyFTk9N64w4gY5KDZ7_6-7_W8cUTKCnaPlcb-614nKqoofTIPq9D9kqaz102J8PA%3D%3D?uid=325189121&filename=r_23_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -356,8 +359,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, говядина, бекон, соус барбекю, сладкий перец, приправа к пицце, масло чесночное",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, говядина, бекон, соус барбекю, сладкий перец, приправа к пицце, масло чесночное",
                     "img":"https://4.downloader.disk.yandex.ru/preview/535eb3be0059af88ac1d31410230b49233ab6ba162fa9b4e6810a5d642063493/inf/Vth7gC3u3NjKxKdZ9g2_t8P7V8batn3POy8FxsStfRN-7PR-ybHS8rvZqoj_hdmg6MKZkorcrHEo4cOuGq1EmQ%3D%3D?uid=325189121&filename=r_88_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -380,8 +383,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, ветчина, бекон, салями, лук, фарш из говядины, горчичный соус, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, ветчина, бекон, салями, лук, фарш из говядины, горчичный соус, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/61ade527986f781494bd0e8a7fc934ce4f585e7bed4e3f72018ff0549c41c7a2/inf/7lDJkUWsISParlBj0vQWT9fJh-g4RT2WUoIE3dHC1pSEGSAV9ztGpq-oHhnv0mDx87ouljc1j-CShY6sl-KI5g%3D%3D?uid=325189121&filename=r_3898_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -404,8 +407,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, ветчина, сосиски, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, ветчина, сосиски, приправа к пицце, масло чесночное.",
                     "img":"https://4.downloader.disk.yandex.ru/preview/31d25f23a64b5a4d492c0f44b9d1f486484dc0b8ad44f096c8a45802926a5245/inf/fdt78yIenO63JpaC_NwLFeAyFTk9N64w4gY5KDZ7_6_5BLoH9ABkmlP_cctetUvtP1r4Ity_TM1iCLHPbvch4A%3D%3D?uid=325189121&filename=r_15_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },   
                 {
@@ -428,8 +431,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"сырный соус, Моцарелла, фарш из говядины, лук, маринованные огурцы, помидоры, Чеддер, горчичный соус, чесночное масло, кунжут.",
+                    "price":4.23,
+                    "composition":"сырный соус, Моцарелла, фарш из говядины, лук, маринованные огурцы, помидоры, Чеддер, горчичный соус, чесночное масло, кунжут.",
                     "img":"https://4.downloader.disk.yandex.ru/preview/ddbbd86432314728916d0ea2cd26ac4452853512cae7a764377bf21084f4963f/inf/8nUVSjhaD3fNmaW5B6bpqNfJh-g4RT2WUoIE3dHC1pRD_dVwFaWa6TdynmKHV_rD0igU9KeOktnLDplxUUMXiQ%3D%3D?uid=325189121&filename=r_4495_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -452,8 +455,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, салями, бекон, помидоры, сметанный соус с чесноком, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, салями, бекон, помидоры, сметанный соус с чесноком, приправа к пицце, масло чесночное.",
                     "img":"https://3.downloader.disk.yandex.ru/preview/453dde2a383364c726afaacac640dcf4b118563d1b2898d0e525f2d124ff344c/inf/-0eRmq6gQx7WoD5k5zF2q6AM4DRjayw0uw4p5OMyK0o7cyRoSL82CJzeNzL5VkdcEOJuYc8EZSI7nOIlLBSWFQ%3D%3D?uid=325189121&filename=r_75_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -476,8 +479,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, салями, ветчина, шампиньоны, Халапеньо, маслины, приправа к пицце, масло чесночное",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, салями, ветчина, шампиньоны, Халапеньо, маслины, приправа к пицце, масло чесночное",
                     "img":"https://3.downloader.disk.yandex.ru/preview/a5fc10710100c40a89d897b501e2a14b1bcbd396a241b17e31e1e940879bcff8/inf/4q1fS8c5tKti7osXq8X3luAyFTk9N64w4gY5KDZ7_69Vm5fQsFm8cd-diCoApX-fkL5mBS-m1VNWlkVuZc-gzw%3D%3D?uid=325189121&filename=r_53_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -500,8 +503,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, колбаса пепперони, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, колбаса пепперони, приправа к пицце, масло чесночное.",
                     "img":"https://4.downloader.disk.yandex.ru/preview/da55e26c1108c9f00fb81da14f29855cab5ddbed65ffcff35c267925e50f719b/inf/5ywWUnR4I1_T2Jfvx94fL9fJh-g4RT2WUoIE3dHC1pQOmMwRu0IY1L4Ccy7yS0MNiuOuF4UjoW5lt4Wed6vXwA%3D%3D?uid=325189121&filename=r_3899_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -524,8 +527,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, колбаса пепперони, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, колбаса пепперони, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/2e67847b7cce958a5bbdf4ede1912d355024c3011876f718848ac4efbcc38d93/inf/bMXnWxye-BKbyF31iaPkBEUeAFEo8DAwu2ZeO14_C5iVkoIRArapbbi3ze-0OUR19x1apzZqTlh-HGK9zMbuaQ%3D%3D?uid=325189121&filename=r_13_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -548,8 +551,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, ветчина, шампиньоны, маринованные огурцы, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, ветчина, шампиньоны, маринованные огурцы, приправа к пицце, масло чесночное.",
                     "img":"https://4.downloader.disk.yandex.ru/preview/bd247951b93fa0ba82df0f709ef111523d9fa05275164233058374490f57b0eb/inf/BbZ2v5qIMR77jM3aw4k3C-Ct_0pOZdkf3sXZoURfOJTvab_VUwkwFeawvNs6Ld3UW-A51Rh4H5Vdq85RZflAEg%3D%3D?uid=325189121&filename=r_17_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -572,8 +575,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, ветчина, ананасы, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, ветчина, ананасы, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/06a83e0ebce55216bb95a448c6722ab6d0301bc01fa357fda0b34e75170c3d18/inf/SOSk2ooAyPHIiD-Qk8asZOAyFTk9N64w4gY5KDZ7_6_yn8ESqKjSfYvhNC3sPv5o9Bn9HR-sAXTHdhP3ScQytw%3D%3D?uid=325189121&filename=r_19_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -596,8 +599,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, ветчина, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, ветчина, приправа к пицце, масло чесночное.",
                     "img":"https://2.downloader.disk.yandex.ru/preview/b0eb716588cdfeaac3e3b30a93df25234fac6e1c6a958aafb4f44c1262c28672/inf/-0eRmq6gQx7WoD5k5zF2q6j62b1-MLPSBqa_hZxlK50dflsJW68Do3yLdOsJVhPxd2exBFhoHYZaSCObMBZTdQ%3D%3D?uid=325189121&filename=r_7_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 }, 
                 {
@@ -620,8 +623,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, бекон, лук, яйцо, маринованные огурцы, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, бекон, лук, яйцо, маринованные огурцы, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/27c89f87a7226837ff366bd77e5f04dc36ba55e2ebd00a72187c5fc3c738070b/inf/jlSV6Q0s-AbW-UxJBk8PQtu68We5yKK82o1eUAMt4iSf7VgllGABNg_T0fdkg2AVjerJMCJsGT5Ce8mxLp2akA%3D%3D?uid=325189121&filename=r_99_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -644,8 +647,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, сыр с голубой плесенью, сыр Джюгас, сыр Чеддер, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, сыр с голубой плесенью, сыр Джюгас, сыр Чеддер, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/025e369ca1188ec4d5bb470dbda23808c6cb72f40abe3058b1306b51c1545a33/inf/DhvA7hZWOAMNv4aLjY91f9fJh-g4RT2WUoIE3dHC1pTDuhzqr7SxvH4AsxPFiAFU4PulEasudCJDuz9SM2MeMQ%3D%3D?uid=325189121&filename=r_3894_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -668,8 +671,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, Моццарелла в рассоле, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, Моццарелла в рассоле, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/4980108b537ece86d769c544f307e32c8729c376aa60f137f5c49e264eb2b2a0/inf/d3aAljOXdNKwo1n2wKvi-2DVKjOVwLY8vt8hHsxage0yxZwMGJPYZx0hSM8Fzplh62YWD_BAJxVSehkCacj_9A%3D%3D?uid=325189121&filename=r_1_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -692,8 +695,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, шампиньоны, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, шампиньоны, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/70031e82a3395813926d4ff8a5be326653897290ac09875c0a06041f6f5175aa/inf/WwO4p2PDnn__jJR-CUtiileRjJqpz1GljKp5kbJHgAsQuLuG4wMlu13meF5wziHKuYBZ3S9ic4nxHEgRaMSXZw%3D%3D?uid=325189121&filename=r_3_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -716,8 +719,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, лосось, креветки, каперсы, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, лосось, креветки, каперсы, приправа к пицце, масло чесночное.",
                     "img":"https://3.downloader.disk.yandex.ru/preview/29ac984c4da67e7a6d7792b03b485db0bc74c11ad8a00806e8d8dd790d62efda/inf/ZBUY4Anj45Mf-AS10ZewstfJh-g4RT2WUoIE3dHC1pTY2Eh7gMbPwQezKLsvi1VV6SpzYYJRgyFJy13XzHwSFg%3D%3D?uid=325189121&filename=r_4220_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -740,8 +743,8 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, рассольный сыр, томаты Черри, шпинат, сметанный соус с чесноком, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, рассольный сыр, томаты Черри, шпинат, сметанный соус с чесноком, приправа к пицце, масло чесночное.",
                     "img":"https://2.downloader.disk.yandex.ru/preview/20c18a506a5234b15ae46106fea818f9ada5a9862d96731040babadf06aaa8ab/inf/jV8z0NJYnONDnk2mcURcg9fJh-g4RT2WUoIE3dHC1pS9W2b4u5RRSqlyadGXDCmWPq7aSP2NdWVGxRXxU_IFKA%3D%3D?uid=325189121&filename=r_89_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
                 {
@@ -764,12 +767,11 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протертых томатов, Моцарелла, ветчина, шампиньоны, креветки, мидии, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протертых томатов, Моцарелла, ветчина, шампиньоны, креветки, мидии, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/f274c21a521da2b2f2d9c3a60d5624aeaa3060fb79406cbf87159c10106fe3b6/inf/jV8z0NJYnONDnk2mcURcg9fJh-g4RT2WUoIE3dHC1pT5SmUcQK2JXKucg6qSh30e-Y2mUwc29eUAnOnSQNMYHg%3D%3D?uid=325189121&filename=r_63_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 },
-                {
-                    
+                {                    
                     "name":"Диабло",
                     "id": 1305673416543,
                     "size":[
@@ -788,12 +790,16 @@
                             "large":["31 см", "550 г"]
                         }
                     ],
-                    "price":[10, 20, 30, 40],
-                    "compound":"соус из протёртых томатов, Моцарелла, салями, колбаса Пепперони, имбирный соус, красный лук, Халапеньо, приправа к пицце, масло чесночное.",
+                    "price":4.23,
+                    "composition":"соус из протёртых томатов, Моцарелла, салями, колбаса Пепперони, имбирный соус, красный лук, Халапеньо, приправа к пицце, масло чесночное.",
                     "img":"https://1.downloader.disk.yandex.ru/preview/a33c48abb5f8681a76853241d5eeca2b470afe73c544567eabcd0577171e8893/inf/-Jr7et4jldfdOK7bmiHaTNfJh-g4RT2WUoIE3dHC1pSlWt1mAZ9QGghMDOK00fL9nra0nZbvBfoqmtXYL-oCwA%3D%3D?uid=325189121&filename=r_55_280x280.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=325189121&tknv=v2&size=1855x964"
                 }
-    ],
-    "salads": [
+    ]
+},
+{   
+    "tittle":"Салаты",    
+    "img": "data:image/webp;base64,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",
+    "list": [
                 {
                   "id": "s1jkl2345dfg67mn",
                   "name": "Цезарь с курицей",
@@ -874,8 +880,12 @@
                   "price": 8.99,
                   "photo": "https://example.com/салат/салат_цезарь.jpg"
                 }
-    ],
-    "burgers": [
+    ]
+},
+{   
+    "tittle":"Бургеры",
+    "img": "data:image/png;base64,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",
+    "list": [     
                 {
                   "id": "b1ahd3467bfz9cm",
                   "name": "Чизбургер",
@@ -956,8 +966,12 @@
                   "price": 8.99,
                   "photo": "https://example.com/бургер/грильбургер.jpg"
                 }
-    ],
-    "soups": [
+    ]
+},
+{   
+    "tittle":"Супы",
+    "img": "data:image/png;base64,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",
+    "list": [
                 {
                   "id": "p1jkl2345dfg67mn",
                   "name": "Борщ",
@@ -1038,8 +1052,12 @@
                   "price": 4.99,
                   "photo": "https://example.com/суп/фасолевый_суп.jpg"
                 }
-    ],       
-    "drinks": [
+    ]    
+},
+{   
+    "tittle":"Напитки",   
+    "img": "data:image/png;base64,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",
+    "list": [
               {
                 "id": "d1jkl2345dfg67mn",
                 "name": "Кола",
@@ -1120,8 +1138,12 @@
                 "price": 1.99,
                 "photo": "https://example.com/напиток/молоко.jpg"
               }
-    ],
-    "desserts": [
+    ]
+},
+{   
+    "tittle": "Дессерты",
+    "img":"data:image/png;base64,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",
+    "list": [
                 {
                   "id": "d1jkl2345dfg67mn",
                   "name": "Шоколадный торт",
@@ -1202,9 +1224,13 @@
                   "price": 3.99,
                   "photo": "https://example.com/десерт/фруктовый_пирог.jpg"
                 }
-    ],
-    "snacks": [
-                {
+    ]
+},
+{
+    "tittle" : "Закуски и снеки",
+    "img": "data:image/png;base64,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",
+    "list": [
+             {
                   "id": "s1jkl2345dfg67mn",
                   "name": "Картофель фри",
                   "composition": "Картофель, растительное масло, соль",
@@ -1262,5 +1288,6 @@
                 }
     ]
 }
+]
 
 

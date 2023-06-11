@@ -11,7 +11,9 @@ import L, { polyline } from "leaflet"
 import axios from 'axios';
 import { Route } from 'react-router-dom';
 
-const Map = ({center, zoom, draw}) => {
+const Map = ({center, zoom}) => {
+  const drawMap = useSelector(state=>state.mapDraw)
+  console.log(drawMap[0])
   const find = useSelector(state=> state.markerPosition)
   const routeAdres = useSelector(state=>state.route)
   
@@ -29,8 +31,8 @@ const Map = ({center, zoom, draw}) => {
 
     const [route, setRoute] = useState([]);
     const drivingTraffic = "driving-traffic"
-    console.log(routeAdres[0].geostart)
-    console.log(routeAdres[0].lat)
+    // console.log(routeAdres[0].geostart)
+    // console.log(routeAdres[0].lat)
 
     // const end = [55.75884664209886, 37.61398022599031]
     // const [end, setEnd] = useState([])
@@ -62,7 +64,7 @@ const Map = ({center, zoom, draw}) => {
     const map = useMapEvents({
       locationfound(e) {
         setPosition([find[0].lat, find[0].lng])
-        map.flyTo([find[0].lat,find[0].lng])
+        map.flyTo([find[0].lat,find[0].lng], 14)
       },
     })
     useEffect(()=>{
@@ -71,7 +73,7 @@ const Map = ({center, zoom, draw}) => {
 
     return position === null ? null : (
       <Marker position={position}
-        icon={GetIcon(60,60)}
+        icon={GetIcon(50)}
       >
         <Popup>
           <h1>{find[0].value}</h1>
@@ -124,7 +126,7 @@ const Map = ({center, zoom, draw}) => {
     return(
       <MapContainer center={center} zoom={zoom} scrollWheelZoom={true}>
         <FeatureGroup >
-          <EditControl style={{display:"none"}} className="active"
+          <EditControl
             position='topleft' 
             onCreated={_onCreate} 
             onDeleted={_onDeleted}
@@ -134,8 +136,8 @@ const Map = ({center, zoom, draw}) => {
               polyline: false,
               circle: false,
               circlemarker: false,
-              marker: true,
-              polygon: true,
+              marker: drawMap[0].poligonDraw,
+              polygon: drawMap[0].poligonDraw,
             }}
             /> 
             {reslist.map(key=>(

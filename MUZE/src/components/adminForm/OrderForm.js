@@ -8,6 +8,7 @@ import MaskedInput from "react-input-mask"
 import pointInPolygon from 'point-in-polygon';
 import resData from "..//map/data.json" 
 import { type } from '@testing-library/user-event/dist/type';
+import { useNavigate } from 'react-router-dom';
 const OrderForm = () => {
     const [firstNameValue, setFirstNameValue] = useState("")
     const [lastNameValue, setLastNameValue] = useState("")
@@ -15,19 +16,10 @@ const OrderForm = () => {
     const [adresValue, setAdresValue] = useState();
     const [payment, setPayment] = useState(false)
     const [comentOrderValue, setComentOrder] = useState('')
-    const [addresStart, setAdressStart] = useState()
-    
+    const navigate = useNavigate()
     //////////////////////////////////
     
-    //    console.log(pointInPolygon([55.687774323622506,37.47449177559611],resData.restList[0].area))
     const dispatch = useDispatch()
-    
-    
-    // addRout(55.72517666621405, 37.5670137568943)
-   
-    
-    const endPoint = useSelector(state => state.route)
-    // console.log(endPoint)
     const find = (e)=>{
         setAdresValue(e.value)
         console.log(+e.data.geo_lat, +e.data.geo_lon)
@@ -67,7 +59,15 @@ const OrderForm = () => {
         }
 
     }
-
+const orderingTransition =(e)=>{
+    e.preventDefault()
+    if(!firstNameValue || !lastNameValue || !phoneValue || !adresValue){
+        return null
+    }
+    else{    
+        navigate('/ordering/Пицца')
+    }
+}
 
     // const url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address";
     const token = "c8bc0f0128c7944afa9f72fcea2fd8f13793ffd6";
@@ -108,7 +108,7 @@ const OrderForm = () => {
                         <textarea id='comentOrder' value={comentOrderValue} onChange={(e)=>setComentOrder(e.target.value)} style={{height:'200px', fontSize:'25px'}}></textarea>
 
 
-                    <button type='submit'>Далее</button>
+                    <button onClick={(e)=>orderingTransition(e)} type='submit'>Далее</button>
             </form>
         </div>
 

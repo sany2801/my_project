@@ -9,23 +9,24 @@ const Menu=()=>{
         <>
             <h2>MENU</h2>
         <div className="menu_section">
-                {menu.pizza.map(item=>(
-            <div>
-                    <h2>{item.name}</h2>
-                    <img src={item.img}></img>
+                {menu.map(item=>(
+                // console.log(item.img)
+                    <div>
+                    <h2>{item.tittle}</h2>
+                    <img alt="img" src={item.img}></img>
                     <p>Состав:</p>
                     <p className="discription">{item.compound}</p>
 
                     <form>
       <label className="doughInput">
 
-                    {item.size.map(item2=>(
+                    {/* {item.size.map(item2=>(
                         <>
                             <input id={item2.id + item.id} name="dough" type="radio"></input>
                             <label for={item2.id + item.id}>{item2.dough}</label>
                         </>
                             
-                            ))}
+                            ))} */}
       </label>
 
                      </form>
