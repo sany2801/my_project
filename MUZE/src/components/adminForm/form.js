@@ -13,7 +13,8 @@ const Form = ()=>{
     const [adresValue, setAdresValue] = useState("");
     const [img, setImg] = useState("https://png.pngtree.com/png-vector/20210312/ourmid/pngtree-outline-camera-icon-png-image_3047239.jpg");
     const [delivery, setDelivery] = useState(false)
-
+    const area = useSelector(state=>state.areaDelivary)
+    console.log(area)
 
 
     const dispatch = useDispatch()
@@ -32,7 +33,7 @@ const Form = ()=>{
                         "adres":adresValue.value,
                         "img": img,
                         "delivery": delivery, 
-                        "area":[],
+                        "area":area[0].area,
                         "geometry": {
                             "id": new Date(),
                             "type": "Point",
@@ -50,8 +51,7 @@ const Form = ()=>{
                     payload:{
                         "lat":+e.data.geo_lat,
                         "lng": +e.data.geo_lon,
-                        "value": e.value,
-                        
+                        "value": e.value, 
                     }
                 }
                 )
@@ -89,10 +89,7 @@ const Form = ()=>{
     }
 
     // Модальное окно
-    const editZoneDelivery = (e)=>{
-        e.preventDefault()
-
-    }
+    
 
     return(
         <div className="formAdmin">
@@ -131,7 +128,6 @@ const Form = ()=>{
                                 ></input>
                         <label for="false">Нет</label>
                     </div>
-                        <Button active={!delivery} onClick={(e)=>editZoneDelivery(e)}>Настроить зону доставки</Button>
                
                     
                   
@@ -139,9 +135,7 @@ const Form = ()=>{
                     <Button active={!adresValue} onClick={(e)=>addRess(e)}> Сахранить</Button>
                 </form>
                 
-                {/* <PopapModal active={modalActive} setActive={setModalActive}>
-                    <h2>sdvgds</h2>
-                </PopapModal> */}
+               
             </div>
             
         )

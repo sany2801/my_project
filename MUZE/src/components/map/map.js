@@ -12,13 +12,16 @@ import axios from 'axios';
 import { Route } from 'react-router-dom';
 
 const Map = ({center, zoom}) => {
+
   const drawMap = useSelector(state=>state.mapDraw)
-  console.log(drawMap[0])
   const find = useSelector(state=> state.markerPosition)
   const routeAdres = useSelector(state=>state.route)
-  
+  const areaList = useSelector(state => state.areaDelivary)
+  const reslist = useSelector(state => state.reslist)
+  const [area, setArea] = useState([])
+
   const dispatch = useDispatch()
-  
+
   const GetIcon = (_iconSize, photo)=>{ // иконка маркера
     return L.icon({
       iconUrl: require("../../images/Без названия.png"),
@@ -60,7 +63,7 @@ const Map = ({center, zoom}) => {
 
   const LocationMarker = ()=>{
     const [position, setPosition] = useState(find[0])
-    console.log(position)
+    // console.log(position)
     const map = useMapEvents({
       locationfound(e) {
         setPosition([find[0].lat, find[0].lng])
@@ -69,7 +72,7 @@ const Map = ({center, zoom}) => {
     })
     useEffect(()=>{
       map.locate()
-    },[find])
+    },[map])
 
     return position === null ? null : (
       <Marker position={position}
@@ -95,20 +98,28 @@ const Map = ({center, zoom}) => {
       fillColor: "black"
     }
 
-    const reslist = useSelector(state => state.reslist)
 
 
     const _onCreate = e =>{
-      console.log(e)
+
+      // console.log(e)
       if(e.layerType === "marker"){
         console.log("marker")
         console.log(e.layer._latlng.lat, e.layer._latlng.lng )
       }
       else if(e.layerType === "polygon"){
-        
         e.layer._latlngs[0].map(item=>{
-          console.log(item.lat, item.lng)
+          area.push([item.lat, item.lng])
         })
+        dispatch({
+          type:"ADD_AREA",
+          payload:{area
+          }
+        })
+        console.log(area)
+        
+
+
       }
 
     }

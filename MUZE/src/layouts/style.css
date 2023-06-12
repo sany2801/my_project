@@ -43,8 +43,8 @@
     position: relative;
 }
 .restaranList, .orderList{
-    width: 90%;
     height: 80vh;
+    width: 100%;
     overflow:auto;
      display: flex;
      flex-direction: column;
@@ -102,4 +102,55 @@ img{
 
 .admin{
     grid-area: btn;
+}
+
+
+.tableOrder{
+    width: 100%;
+}
+.header{
+    background-color:rgb(231, 83, 46);
+    color: #ffffff;
+    font-weight: 900;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.cell{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: .5rem;
+    /* text-align: center; */
+}
+.itemOrder:nth-child(even){
+    background-color:rgb(209, 230, 230);
+}
+.itemOrder{
+    background-color:rgb(211, 198, 179)
+}
+
+.number{
+    max-width: 5%;
+}.time{
+    max-width: 10%;
+}.name{
+    max-width: 10%;
+}.phone{
+    min-width:200px;
+}.adres{
+    min-width: 15%;
+}.sumOrder{
+    min-width:min-content;
+}.payment{
+    max-width: 10%;
+}.coment{
+    min-width: 100px;
+    max-height: 200px;
+    overflow: auto;
 }

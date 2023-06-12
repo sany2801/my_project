@@ -9,6 +9,7 @@ const RestItem = ({data}) => {
     const infoRest = ()=>{
         console.log('click')
         setModalActive(true)
+        console.log()
     }
     return (
     <>
@@ -21,10 +22,14 @@ const RestItem = ({data}) => {
             <h3 className='tittleDel'>Зона доставки:</h3>
             <p className='valueDel'>р-н Первомайский</p>
             <button onClick={()=>infoRest()}>Подробнее</button>
-        </div>
        <PopapModal active={modalActive} setActive={setModalActive}>
-            <Map center={[data.geometry.coordinates[0], data.geometry.coordinates[1]]} zoom={13} draw={true}></Map>
+            <h2>{data.name}</h2>
+            <h4>{data.adres}</h4>
+            <p>{data.geometry.coordinates[0]}</p>
+            <p>{data.geometry.coordinates[1]}</p>
+            <Map center={[data.geometry.coordinates[0], data.geometry.coordinates[1]]} zoom={100} draw={false}></Map>
         </PopapModal>
+        </div>
             </>
     );
 };

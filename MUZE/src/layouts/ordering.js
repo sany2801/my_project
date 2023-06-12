@@ -7,37 +7,22 @@ import Button from '../components/Button/Button';
 import { useDispatch, useSelector } from 'react-redux';
 
 const Ordering = () => {
-    const list  = useSelector(state=>state.list)
-    const order_list = useSelector(state=>state.orderlist)
+    const order_list = useSelector(state=>state.orderList)
     const adres = useSelector(state => state.route[0].value)
     console.log(adres)
     const [orderSum, setOrderSum] = useState(0)
     console.log(order_list)
-    console.log(list)
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const back = ()=>{
         navigate("/addOrder")
     }
     const add = (e)=>{
-        // console.log(e)
-        setOrderSum(orderSum + e.price)
-        dispatch({
-            type:"LIST_ORDER",
-            payload: {name: e.name, price: e.price}
-        })
+
+
     }
     const saveOrder = ()=>{
-        navigate("/userPanel")
-        dispatch({
-            type:"ADD_ORDER",
-            payload:{
-                nuberOrder:Date(),
-                sumOrder: orderSum,
-                list: [list],
-                adress: adres
-            }
-        })
+  
         
     }
 
@@ -46,7 +31,7 @@ const Ordering = () => {
    })
     return (
     <>
-            <NavMenu className="nav_wrapper"></NavMenu>
+        <NavMenu className="nav_wrapper"></NavMenu>
         <div className='wrapper_ordering'>
                 <Routes>
                  {
@@ -72,16 +57,7 @@ const Ordering = () => {
                  }
                 </Routes>
             <div className='order_list'>
-                {
-                    list.map(item=>(
-                        <ul>
-                            <li>
-                                <p>{item.name}</p>
-                                <p>{item.price}</p>
-                            </li>
-                        </ul>
-                    ))
-                }
+           
             </div>
                 <h2>Иттого: {orderSum.toFixed()}$</h2>
         </div>

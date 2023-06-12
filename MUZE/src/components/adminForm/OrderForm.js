@@ -16,24 +16,28 @@ const OrderForm = () => {
     const [adresValue, setAdresValue] = useState();
     const [payment, setPayment] = useState(false)
     const [comentOrderValue, setComentOrder] = useState('')
+    const reslist = useSelector(state => state.reslist)
+    const orderList = useSelector(state => state.orderList)
     const navigate = useNavigate()
+    
     //////////////////////////////////
     
     const dispatch = useDispatch()
     const find = (e)=>{
+        console.log(reslist)
         setAdresValue(e.value)
         console.log(+e.data.geo_lat, +e.data.geo_lon)
         // addRout(+e.data.geo_lat, +e.data.geo_lon)
-        for(let i = 0; i < resData.restList.length;i++){
-            if(pointInPolygon([+e.data.geo_lat, +e.data.geo_lon],resData.restList[i].area)){
+        for(let i = 0; i < reslist.length;i++){
+            if(pointInPolygon([+e.data.geo_lat, +e.data.geo_lon],reslist[i].area)){
                 dispatch(
                     {type: "ADD_ROUTE",
                     payload:{
                         "lat": +e.data.geo_lat,
                         "lng": +e.data.geo_lon,
                         "value": e.value,
-                        "adresStart": resData.restList[i].adres,
-                        "geostart": resData.restList[i].geometry.coordinates
+                        "adresStart": reslist[i].adres,
+                        "geostart": reslist[i].geometry.coordinates
                     }
                 }
                 )
@@ -51,7 +55,7 @@ const OrderForm = () => {
     }
 
     const onOptionChange = e => {
-        console.log(e.target.value)
+        // console.log(e.target.value)
         if(e.target.id === "true"){
             setPayment(true)
         }else{
@@ -60,12 +64,31 @@ const OrderForm = () => {
 
     }
 const orderingTransition =(e)=>{
+    const date = new Date()
+    // eslint-disable-next-line no-restricted-globals
+    const ID = self.crypto.randomUUID()
+    console.log(ID)
     e.preventDefault()
     if(!firstNameValue || !lastNameValue || !phoneValue || !adresValue){
         return null
     }
-    else{    
+    else{
+        dispatch({
+            type:"ORDER_LIST",
+            payload:{
+                orderID: ID,
+                numberOrder:Math.ceil(Math.random()*10000),
+                name: firstNameValue, 
+                phone: phoneValue, 
+                adres: adresValue,
+                timeOrder: `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,  
+                payment: payment,  
+                coment: comentOrderValue,
+            }
+        }
+        )
         navigate('/ordering/Пицца')
+        
     }
 }
 
