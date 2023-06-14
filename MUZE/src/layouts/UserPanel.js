@@ -5,7 +5,7 @@ import Order from '../components/orderItem/Order';
 import { useSelector } from 'react-redux';
 const UserPanel = () => {
     const navigate = useNavigate()
-    const orderList = useSelector(state=>state.orderList)
+    const orderList = useSelector(state=>state.allOrderValue)
     const addOrder = ()=>{
         navigate('/addOrder')
 
@@ -42,22 +42,32 @@ const UserPanel = () => {
                         Коментарий
                     </div>
                 </div>
-                {                      
-                    orderList.map(item=>(
-                        <Order
-                        numberOrder={item.numberOrder}
-                        timeOrder={item.timeOrder}
-                        name={item.name}
-                        phone={item.phone}
-                        adres={item.adres}
-                        sumOrder={item.sumOrder}
-                        payment={item.payment}
-                        coment={item.coment}
-                        ></Order>
-                        
-                    ))
-                }
-            </div>            
+
+                {orderList.length !== 0 ?
+                    <div>
+                          {orderList.map(item=>(
+                            <Order onClick={()=>console.log("sdvcds")}
+                                numberOrder={item.numberOrder}
+                                timeOrder={item.timeOrder}
+                                name={item.name}
+                                phone={item.phone}
+                                adres={item.adres}
+                                sumOrder={item.sumOrder}
+                                payment={item.payment}
+                                coment={item.coment}
+                                >
+                            </Order>
+                            ))}
+                    </div>    
+                :
+                <div style={{fontSize:"40px"}}>
+                    Заказов нет
+                </div>
+            }
+
+              
+            </div>
+                     
 
         </div>
             <button onClick={()=>addOrder()} className={"admin"}>Добавить заказ</button>

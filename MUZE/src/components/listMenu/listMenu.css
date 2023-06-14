@@ -1,0 +1,23 @@
+.listMenu{
+    width: 30%;
+    /* height: 400px; */
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    background-color:rgba(180, 180, 38, 0.178);
+    padding: 20px;
+}
+.listMenu img{
+    width: 60%;
+    height: auto;
+}
+.price{
+    font-size: 25px;
+    font-weight: 800;
+}
+.composition{
+    height: 130px;
+    font-size: 2ex;
+}

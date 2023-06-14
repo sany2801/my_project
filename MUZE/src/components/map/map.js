@@ -29,8 +29,6 @@ const Map = ({center, zoom}) => {
     })
   }
 
-    // const startPoint = useSelector (state => state.route)
-    // console.log(startPoint)
 
     const [route, setRoute] = useState([]);
     const drivingTraffic = "driving-traffic"
@@ -58,21 +56,20 @@ const Map = ({center, zoom}) => {
     
 
 
-    // console.log(route)
 
 
   const LocationMarker = ()=>{
     const [position, setPosition] = useState(find[0])
-    // console.log(position)
     const map = useMapEvents({
       locationfound(e) {
-        setPosition([find[0].lat, find[0].lng])
-        map.flyTo([find[0].lat,find[0].lng], 14)
+        setPosition(position)
+        map.flyTo(position, 12)
       },
     })
     useEffect(()=>{
       map.locate()
-    },[map])
+      console.log("useEffect")
+    },[])
 
     return position === null ? null : (
       <Marker position={position}

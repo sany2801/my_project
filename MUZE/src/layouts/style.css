@@ -38,21 +38,15 @@
     background: linear-gradient(236.64deg, #FFFFFF 4.73%, #96A0F2 38.46%, #96A0F2 57.81%, #ededed 91.1%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
-.restaranList, .orderList{
-    height: 80vh;
-    width: 100%;
-    overflow:auto;
-     display: flex;
-     flex-direction: column;
-     align-items:center
-}
 
-.restaranList ul {
-    width: 100%;
+
+.restaranList  {
+    /* width: 100vh; */
+    overflow: auto;
 }
 .restaranList ul li{
     background-color:#ffffff;
@@ -129,9 +123,10 @@ img{
     /* text-align: center; */
 }
 .itemOrder:nth-child(even){
-    background-color:rgb(209, 230, 230);
+    background-color:rgb(209, 221, 221);
 }
 .itemOrder{
+    color: black;
     background-color:rgb(211, 198, 179)
 }
 
@@ -153,4 +148,8 @@ img{
     min-width: 100px;
     max-height: 200px;
     overflow: auto;
+}
+.order_list{
+    overflow: auto;
+    width: 50%;
 }

@@ -1,8 +1,21 @@
 import React from 'react';
 import "./style.css"
+import { Popup } from 'react-leaflet';
+import PopapModal from '../popapModal/PopapModal';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
 // import Map
 const Order = ({numberOrder, name, phone, adres, sumOrder, payment, coment, timeOrder}) => {
+    const [modalActive, setModalActive] = useState(false)
+    const allOrderValue = useSelector(state => state.allOrderValue)
+    
+    const setValueOrder = (e)=>{
+        setModalActive(true)
+        console.log(e)
+    }
+
     return (
+        <>
     <div className="row itemOrder">
         <div className="cell number">
             {numberOrder}
@@ -28,8 +41,14 @@ const Order = ({numberOrder, name, phone, adres, sumOrder, payment, coment, time
         <div className="cell coment">
             {coment}
         </div>
-    </div>
 
+    </div>
+        <button style={{width:"100%"}} onClick={()=>setValueOrder()}> Подробнее</button>
+
+            <PopapModal active={modalActive} setActive={setModalActive}>
+            </PopapModal>
+        </>
+        
     );
 };
 

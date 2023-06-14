@@ -6,14 +6,17 @@ import { useDispatch, useSelector } from "react-redux";
 import Button from "../Button/Button";
 import { useMap, useMapEvents } from "react-leaflet";
 import PopapModal from "../popapModal/PopapModal";
+import { useNavigate } from "react-router-dom";
 
 
 const Form = ()=>{
     const [nameObject,addNameObject] = useState('')
-    const [adresValue, setAdresValue] = useState("");
+    const [adresValue, setAdresValue] = useState();
     const [img, setImg] = useState("https://png.pngtree.com/png-vector/20210312/ourmid/pngtree-outline-camera-icon-png-image_3047239.jpg");
     const [delivery, setDelivery] = useState(false)
     const area = useSelector(state=>state.areaDelivary)
+    const markerPosition = useSelector(state=>state.markerPosition)
+    const navigate = useNavigate()
     console.log(area)
 
 
@@ -33,7 +36,7 @@ const Form = ()=>{
                         "adres":adresValue.value,
                         "img": img,
                         "delivery": delivery, 
-                        "area":area[0].area,
+                        "area":area[0].area || [],
                         "geometry": {
                             "id": new Date(),
                             "type": "Point",
@@ -41,7 +44,17 @@ const Form = ()=>{
                         },
                     }
                 })
+                dispatch(
+                    {type:"FIND",
+                        payload:{
+                            "lat":null,
+                            "lng": null,
+                            "value":null, 
+                        }
+                    }
+                )
             }
+
             
         const find = (e)=>{
                 setAdresValue(e)
@@ -88,7 +101,6 @@ const Form = ()=>{
         }
     }
 
-    // Модальное окно
     
 
     return(
@@ -133,6 +145,7 @@ const Form = ()=>{
                   
 
                     <Button active={!adresValue} onClick={(e)=>addRess(e)}> Сахранить</Button>
+                    <Button  onClick={()=>navigate("/")}> Назад</Button>
                 </form>
                 
                

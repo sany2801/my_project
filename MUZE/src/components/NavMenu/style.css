@@ -17,35 +17,16 @@ img{
     height: 100px;
 }
 .wrapper_ordering{
-    display: flex;    
+    display: flex;
+    width: 100%;  
+    justify-content: space-between;
     height: calc(100vh - 200px);
 }
 .list_menu{
     width: 50%;
     overflow: auto;
 } 
-.list_menu li{
-    background-color:antiquewhite;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    border-radius: 14px;
-    font-size: 13px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.order_list{
-    width: 50%;
-}
-.composition{
-    width: 100%;
-    font-size: 20px;
-}
-.price{
-    font-size: 20px;
-    font-weight: 900;
-}
+
 
 ::-webkit-scrollbar {
     width: 20px;               /* ширина всей полосы прокрутки */
@@ -57,7 +38,19 @@ img{
 ::-webkit-scrollbar-thumb {
     background-color: rgb(225, 255, 0);    /* цвет бегунка */
   }
-  .order_list{
-    height: 100%;
-    overflow: auto;
+  .orderList{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 20px;
+    background-color:rgb(0, 0, 0);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .list_menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
   }

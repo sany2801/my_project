@@ -15,7 +15,8 @@ const defaultState = {
   markerPosition: [{lat:55.75396 , lng:37.620393, value:"Москва", adresStart:[], geostart:[]},  11],
   route: [{lat:55.75396 , lng:37.620393, value:"Москва", adresStart:[], geostart:[]},  11],
   mapDraw : [{poligonDraw:false}],
-  orderList: []
+  orderList: [],
+  allOrderValue : [],
 }
 
 
@@ -32,7 +33,9 @@ const reducer  = (state = defaultState, action) => {
     case "MAP_DRAW":
       return {...state, mapDraw:[action.payload]}
     case "ORDER_LIST":
-      return{...state, orderList:[...state.orderList, action.payload]}
+      return{...state, orderList:[action.payload]}
+    case "ALL_ORDER_VALUE":
+      return{...state, allOrderValue:[...state.allOrderValue, action.payload]}
     default:
       return state
   }
