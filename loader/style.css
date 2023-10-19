@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-family: 'Raleway';
     
 }
@@ -9,12 +9,12 @@
     margin-top: 200px;
     width: 200px;
     height: 200px;
-    transform: ;
+    /* transform: ; */
 }
 
 
  .wrapper{
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
 }
 .loader1 svg{

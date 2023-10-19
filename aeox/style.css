@@ -340,10 +340,8 @@ input:focus {
     outline: none; 
 }
 :focus::-webkit-input-placeholder {
-    text-indent: 300px; 
+    text-indent: 500px; 
     transition:all 1s ease;
-
-
 }
 
 .size_form{

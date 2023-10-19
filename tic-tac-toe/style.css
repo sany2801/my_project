@@ -7,7 +7,7 @@
 }
 body{
     height: 100vh;
-    background-image: url(/DOM/Grantcevich/tic-tac-toe/1643301452_23-phonoteka-org-p-krestiki-noliki-fon-31.png);
+    background-image: url(bg.png);
     align-items: center;
     padding-top: 50px;
 }

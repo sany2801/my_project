@@ -28,18 +28,18 @@ const rotate2 = ()=>{
     return randomRes
 }
 
-// const rotate = ()=>{
-//     let start = Date.now()
-//     let timer = setInterval(()=>{
-//         let timePas = Date.now() - start;
-//         wrapperBall.style.transform = `rotate(${timePas/4}deg)`;
-//         if(timePas > 5760) clearInterval(timer)
-//         },1)    
-//         setTimeout(() => {
-//             rotate2()
+const rotate = ()=>{
+    let start = Date.now()
+    let timer = setInterval(()=>{
+        let timePas = Date.now() - start;
+        wrapperBall.style.transform = `rotate(${timePas/4}deg)`;
+        if(timePas > 5760) clearInterval(timer)
+        },1)    
+        setTimeout(() => {
+            rotate2()
           
-//         },5820); 
-//     }
+        },5820); 
+    }
     const init = ()=>{
         btnInit.addEventListener('click',()=>{
             rotate2()

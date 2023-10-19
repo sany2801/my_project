@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+.wrapper{
+    width: 80%;
+    height: 80vh;
+    margin: 10vh auto;
+    display: flex;
+}
+.battlefield, .fieldOfShips{
+    width: 50%;
+    height: 100%;
+}
+
+.battlefield{
+    background-color: rgb(195, 235, 133);
+    display: flex;
+    flex-wrap: wrap;
+}
+.battlefield div{
+    width: 10%;
+    height: 10%;
+}
+.battlefield div:hover{
+  background-color:black
+}
+.fieldOfShips{
+    background-color:chocolate;
+}

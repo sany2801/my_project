@@ -268,7 +268,7 @@ p {
   width: var(--size);
   height: calc(var(--size) + 8px);
   background-color: rgba(118, 134, 147, 0.816);
-  background-image: url(/img/1103471.png);
+  background-image:url(img/1103471.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
@@ -297,7 +297,7 @@ p {
 .winner div {
   width: 100%;
   height: 100%;
-  background-image: url(/img/winner.png);
+  background-image: url(img/winner.png);
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;

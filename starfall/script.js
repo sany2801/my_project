@@ -3,9 +3,9 @@ const countValue = document.querySelector('.count_input')
 const color = document.querySelector('.color_input')
 const BTN_INIT = document.querySelector('.BTN_INIT')
 const bg = document.querySelectorAll('.bg_input')
-color.addEventListener('click',()=>{
-   console.log(color.value) 
-})
+// color.addEventListener('click',()=>{
+//    console.log(color.value) 
+// })
 
 
 
@@ -39,16 +39,16 @@ const bg_Value = ()=>{
 
 const init = (count)=>{
     wrap.innerHTML= ``
-    document.body.style.backgroundImage = `url('img/${bg_Value()}.jpg')`;
+    // document.body.style.backgroundImage = `url('img/${bg_Value()}.jpg')`;
     for(i=0; i<count;i++){
         wrap.append(star())
     }
 }
+init(600)
+
+// BTN_INIT.addEventListener('click',()=>{
 
 
-BTN_INIT.addEventListener('click',()=>{
-
-
-    init(+countValue.value)
-    console.log(+countValue.value)
-})
+//     init(+countValue.value)
+//     console.log(+countValue.value)
+// })

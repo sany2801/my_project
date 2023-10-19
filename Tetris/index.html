@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+        <circle cx="150" cy="150" r="100" fill="#FDBF41" /> <!-- тело собаки -->
+        <circle cx="115" cy="120" r="20" fill="#FFFFFF" /> <!-- левый глаз -->
+        <circle cx="185" cy="120" r="20" fill="#FFFFFF" /> <!-- правый глаз -->
+        <circle cx="115" cy="120" r="5" fill="#000000" /> <!-- левый зрачок -->
+        <circle cx="185" cy="120" r="5" fill="#000000" /> <!-- правый зрачок -->
+        <path d="M135 180 Q150 200 165 180" stroke="#000000" stroke-width="5" fill="none" /> <!-- рот -->
+        <path d="M130 180 Q150 210 170 180" stroke="#000000" stroke-width="5" fill="none" /> <!-- язык -->
+        <line x1="120" y1="160" x2="140" y2="160" stroke="#000000" stroke-width="5" /> <!-- левое ухо -->
+        <line x1="180" y1="160" x2="160" y2="160" stroke="#000000" stroke-width="5" /> <!-- правое ухо -->
+        <line x1="130" y1="90" x2="150" y2="100" stroke="#000000" stroke-width="5" /> <!-- нос -->
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+        <rect x="0" y="0" width="500" height="500" fill="#ffffff" />
+
+        <!-- Тело собаки -->
+        <g id="body">
+            <rect x="150" y="300" width="200" height="100" fill="#ffcc66" />
+            <circle cx="150" cy="350" r="50" fill="#ffcc66" />
+            <circle cx="350" cy="350" r="50" fill="#ffcc66" />
+        </g>
+
+        <!-- Ноги собаки -->
+        <g id="legs">
+            <rect x="200" y="400" width="30" height="100" fill="#996633">
+                <animate attributeName="y" from="400" to="450" dur="0.5s" repeatCount="indefinite" />
+            </rect>
+            <rect x="270" y="400" width="30" height="100" fill="#996633">
+                <animate attributeName="y" from="400" to="450" dur="0.5s" repeatCount="indefinite" begin="0.25s" />
+            </rect>
+        </g>
+
+        <!-- Голова собаки -->
+        <g id="head">
+            <circle cx="400" cy="325" r="25" fill="#996633" />
+            <path d="M400,350 Q425,325 400,300" fill="none" stroke="#996633" stroke-width="5" />
+        </g>
+
+        <!-- Анимация бега -->
+        <animateTransform xlink:href="#body" attributeName="transform" type="translate" values="0 0; -100 0; 0 0"
+            dur="1s" repeatCount="indefinite" />
+        <animateTransform xlink:href="#legs" attributeName="transform" type="translate" values="0 0; -100 0; 0 0"
+            dur="1s" repeatCount="indefinite" />
+        <animateTransform xlink:href="#head" attributeName="transform" type="translate" values="0 0; -100 0; 0 0"
+            dur="1s" repeatCount="indefinite" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+        <rect x="0" y="0" width="500" height="500" fill="#ffffff" />
+
+        <!-- Тело собаки -->
+        <g id="body">
+            <rect x="150" y="300" width="200" height="100" fill="#ffcc66" />
+            <circle cx="150" cy="350" r="50" fill="#ffcc66" />
+            <circle cx="350" cy="350" r="50" fill="#ffcc66" />
+
+            <!-- Реализм: тень -->
+            <ellipse cx="250" cy="400" rx="100" ry="10" fill="#333333" opacity="0.3" />
+        </g>
+
+        <!-- Ноги собаки -->
+        <g id="legs">
+            <rect x="200" y="400" width="30" height="100" fill="#996633">
+                <animate attributeName="y" from="400" to="450" dur="0.5s" repeatCount="indefinite" />
+            </rect>
+            <rect x="270" y="400" width="30" height="100" fill="#996633">
+                <animate attributeName="y" from="400" to="450" dur="0.5s" repeatCount="indefinite" begin="0.25s" />
+            </rect>
+
+            <!-- Реализм: тень -->
+            <ellipse cx="215" cy="510" rx="40" ry="5" fill="#333333" opacity="0.3">
+                <animate attributeName="cy" from="510" to="560" dur="0.5s" repeatCount="indefinite" />
+            </ellipse>
+            <ellipse cx="285" cy="510" rx="40" ry="5" fill="#333333" opacity="0.3">
+                <animate attributeName="cy" from="510" to="560" dur="0.5s" repeatCount="indefinite" begin="0.25s" />
+            </ellipse>
+        </g>
+
+        <!-- Голова собаки -->
+        <g id="head">
+            <circle cx="400" cy="325" r="25" fill="#996633" />
+            <path d="M400,350 Q425,325 400,300" fill="none" stroke="#996633" stroke-width="5" />
+
+            <!-- Реализм: глаза -->
+            <circle cx="390" cy="320" r="5" fill="#333333" />
+            <circle cx="410" cy="320" r="5" fill="#333333" />
+        </g>
+
+        <!-- Анимация бега -->
+        <animateTransform xlink:href="#body" attributeName="transform" type="translate" values="0 0; -100 0; 0 0"
+            dur="1s" repeatCount="indefinite" />
+        <animateTransform xlink:href="#legs" attributeName="transform" type="translate" values="0 0; -100 0; 0 0"
+            dur="1s" repeatCount="indefinite" />
+        <animateTransform xlink:href="#head" attributeName="transform" type="translate" values="0 0; -100 0; 0 0"
+            dur="1s" repeatCount="indefinite" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+        <rect x="0" y="0" width="500" height="500" fill="#ffffff" />
+
+        <!-- Тело собаки -->
+        <g id="body">
+            <rect x="150" y="300" width="200" height="100" fill="#ffcc66" />
+            <circle cx="150" cy="350" r="50" fill="#ffcc66" />
+            <circle cx="350" cy="350" r="50" fill="#ffcc66" />
+
+            <!-- Шерсть -->
+            <circle cx="170" cy="320" r="10" fill="#ddaa66" />
+            <circle cx="190" cy="340" r="10" fill="#ddaa66" />
+            <circle cx="210" cy="360" r="10" fill="#ddaa66" />
+            <circle cx="230" cy="320" r="10" fill="#ddaa66" />
+            <circle cx="250" cy="340" r="10" fill="#ddaa66" />
+            <circle cx="270" cy="360" r="10" fill="#ddaa66" />
+            <circle cx="290" cy="320" r="10" fill="#ddaa66" />
+            <circle cx="310" cy="340" r="10" fill="#ddaa66" />
+            <circle cx="330" cy="360" r="10" fill="#ddaa66" />
+
+            <!-- Хвост -->
+            <path d="M350,350 Q400,325 420,360" fill="none" stroke="#ddaa66" stroke-width="10" />
+
+            <!-- Реализм: тень -->
+            <ellipse cx="250" cy="400" rx="100" ry="10" fill="#333333" opacity="0.3" />
+        </g>
+
+        <!-- Ноги собаки -->
+        <g id="legs">
+            <rect x="200" y="400" width="30" height="100" fill="#996633">
+                <animate attributeName="y" from="400" to="450" dur="0.5s" repeatCount="indefinite" />
+            </rect>
+            <rect x="270" y="400" width="30" height="100" fill="#996633">
+                <animate attributeName="y" from="400" to="450" dur="0.5s" repeatCount="indefinite" begin="0.25s" />
+            </rect>
+
+            <!-- Реализм: тень -->
+            <ellipse cx="215" cy="510" rx="40" ry="5" fill="#333333" opacity="0.3">
+                <animate attributeName="cy" from="510" to="560" dur="0.5s" repeatCount="indefinite" />
+            </ellipse>
+            <ellipse cx="285" cy="510" rx="40" ry="5" fill="#333333" opacity="0.3">
+                <animate attributeName="cy" from="510" to="560" dur="0.5s" repeatCount="indefinite" begin="0.25s" />
+            </ellipse>
+        </g>
+
+        <!-- Голова собаки -->
+        <g id="head">
+            <circle cx="400" cy="325" r="25" fill="#996633" />
+            <path d="M400,350 Q425,325 400,300" fill="none" stroke="#996633" stroke-width="5" />
+
+            <!-- Реализм: глаза -->
+            <circle cx="390" cy="320" r="5" fill="#333333" />
+            <circle cx="410" cy="320" r="5" fill="#333333" />
+
+            <!-- Рот -->
+            <path d="M395,335 Q400,345 405,335" fill="none" stroke="#333333" stroke-width="2" />
+
+            <!-- Нос -->
+            <circle cx="400" cy="335" r="2" fill="#333333" />
+
+            <!-- Уши -->
+            <path d="M375,325 Q400,305 425,325" fill="#996633" />
+            <path d="M375,325 Q400,295 425,325" fill="#996633" />
+        </g>
+
+        <!-- Анимация бега -->
+        <animateTransform xlink:href="#body" attributeName="transform" type="translate" values="0 0; -100 0; 0 0"
+            dur="1s" repeatCount="indefinite" />
+        <animateTransform xlink:href="#legs" attributeName="transform" type="translate" values="0 0; -100 0; 0 0"
+            dur="1s" repeatCount="indefinite" />
+        <animateTransform xlink:href="#head" attributeName="transform" type="translate" values="0 0; -100 0; 0 0"
+            dur="1s" repeatCount="indefinite" />
+    </svg>
+
+    <img src="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiB2aWV3Qm94PSIwIDAgNTAwIDUwMCIgLz4KIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjZmZmZmZmIiAvPgogICA8ZyBpZD0iYm9keSI+CiAgICAgIDxyZWN0IHg9IjE1MCIgeT0iMzAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmY2M2NiIgLz4KICAgICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMzUwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmY2M2NiIgLz4KICAgICAgPGNpcmNsZSBjeD0iMzUwIiBjeT0iMzUwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmY2M2NiIgLz4KICAgIDwvZyAvPgogICA8ZyBpZD0iaGVhZCI+CiAgICAgIDxjaXJjbGUgY3g9IjQwMCIgY3k9IjMyNSIgciA9IjI1IiBmaWxsPSIjOTk2NjMzIiBzdHJva2U9IjUwIiAvPgogICA8L2cgLz4KPC9zdmc+Cg=="
+        alt="" srcset="">
+    <!-- <div class="wrapper">
+        
+        <div class="gameZone">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+
+        </div>
+        
+        <div class="infoGameZone"></div>
+    </div> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

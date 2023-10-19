@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="file" id="fileInput" />
+    <button id="submitButton">Отправить</button>
+
+    <script>
+        document.getElementById('submitButton').addEventListener('click', async () => {
+            try {
+                const myHeaders = new Headers();
+                myHeaders.append("Authorization",
+                    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5NjQ0NjUwMSwianRpIjoiNDc3OWVlZjFkZTNiNDhhNzgyM2FjNjYwNjU4YTA3YjAiLCJ1c2VyX2lkIjoxMywiZnVsbF9uYW1lIjoiQUxFWCIsInBvc2l0aW9uIjoiUHJvamVjdCBPd25lciIsImNvbXBhbnlfbmFtZSI6bnVsbCwiYWNjb3VudF9waG90byI6InBob3RvL3VzZXIvZGVmYXVsdC9BdmF0YXIuanBnIiwicm9sZSI6IlBPIiwibmlja25hbWUiOiJBXzUifQ.qCQuRd03dgu1iHnAMLhAI80YbdOnebcdGpoPiKFn8_c"
+                );
+
+                const fileInput = document.getElementById("fileInput");
+                const formData = new FormData();
+                formData.append("logo", fileInput.files[0]);
+
+                // Добавьте дополнительные параметры к FormData, если необходимо
+                formData.append("title", "CVSFDBVSDV");
+
+                const requestOptions = {
+                    method: 'POST',
+                    body: formData,
+                    redirect: 'follow',
+                    headers: myHeaders,
+                };
+
+                const response = await fetch("https://chat.agiledreamers.com/chat/", requestOptions);
+                const result = await response.text();
+
+                console.log(result);
+            } catch (error) {
+                console.error('error', error);
+            }
+        });
+    </script>
+</body>
+
+</html>
